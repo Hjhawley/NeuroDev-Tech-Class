@@ -8,13 +8,14 @@
 </head>
 <body>
     <header>
-        <h1>NeuroDev</h1>
+        <!-- Company Logo -->
+        <a href="index.html">
+            <img src="assets/images/logo-white.png" alt="NeuroDev Logo" class="logo">
+        </a>
         <nav>
             <a href="index.html">Home</a>
             <!-- Add more navigation links if needed -->
         </nav>
-        <!-- Dark Mode Toggle -->
-        <button id="theme-toggle" class="button" aria-label="Toggle Dark Mode">🌙</button>
     </header>
     <main>
         <section>
@@ -41,6 +42,12 @@
     <footer>
         <p>&copy; 2024 NeuroDev</p>
     </footer>
+
+    <!-- Dark Mode Toggle -->
+    <div class="theme-toggle-container">
+        <button id="theme-toggle" class="button" aria-label="Toggle Light Mode / Dark Mode">Light Mode / Dark Mode</button>
+    </div>
+
     <!-- Dark Mode Toggle Script -->
     <script src="assets/js/theme-toggle.js"></script>
 </body>

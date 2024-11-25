@@ -12,9 +12,9 @@ if (!currentTheme) {
 document.body.classList.toggle(currentTheme === "dark-mode");
 
 if (currentTheme === "dark-mode") {
-    toggleButton.textContent = '☀️';
+    toggleButton.textContent = '☀️ Light Mode';
 } else {
-    toggleButton.textContent = '🌙';
+    toggleButton.textContent = '🌙 Dark Mode';
 }
 
 toggleButton.addEventListener('click', function() {
@@ -23,10 +23,10 @@ toggleButton.addEventListener('click', function() {
     let theme = 'light-mode';
     if (document.body.classList.contains('dark-mode')) {
         theme = 'dark-mode';
-        toggleButton.textContent = '☀️';
+        toggleButton.textContent = '☀️ Light Mode';
     } else {
-        theme = 'light-mode';
-        toggleButton.textContent = '🌙';
+        theme = 'dark-mode';
+        toggleButton.textContent = '🌙 Dark Mode';
     }
 
     localStorage.setItem('theme', theme);
