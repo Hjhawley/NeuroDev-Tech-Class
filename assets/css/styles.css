@@ -10,6 +10,7 @@
 
 /* Root Variables */
 :root {
+    --max-width: 1000px;
     --primary-color: #42BFEF; /* Primary Color */
     --secondary-color: #20306F; /* Secondary Color */
     --background-color: #f1f1f1;
@@ -64,10 +65,11 @@ header {
     background-color: var(--header-background);
     color: var(--header-text-color);
     padding: 20px 0;
-    margin-bottom: 30px;
+    margin: 0 auto 30px auto; /* Top & Bottom margins, auto for left & right */
     border-radius: 8px;
     box-shadow: var(--box-shadow);
     transition: background-color 0.3s ease, color 0.3s ease;
+    max-width: var(--max-width);
 }
 
 .logo {
@@ -110,7 +112,7 @@ nav a:hover {
 
 /* Main Content */
 main {
-    max-width: 1000px;
+    max-width: var(--max-width);
     margin: 0 auto;
     background-color: white;
     padding: 30px;
