@@ -14,14 +14,14 @@
     --primary-color: #42BFEF; /* Primary Color */
     --secondary-color: #20306F; /* Secondary Color */
     --background-color: #f1f1f1;
-    --text-color: #333;
-    --h2-color: var(--secondary-color);
+    --text-color: #777;
+    --h2-color: var(--primary-color);
     --header-background: var(--primary-color);
     --header-text-color: #fff;
     --footer-text-color: #777;
-    --link-color: var(--primary-color);
-    --link-hover-color: var(--secondary-color);
-    --section-border-color: var(--primary-color);
+    --link-color: var(--secondary-color);
+    --link-hover-color: #FFDD57;
+    --section-border-color: var(--secondary-color);
     --button-background: var(--primary-color);
     --button-hover-background: var(--secondary-color);
     --button-text-color: #fff;
@@ -38,7 +38,6 @@ body.dark-mode {
     --header-text-color: #fff;
     --footer-text-color: #777;
     --link-color: var(--primary-color);
-    --link-hover-color: var(--secondary-color);
     --section-border-color: var(--primary-color);
     --button-background: var(--secondary-color);
     --button-hover-background: var(--primary-color);
