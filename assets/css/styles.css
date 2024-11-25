@@ -1,3 +1,6 @@
+/* Import Custom Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 /* Reset some default styles */
 * {
     margin: 0;
@@ -5,24 +8,62 @@
     box-sizing: border-box;
 }
 
+/* Root Variables */
+:root {
+    --primary-color: #42BFEF; /* Primary Color */
+    --secondary-color: #20306F; /* Secondary Color */
+    --background-color: #f9f9f9;
+    --text-color: #333;
+    --header-background: var(--primary-color);
+    --header-text-color: #fff;
+    --footer-text-color: #777;
+    --link-color: var(--primary-color);
+    --link-hover-color: var(--secondary-color);
+    --section-border-color: var(--primary-color);
+    --button-background: var(--primary-color);
+    --button-hover-background: var(--secondary-color);
+    --button-text-color: #fff;
+    --border-color: #eaeaea;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Mode Variables */
+body.dark-mode {
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+    --header-background: var(--secondary-color);
+    --header-text-color: #fff;
+    --footer-text-color: #aaa;
+    --link-color: #bb86fc;
+    --link-hover-color: #3700b3;
+    --section-border-color: #bb86fc;
+    --button-background: #bb86fc;
+    --button-hover-background: #3700b3;
+    --button-text-color: #121212;
+    --border-color: #333;
+}
+
 /* Body styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
     line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: var(--background-color);
+    color: var(--text-color);
     padding: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Header */
 header {
-    background-color: #42BFEF; /* Primary Color */
-    color: white;
+    background-color: var(--header-background);
+    color: var(--header-text-color);
     padding: 20px 0;
     text-align: center;
     margin-bottom: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--box-shadow);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 header h1 {
@@ -30,15 +71,18 @@ header h1 {
     font-size: 2.5em;
 }
 
+/* Navigation Links */
 nav a {
-    color: white;
+    color: var(--header-text-color);
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
     text-decoration: underline;
+    color: var(--link-hover-color);
 }
 
 /* Main Content */
@@ -48,7 +92,13 @@ main {
     background-color: white;
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--box-shadow);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.dark-mode main {
+    background-color: #1e1e1e;
+    box-shadow: var(--box-shadow);
 }
 
 section {
@@ -56,10 +106,11 @@ section {
 }
 
 h2 {
-    color: #20306F; /* Secondary Color */
+    color: var(--secondary-color);
     margin-bottom: 15px;
-    border-bottom: 2px solid #42BFEF; /* Primary Color */
+    border-bottom: 2px solid var(--section-border-color);
     padding-bottom: 5px;
+    transition: color 0.3s ease, border-color 0.3s ease;
 }
 
 ul {
@@ -69,13 +120,13 @@ ul {
 }
 
 a {
-    color: #42BFEF; /* Primary Color */
+    color: var(--link-color);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #20306F; /* Secondary Color */
+    color: var(--link-hover-color);
     text-decoration: underline;
 }
 
@@ -89,14 +140,38 @@ li {
     margin-bottom: 10px;
 }
 
+/* Buttons */
+button, .button {
+    background-color: var(--button-background);
+    color: var(--button-text-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: 700;
+}
+
+button:hover, .button:hover {
+    background-color: var(--button-hover-background);
+}
+
 /* Footer */
 footer {
     text-align: center;
     margin-top: 50px;
-    color: #777;
+    color: var(--footer-text-color);
     font-size: 0.9em;
-    border-top: 1px solid #eaeaea;
+    border-top: 1px solid var(--border-color);
     padding-top: 20px;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Focus States */
+a:focus, button:focus, .button:focus {
+    outline: 3px solid #FFDD57; /* A contrasting color for focus */
+    outline-offset: 2px;
 }
 
 /* Responsive Design */
