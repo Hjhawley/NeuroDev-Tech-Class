@@ -12,16 +12,16 @@
 :root {
     --primary-color: #42BFEF; /* Primary Color */
     --secondary-color: #20306F; /* Secondary Color */
-    --background-color: #f9f9f9;
+    --background-color: #f1f1f1;
     --text-color: #333;
     --header-background: var(--primary-color);
     --header-text-color: #fff;
     --footer-text-color: #777;
     --link-color: var(--primary-color);
-    --link-hover-color: #20306F;
+    --link-hover-color: var(--secondary-color);
     --section-border-color: var(--primary-color);
     --button-background: var(--primary-color);
-    --button-hover-background: #20306F; /* Adjusted for better contrast */
+    --button-hover-background: var(--secondary-color);
     --button-text-color: #fff;
     --border-color: #eaeaea;
     --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -33,14 +33,14 @@ body.dark-mode {
     --text-color: #e0e0e0;
     --header-background: var(--secondary-color);
     --header-text-color: #fff;
-    --footer-text-color: #aaa;
-    --link-color: #bb86fc;
-    --link-hover-color: #3700b3;
-    --section-border-color: #bb86fc;
-    --button-background: #bb86fc;
-    --button-hover-background: #3700b3;
-    --button-text-color: #121212;
-    --border-color: #333;
+    --footer-text-color: #777;
+    --link-color: var(--primary-color);
+    --link-hover-color: var(--secondary-color);
+    --section-border-color: var(--primary-color);
+    --button-background: var(--secondary-color);
+    --button-hover-background: var(--primary-color);
+    --button-text-color: #fff;
+    --border-color: #777;
 }
 
 /* Body styling */
@@ -78,6 +78,8 @@ nav {
     margin-top: 10px;
 }
 
+/* Removed the media query to prevent header layout changes on larger screens */
+/*
 @media (min-width: 769px) {
     header {
         flex-direction: row;
@@ -88,6 +90,7 @@ nav {
         margin-top: 0;
     }
 }
+*/
 
 /* Navigation Links */
 nav a {

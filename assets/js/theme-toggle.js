@@ -5,28 +5,31 @@ const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
 let currentTheme = storedTheme;
 
+// Determine the initial theme
 if (!currentTheme) {
     currentTheme = prefersDarkScheme.matches ? "dark-mode" : "light-mode";
 }
 
-document.body.classList.toggle(currentTheme === "dark-mode");
-
+// Apply the initial theme
 if (currentTheme === "dark-mode") {
-    toggleButton.textContent = '☀️ Light Mode';
+    document.body.classList.add('dark-mode');
+    toggleButton.textContent = '☀️';
 } else {
-    toggleButton.textContent = '🌙 Dark Mode';
+    document.body.classList.remove('dark-mode');
+    toggleButton.textContent = '🌙';
 }
 
+// Toggle theme on button click
 toggleButton.addEventListener('click', function() {
     document.body.classList.toggle('dark-mode');
 
-    let theme = 'light-mode';
+    let theme;
     if (document.body.classList.contains('dark-mode')) {
         theme = 'dark-mode';
-        toggleButton.textContent = '☀️ Light Mode';
+        toggleButton.textContent = '☀️';
     } else {
-        theme = 'dark-mode';
-        toggleButton.textContent = '🌙 Dark Mode';
+        theme = 'light-mode';
+        toggleButton.textContent = '🌙';
     }
 
     localStorage.setItem('theme', theme);
