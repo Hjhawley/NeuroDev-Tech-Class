@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Reset some default styles */
 * {
@@ -7,15 +7,15 @@
     box-sizing: border-box;
 }
 
-body, header, main, section, footer, nav a, button, h1, h2, h3, ul, li {
+body, header, main, section, footer, nav a, a:hover, button, h1, h2, h3, ul, li {
     transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 :root {
     --max-width: 1000px;
-    --primary-color: #42BFEF; /* Primary Color */
-    --secondary-color: #20306F; /* Secondary Color */
-    --background-color: #eee;
+    --primary-color: #42BFEF;
+    --secondary-color: #20306F;
+    --background-color: #d8d8d8;
     --text-color: #222;
     --h2-color: var(--text-color);
     --h3-color: var(--secondary-color);
