@@ -5,6 +5,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+body, header, main, section, footer, nav a, button {
+    transition: inherit;
 }
 
 :root {
@@ -49,7 +54,6 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     padding: 20px;
-    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 header {
@@ -62,7 +66,6 @@ header {
     margin: 0 auto 30px auto; /* Top & Bottom margins, auto for left & right */
     border-radius: 8px;
     box-shadow: var(--box-shadow);
-    transition: background-color 0.3s ease, color 0.3s ease;
     max-width: var(--max-width);
 }
 
@@ -82,7 +85,6 @@ nav a {
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
-    transition: color 0.3s ease;
 }
 
 nav a:hover {
@@ -97,7 +99,6 @@ main {
     padding: 30px;
     border-radius: 8px;
     box-shadow: var(--box-shadow);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 body.dark-mode main {
@@ -113,7 +114,6 @@ h1 {
     color: var(--h1-color);
     margin-bottom: 15px;
     padding-bottom: 1px;
-    transition: color 0.3s ease, border-color 0.3s ease;
 }
 
 h2 {
@@ -121,7 +121,6 @@ h2 {
     margin-bottom: 15px;
     border-bottom: 2px solid var(--section-border-color);
     padding-bottom: 5px;
-    transition: color 0.3s ease, border-color 0.3s ease;
 }
 
 h3 {
@@ -142,7 +141,6 @@ ul {
 a {
     color: var(--link-color);
     text-decoration: none;
-    transition: color 0.3s ease;
 }
 
 a:hover {
@@ -166,7 +164,6 @@ button, .button {
     border-radius: 25px;
     cursor: pointer;
     font-size: 0.9em;
-    transition: background-color 0.3s ease, color 0.3s ease;
     box-shadow: var(--box-shadow);
     display: flex;
     align-items: center;
@@ -185,7 +182,6 @@ footer {
     font-size: 0.9em;
     border-top: 1px solid var(--footer-text-color);
     padding-top: 20px;
-    transition: color 0.3s ease, border-color 0.3s ease;
 }
 
 .theme-toggle-container {
@@ -202,7 +198,6 @@ footer {
     border-radius: 25px;
     cursor: pointer;
     font-size: 0.9em;
-    transition: background-color 0.3s ease, color 0.3s ease;
     box-shadow: var(--box-shadow);
     display: flex;
     align-items: center;
