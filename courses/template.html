@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NeuroDev - [course title]</title>
     <link rel="stylesheet" href="../../assets/css/styles.css">
+    <script>
+        const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+        const baseElement = document.createElement("base");
+        baseElement.href = isLocal ? "/" : "/NeuroDev-Tech-Class/";
+        document.head.appendChild(baseElement);
+    </script>    
 </head>
 <body>
     <header>
