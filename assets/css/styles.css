@@ -68,10 +68,11 @@ header {
 }
 
 .logo {
-    min-width: 200px;
+    min-width: 75%;
     max-width: 360px;
     height: auto;
-    margin-bottom: 5px;
+    margin: 0 auto;
+    display: block;
 }
 
 nav {
@@ -82,7 +83,6 @@ nav a {
     color: var(--header-text-color);
     text-decoration: none;
     margin: 0 15px;
-    font-weight: bold;
 }
 
 nav a:hover {
@@ -180,7 +180,6 @@ button, .button {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 700;
 }
 
 button:hover, .button:hover {
