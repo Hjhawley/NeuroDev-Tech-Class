@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-weight: normal;
 }
 
 body, header, main, section, footer, nav a, a:hover, button, h1, h2, h3, ul, li {
@@ -15,20 +16,19 @@ body, header, main, section, footer, nav a, a:hover, button, h1, h2, h3, ul, li 
     --max-width: 1000px;
     --primary-color: #42BFEF;
     --secondary-color: #20306F;
-    --tertiary-color: #55b;
+    --tertiary-color: #fd5;
     --background-color: #ddd;
     --text-color: #222;
     --h2-color: var(--text-color);
     --h3-color: var(--primary-color);
     --header-background: var(--primary-color);
-    --header-text-color: #eee;
+    --header-text-color: #fff;
     --footer-text-color: #999;
-    --link-color: var(--tertiary-color);
-    --link-hover-color: #fd5;
+    --link-color: var(--secondary-color);
+    --link-hover-color: var(--tertiary-color);
     --section-border-color: var(--secondary-color);
     --button-background: var(--primary-color);
     --button-hover-background: var(--secondary-color);
-    --border-color: #eee;
     --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -46,7 +46,7 @@ body.dark-mode {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     line-height: 1.6;
     background-color: var(--background-color);
@@ -87,7 +87,7 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
-    color: var(--link-hover-color);
+    color: var(--tertiary-color);
 }
 
 main {
@@ -100,7 +100,7 @@ main {
 }
 
 body.dark-mode main {
-    background-color: #1e1e1e;
+    background-color: #222;
     box-shadow: var(--box-shadow);
 }
 
@@ -126,7 +126,6 @@ h3 {
     margin-top: 20px;
     margin-bottom: 10px;
     font-size: 1.5em;
-    font-weight: 700;
 }
 
 ul {
@@ -217,10 +216,6 @@ footer {
     justify-content: center;
 }
 
-/* #theme-toggle:hover {
-    background-color: var(--button-hover-background);
-} */
-
 /* Responsive Adjustments for Toggle Button */
 @media (max-width: 480px) {
     .theme-toggle-container {
@@ -236,6 +231,6 @@ footer {
 
 /* Focus States */
 a:focus, button:focus, .button:focus {
-    outline: 2px solid #FFDD57;
+    outline: 2px solid #fd5;
     outline-offset: 2px;
 }
