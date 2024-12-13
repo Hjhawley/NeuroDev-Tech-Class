@@ -158,23 +158,20 @@ li {
 }
 
 .video-responsive {
-    display: block; /* Prevents interference with list-item behavior */
     position: relative;
-    max-width: 500px; /* Caps the width at 500px */
-    width: 100%; /* Fills the container up to max-width */
-    padding-top: 56.25%; /* Maintain 16:9 aspect ratio */
-    overflow: hidden; /* Prevents overflow */
-    margin-top: 10px; /* Space between text and video */
+    max-width: 500px; /* Responsive to the container width */
+    height: 280px; /* Fixed height */
+    overflow: hidden; /* Prevent excess content */
+    margin-top: 10px; /* Space between video and previous content */
 }
 
 .video-responsive iframe {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%; /* Fills the responsive container */
-    height: 100%; /* Maintains aspect ratio */
-    max-height: 281.25px; /* Caps height at 16:9 ratio when max-width is reached */
-    border: none; /* Removes iframe border */
+    width: 100%; /* Fills the container width */
+    height: 100%; /* Matches the container height */
+    border: none; /* Removes default iframe border */
 }
 
 button, .button {
