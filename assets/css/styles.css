@@ -128,13 +128,6 @@ h3 {
     font-size: 1.5em;
 }
 
-ul {
-    list-style-type: square;
-    margin-left: 20px;
-    margin-top: 10px;
-    color: var(--h2-color);
-}
-
 a {
     color: var(--link-color);
     text-decoration: none;
@@ -150,22 +143,28 @@ p {
     line-height: 1.8;
 }
 
+ul {
+    list-style-type: square; /* Ensure bullet points are used */
+    padding-left: 20px; /* Add spacing for bullet points */
+    margin-left: 20px;
+    color: var(--h2-color);
+}
+
 li {
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack items vertically by default */
-    align-items: flex-start; /* Align items to the left */
-    margin-bottom: 10px; /* Standard spacing between list items */
+    display: list-item; /* Restores the default bullet point behavior */
+    margin-bottom: 10px; /* Adds spacing between list items */
+    list-style-position: outside; /* Ensures bullets are outside the content */
+    padding-left: 20px; /* Indent for bullet alignment */
 }
 
 .video-responsive {
+    display: block; /* Prevents interference with list-item behavior */
     position: relative;
-    width: 100%; /* Responsive to container width */
-    max-width: 500px; /* Caps width at 500px */
-    height: 0;
+    max-width: 500px; /* Caps the width at 500px */
+    width: 100%; /* Fills the container up to max-width */
     padding-top: 56.25%; /* Maintain 16:9 aspect ratio */
-    margin: 0; /* Remove any centering margins */
-    overflow: hidden; /* Prevent overflow */
-    align-self: flex-start; /* Ensures it's left-aligned in flexbox layout */
+    overflow: hidden; /* Prevents overflow */
+    margin-top: 10px; /* Space between text and video */
 }
 
 .video-responsive iframe {
@@ -174,15 +173,9 @@ li {
     left: 0;
     width: 100%; /* Fills the responsive container */
     height: 100%; /* Maintains aspect ratio */
-    border: 0; /* Removes default iframe border */
+    max-height: 281.25px; /* Caps height at 16:9 ratio when max-width is reached */
+    border: none; /* Removes iframe border */
 }
-
-a {
-    margin-top: 5px; /* Space between the video and the next link */
-    margin-bottom: 0; /* Eliminate unnecessary spacing beneath */
-    text-align: left; /* Left-aligns the text */
-}
-
 
 button, .button {
     background-color: var(--button-background);
