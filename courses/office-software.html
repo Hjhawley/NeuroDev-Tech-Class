@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NeuroDev - Office Software</title>
+        <script>
+            const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+            const baseElement = document.createElement("base");
+            baseElement.href = isLocal ? "/" : "/NeuroDev-Tech-Class/";
+            document.head.appendChild(baseElement);
+        </script>
+        <script src="assets/js/link-generator.js"></script>
+        <link rel="stylesheet" href="assets/css/styles.css">
+    </head>    
+<body>
+    <header>
+        <a href="index.html">
+            <img src="assets/images/logo-white.png" alt="NeuroDev Logo" class="logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+    <main id="main-content">
+        <h1>Office Software: Microsoft 365 and Google Workspace</h1>
+
+        <!-- Course Overview -->
+        <section>
+            <h3>Course Overview</h3>
+            <p>
+                This comprehensive course will prepare students to more effectively utilize the leading office productivity tools: Microsoft 365 and Google Workspace. 
+                Specifically the course offers a deep dive into Microsoft Word / Google Docs, MS Excel / Google Sheets, and MS PowerPoint / Google Slides. 
+                This course is ideal for students wanting to enhance their everyday software skills in academic, personal, and professional settings.
+            </p>
+        </section>
+
+        <!-- Course Objectives -->
+        <section>
+            <h3>Course Objectives</h3>
+            <ul>
+                <li>Understand the core functionalities of word processors, spreadsheets, and presentation software.</li>
+                <li>Develop proficiency in creating, formatting, and editing documents using Microsoft Word and Google Docs.</li>
+                <li>Master spreadsheet skills, including formula application, data analysis, and budget creation with Excel and Google Sheets.</li>
+                <li>Learn to design and deliver effective presentations using PowerPoint and Google Slides, focusing on audience engagement and clear communication.</li>
+                <li>Apply real-world applications of office productivity software through project-based assignments, including résumé creation, budget management, and presentation delivery.</li>
+            </ul>
+        </section>
+
+        <!-- Unit Material -->
+        <script id="unit-data" type="application/json">
+        [
+            {
+                "title": "Unit 1: Word Processors",
+                "description": "Learn how to better use Microsoft Word and Google Docs.",
+                "content": [
+                    { "type": "doc", "title": "Reading - Word Processors", "url": "https://docs.google.com/document/d/1R_qvS6ou3ZTpZPwoX45rCIM9lIIl6POLJS9x8aijh-k/edit?usp=sharing" },
+                    { "type": "doc", "title": "Quiz - Word Processors", "url": "https://docs.google.com/forms/d/e/1FAIpQLSdqqkhza05g7Aar0w9ElvafKq54gdsBDNkBgZaROEgnWvqa0A/viewform?usp=sf_link" },
+                    { "type": "doc", "title": "Practice - Word Processors", "url": "https://docs.google.com/document/d/18DMgf6el56QoNY7bisuXV8Yk_8zmCjjnqJvtDAX3FMY/edit?usp=sharing" },
+                    { "type": "doc", "title": "Application - Creating a Résumé", "url": "https://docs.google.com/document/d/1bDvb8u0q9lWX4ckkeMhWD8ZBmdSIlaBqcQcCL6SBbjM/edit?usp=sharing" }
+                ]
+            },
+            {
+                "title": "Unit 2: Spreadsheets",
+                "description": "Learn how to better use Microsoft Excel and Google Sheets.",
+                "content": [
+                    { "type": "doc", "title": "Reading - Spreadsheets", "url": "https://docs.google.com/document/d/1ovhVqICZkWqni01piBZRUMXuAlwWPkuOc-RR4bGu224/edit?usp=sharing" },
+                    { "type": "doc", "title": "Worksheet - Spreadsheet Formulas", "url": "https://docs.google.com/spreadsheets/d/1-DqkSTjb0iq8MDh-hrxfyP-fkK9dMA6bvFY7e-4GFsE/edit?usp=sharing" },
+                    { "type": "doc", "title": "Practice - Spreadsheets", "url": "https://docs.google.com/document/d/15Og8CmsEGyiVHfhUAoUhRvAr4dPWUoK_u0u8xhEa5Eg/edit?usp=sharing" },
+                    { "type": "doc", "title": "Application - Creating a Budget", "url": "https://docs.google.com/document/d/10XQvaMQHOgp4DnzXpXx32dSPTbd21uILjFrz-04anYY/edit?usp=sharing" }
+                ]
+            },
+            {
+                "title": "Unit 3: Presentation Software",
+                "description": "Learn how to better use Microsoft PowerPoint and Google Slides.",
+                "content": [
+                    { "type": "doc", "title": "Reading - Slideshows", "url": "https://docs.google.com/document/d/1w4i2T_oYqwfUa1nmaB9yF9Q3CrBXJycL-CgyhE7_TVM/edit?usp=drive_link" },
+                    { "type": "doc", "title": "Application - “Career Day” Presentation", "url": "https://docs.google.com/document/d/1xzmugCusgxqknA9xnf_z5yjapYzvKtbRh90KnNkKWmg/edit?usp=sharing" }
+                ]
+            }
+        ]
+        </script>
+
+        <!-- Generate Content -->
+        <div id="unit-sections"></div>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 NeuroDev</p>
+    </footer>
+    <!-- Dark Mode Toggle Button -->
+    <div class="theme-toggle-container">
+        <button id="theme-toggle" class="button" aria-label="Toggle Light Mode / Dark Mode">Toggle Theme</button>
+    </div>
+    <script src="assets/js/theme-toggle.js"></script>
+</body>
+</html>
