@@ -3,13 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>NeuroDev - [course title]</title>
+        <title>NeuroDev - Digital Literacy</title>
         <script>
             const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
             const baseElement = document.createElement("base");
             baseElement.href = isLocal ? "/" : "/NeuroDev-Tech-Class/";
             document.head.appendChild(baseElement);
         </script>
+        <script src="assets/js/link-generator.js"></script>
         <link rel="stylesheet" href="assets/css/styles.css">
     </head>    
 <body>
@@ -19,117 +20,67 @@
         </a>
         <nav>
             <a href="index.html">Home</a>
-            <!-- Add more nav links here -->
         </nav>
     </header>
     <main id="main-content">
-        <h1>[course title]</h1>
-        <!-- Course Overview & Objectives -->
+        <h1>Digital Literacy</h1>
+
+        <!-- Course Overview -->
         <section>
             <h3>Course Overview</h3>
             <p>
-                [course overview]
-                [course overview]
-                [course overview]
+                The goal of this entry-level course is to equip students with essential digital literacy skills, important for both personal and professional success in today's digital world. 
+                By mastering basic computer and internet skills, students will improve their productivity, safety, and digital communication abilities. 
+                Most adults should find this course useful to some degree, regardless of technical proficiency.
             </p>
         </section>
+
+        <!-- Course Objectives -->
         <section>
             <h3>Course Objectives</h3>
             <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-                <li>6</li>
+                <li>Understand the function of basic hardware and software components.</li>
+                <li>Navigate efficiently through an operating system (Windows or macOS).</li>
+                <li>Employ effective internet search strategies.</li>
+                <li>Practice digital communication etiquette.</li>
+                <li>Apply best practices for digital security and privacy.</li>
+                <li>Utilize common productivity tools and cloud storage solutions.</li>
             </ul>
         </section>
 
-        <!-- Unit 1 -->
-        <section>
-        <h2>Unit 1: ____</h2>
-        <p>[unit overview]</p>
-            <div>
-                <label>
-                    <input type="checkbox" class="task-checkbox">
-                    <a href="link" target="_blank" rel="noopener noreferrer">
-                        [link]
-                    </a>
-                </label>
-            </div>
+        <!-- Unit Material -->
+        <script id="unit-data" type="application/json">
+        [
+            {
+                "title": "Unit 1: ___",
+                "description": "___",
+                "content": [
+                    { "type": "doc", "title": "title", "url": "link" },
+                    { "type": "video", "title": "title", "url": "https://youtube.com/embed/link" }
+                ]
+            },
+            {
+                "title": "Unit 2: ___",
+                "description": "___",
+                "content": [
+                    { "type": "doc", "title": "title", "url": "link" },
+                    { "type": "video", "title": "title", "url": "https://youtube.com/embed/link" }
+                ]
+            },
+            {
+                "title": "Unit 2: ___",
+                "description": "___",
+                "content": [
+                    { "type": "doc", "title": "title", "url": "link" },
+                    { "type": "video", "title": "title", "url": "https://youtube.com/embed/link" }
+                ]
+            }
+        ]
+        </script>
 
-            <div>
-                <label>
-                    <input type="checkbox" class="task-checkbox">
-                    Video - [title]
-                </label>
-                <div class="video-responsive">
-                    <iframe src="https://www.youtube.com/embed/[link]" 
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen loading="lazy">
-                    </iframe>
-                </div>
-            </div>
-        </section>
+        <!-- Generate Content -->
+        <div id="unit-sections"></div>
 
-        <!-- Unit 2 -->
-        <section>
-        <h2>Unit 2: ____</h2>
-        <p>[unit overview]</p>
-            <div>
-                <label>
-                    <input type="checkbox" class="task-checkbox">
-                    <a href="link" target="_blank" rel="noopener noreferrer">
-                        [link]
-                    </a>
-                </label>
-            </div>
-
-            <div>
-                <label>
-                    <input type="checkbox" class="task-checkbox">
-                    Video - [title]
-                </label>
-                <div class="video-responsive">
-                    <iframe src="https://www.youtube.com/embed/[link]" 
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen loading="lazy">
-                    </iframe>
-                </div>
-            </div>
-        </section>
-
-        <!-- Unit 3 -->
-        <section>
-        <h2>Unit 3: ____</h2>
-        <p>[unit overview]</p>
-            <div>
-                <label>
-                    <input type="checkbox" class="task-checkbox">
-                    <a href="link" target="_blank" rel="noopener noreferrer">
-                        [link]
-                    </a>
-                </label>
-            </div>
-
-            <div>
-                <label>
-                    <input type="checkbox" class="task-checkbox">
-                    Video - [title]
-                </label>
-                <div class="video-responsive">
-                    <iframe src="https://www.youtube.com/embed/[link]" 
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen loading="lazy">
-                    </iframe>
-                </div>
-            </div>
-        </section>
-
-        </section>
     </main>
     <footer>
         <p>&copy; 2024 NeuroDev</p>
