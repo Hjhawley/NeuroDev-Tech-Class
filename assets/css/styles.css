@@ -144,20 +144,22 @@ p {
 }
 
 ul {
-    list-style-type: square; /* Ensure bullet points are used */
-    padding-left: 20px; /* Add spacing for bullet points */
+    list-style-type: square;
+    padding-left: 20px;
     margin-left: 20px;
     color: var(--h2-color);
 }
 
 li {
-    display: list-item; /* Restores the default bullet point behavior */
-    margin-bottom: 10px; /* Adds spacing between list items */
-    list-style-position: outside; /* Ensures bullets are outside the content */
-    padding-left: 20px; /* Indent for bullet alignment */
+    display: list-item;
+    margin-bottom: 10px;
+    list-style-position: outside;
+    padding-left: 20px;
 }
 
 input[type="checkbox"] {
+    vertical-align: top;
+    margin-top: 4px;
     margin-right: 10px;
     width: 16px;
     height: 16px;
@@ -165,28 +167,39 @@ input[type="checkbox"] {
 }
 
 label {
-    display: flex;
+    display: inline-flex;
+    line-height: 1.5;
     align-items: center;
     margin-bottom: 10px;
     font-size: 1rem;
     cursor: pointer;
 }
 
+label .task-checkbox {
+    margin-right: 8px;
+}
+
+.task-checkbox {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
 .video-responsive {
     position: relative;
-    max-width: 500px; /* Responsive to the container width */
-    height: 280px; /* Fixed height */
-    overflow: hidden; /* Prevent excess content */
-    margin-top: 10px; /* Space between video and previous content */
+    max-width: 500px;
+    height: 280px;
+    overflow: hidden;
+    margin-top: 10px;
 }
 
 .video-responsive iframe {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%; /* Fills the container width */
-    height: 100%; /* Matches the container height */
-    border: none; /* Removes default iframe border */
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 
 button, .button {
