@@ -52,6 +52,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 videoContainer.appendChild(iframe);
                 div.appendChild(videoContainer);
+            } else if (item.type === "html") {
+                const htmlContainer = document.createElement("div");
+                htmlContainer.innerHTML = item.html; // Insert raw HTML
+                label.appendChild(htmlContainer);
             } else {
                 const link = document.createElement("a");
                 link.href = item.url;
@@ -59,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 link.target = "_blank";
                 link.rel = "noopener noreferrer";
                 label.appendChild(link);
-            }
+            } 
 
             div.appendChild(label);
             section.appendChild(div);
