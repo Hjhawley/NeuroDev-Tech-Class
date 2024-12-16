@@ -10,6 +10,7 @@
             baseElement.href = isLocal ? "/" : "/NeuroDev-Tech-Class/";
             document.head.appendChild(baseElement);
         </script>
+        <script src="assets/js/link-generator.js"></script>
         <link rel="stylesheet" href="assets/css/styles.css">
     </head>    
 <body>
@@ -44,235 +45,34 @@
                 <li>Utilize common productivity tools and cloud storage solutions.</li>
             </ul>
         </section>
-        <!-- Unit 1 -->
-        <section>
-            <h2>Unit 1: Intro to Computers</h2>
-            <p>Learn the basics of hardware, software, and computer safety.</p>
-            
-                <div>
-                    <label>
-                        <input type="checkbox" class="task-checkbox">
-                        <a href="https://docs.google.com/presentation/u/0/d/1A5Wxnjh8EWCwFQYhK-_iWr0yY05UBOP80svrONxToss" target="_blank" rel="noopener noreferrer">
-                            Slideshow - "When am I going to use this?"
-                        </a>
-                    </label>
-                </div>
 
-                <div>
-                    <label>
-                        <input type="checkbox" class="task-checkbox">
-                        <a href="https://docs.google.com/document/u/0/d/1x9cGdECm9zd1xIt6pq9M5fosAeAQgix8KzINAGq7mu4" target="_blank" rel="noopener noreferrer">
-                            Reading - What Does It Mean to Be Digitally Literate?
-                        </a>
-                    </label>
-                </div>
+    <!-- Unit 1 -->
+    <script id="unit-data" type="application/json">
+        [
+            {
+                "title": "Unit 1: Intro to Computers",
+                "description": "Learn the basics of hardware, software, and computer safety.",
+                "content": [
+                    { "type": "doc", "title": "Slideshow - \"When am I going to use this?\"", "url": "https://docs.google.com/presentation/u/0/d/1A5Wxnjh8EWCwFQYhK-_iWr0yY05UBOP80svrONxToss" },
+                    { "type": "doc", "title": "Reading - What Does It Mean to Be Digitally Literate?", "url": "https://docs.google.com/document/u/0/d/1x9cGdECm9zd1xIt6pq9M5fosAeAQgix8KzINAGq7mu4" },
+                    { "type": "doc", "title": "Slideshow - Basics of Computer Safety", "url": "https://docs.google.com/presentation/d/12idFrbgFHmDyqFY7wbD84SgNzaU1u8qxcUlJuP3DJ8I" },
+                    { "type": "doc", "title": "Checkpoint - How Will Technology Help Me?", "url": "https://docs.google.com/document/u/0/d/1gDkghrpWXQdqu7VPUkJOhF2TOGxz6fRHbTNyZ8BX1nw" },
+                    { "type": "doc", "title": "Reading - Hardware and Software", "url": "https://docs.google.com/document/d/1zSbdvdb5yFulnF_3PxomQB67mePHcKpL7tieGPofjQg" },
+                    { "type": "video", "title": "The Fetch-Execute Cycle: What's Your Computer Actually Doing?", "url": "https://www.youtube.com/embed/Z5JC9Ve1sfI" },
+                    { "type": "doc", "title": "Reading - Computer Hazards", "url": "https://docs.google.com/document/d/1KgBOZSYVfgzff6_Hvyz2Mb_Xcackaqy9BosNN8g3kyQ" },
+                    { "type": "video", "title": "The Worst Typo I Ever Made (Why backups are important)", "url": "https://www.youtube.com/embed/X6NJkWbM1xk" },
+                    { "type": "doc", "title": "Reading - Cables & Ports", "url": "https://docs.google.com/document/d/1jeeUeYW3aDJOVbUibJqIJLth-kAyG6_f5CExqfT1s9M" },
+                    { "type": "doc", "title": "Hands-on Exercise - Identifying Hardware", "url": "https://docs.google.com/document/u/0/d/1XUIDq-WwOVZj2KHCTKnbU41h4gdSaeh7Dhx5jDMKxVg" },
+                    { "type": "doc", "title": "Reading - Files, Data, and Information", "url": "https://docs.google.com/document/d/16-GT65dzay5ml03A3j2EJCGQkH3V0C8YrT_gPg6ttrU" },
+                    { "type": "doc", "title": "Reading - \"Why is my computer so slow?\"", "url": "https://docs.google.com/document/d/1nv6AVFG_w42stHZeS0O52V_hIakzuImQiP5ysR5_tXw" },
+                    { "type": "doc", "title": "Reading - Your Computer's Properties", "url": "https://docs.google.com/document/d/1p5cKouTyOQyNeC4s3wcaBEyApwPAYzx6rxq4GC9yloY" },
+                    { "type": "doc", "title": "Unit 1 Review Exercises", "url": "https://docs.google.com/document/d/1wp0AxA4BOSDFZzaxHhNWb1mjfZZtONy3BpWqN_pT6_A" },
+                    { "type": "doc", "title": "Unit 1 Test", "url": "https://docs.google.com/forms/d/e/1FAIpQLScr3Av6NjYj078UyzPSgV_avz7BLk9WN-ftffa5a8AsO4JVPw/viewform?usp=sf_link" }
+                ]
+            }
+        ]
+        </script>
 
-                <div>
-                    <label>
-                        <input type="checkbox" class="task-checkbox">
-                        <a href="https://docs.google.com/presentation/d/12idFrbgFHmDyqFY7wbD84SgNzaU1u8qxcUlJuP3DJ8I" target="_blank" rel="noopener noreferrer">
-                            Slideshow - Basics of Computer Safety
-                        </a>
-                    </label>
-                </div>
-
-                <div>
-                    <label>
-                        <input type="checkbox" class="task-checkbox">
-                        <a href="https://docs.google.com/document/u/0/d/1gDkghrpWXQdqu7VPUkJOhF2TOGxz6fRHbTNyZ8BX1nw" target="_blank" rel="noopener noreferrer">
-                            Checkpoint - How Will Technology Help Me?
-                        </a>
-                    </label>
-                </div>
-
-                <div>
-                    <label>
-                        <input type="checkbox" class="task-checkbox">
-                        <a href="https://docs.google.com/document/d/1zSbdvdb5yFulnF_3PxomQB67mePHcKpL7tieGPofjQg" target="_blank" rel="noopener noreferrer">
-                            Reading - Hardware and Software
-                        </a>
-                    </label>
-                </div>
-
-                <div>
-                    <label>
-                        <input type="checkbox" class="task-checkbox">
-                        Video - The Fetch-Execute Cycle: What's Your Computer Actually Doing?
-                    </label>
-                    <div class="video-responsive">
-                        <iframe src="https://www.youtube.com/embed/Z5JC9Ve1sfI" 
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen loading="lazy">
-                        </iframe>
-                    </div>
-                </div>
-
-                <div>
-                    <label>
-                        <input type="checkbox" class="task-checkbox">
-                        <a href="https://docs.google.com/document/d/1KgBOZSYVfgzff6_Hvyz2Mb_Xcackaqy9BosNN8g3kyQ" target="_blank" rel="noopener noreferrer">
-                            Reading - Computer Hazards
-                        </a>
-                    </label>
-                </div>
-
-                <div>
-                    <label>
-                        <input type="checkbox" class="task-checkbox">
-                        Video - The Worst Typo I Ever Made (Why backups are important)
-                    </label>
-                    <div class="video-responsive">
-                        <iframe src="https://www.youtube.com/embed/X6NJkWbM1xk" 
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen loading="lazy">
-                        </iframe>
-                    </div>
-                </div>
-
-                <div>
-                    <label>
-                        <input type="checkbox" class="task-checkbox">
-                        <a href="https://docs.google.com/document/d/1jeeUeYW3aDJOVbUibJqIJLth-kAyG6_f5CExqfT1s9M" target="_blank" rel="noopener noreferrer">
-                            Reading - Cables & Ports
-                        </a>
-                    </label>
-                </div>
-
-                <div>
-                    <label>
-                        <input type="checkbox" class="task-checkbox">
-                        <a href="https://docs.google.com/document/u/0/d/1XUIDq-WwOVZj2KHCTKnbU41h4gdSaeh7Dhx5jDMKxVg" target="_blank" rel="noopener noreferrer">
-                            Hands-on Exercise - Identifying Hardware
-                        </a>
-                    </label>
-                </div>
-
-                <div>
-                    <label>
-                        <input type="checkbox" class="task-checkbox">
-                        <a href="https://docs.google.com/document/d/16-GT65dzay5ml03A3j2EJCGQkH3V0C8YrT_gPg6ttrU" target="_blank" rel="noopener noreferrer">
-                            Reading - Files, Data, and Information
-                        </a>
-                    </label>
-                </div>
-
-                <div>
-                    <label>
-                        <input type="checkbox" class="task-checkbox">
-                        <a href="https://docs.google.com/document/d/1nv6AVFG_w42stHZeS0O52V_hIakzuImQiP5ysR5_tXw" target="_blank" rel="noopener noreferrer">
-                            Reading - "Why is my computer so slow?"
-                        </a>
-                    </label>
-                </div>
-
-                <div>
-                    <label>
-                        <input type="checkbox" class="task-checkbox">
-                        <a href="https://docs.google.com/document/d/1p5cKouTyOQyNeC4s3wcaBEyApwPAYzx6rxq4GC9yloY" target="_blank" rel="noopener noreferrer">
-                            Reading - Your Computer's Properties
-                        </a>
-                    </label>
-                </div>
-
-                <div>
-                    <label>
-                        <input type="checkbox" class="task-checkbox">
-                        <a href="https://docs.google.com/document/d/1wp0AxA4BOSDFZzaxHhNWb1mjfZZtONy3BpWqN_pT6_A" target="_blank" rel="noopener noreferrer">
-                            Unit 1 Review Exercises 
-                        </a>
-                    </label>
-                </div>
-
-                <div>
-                    <label>
-                        <input type="checkbox" class="task-checkbox">
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScr3Av6NjYj078UyzPSgV_avz7BLk9WN-ftffa5a8AsO4JVPw/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">
-                            Unit 1 Test
-                        </a>
-                    </label>
-                </div>
-
-        </section>
-        <!-- Unit 2 -->
-        <section>
-            <h2>Unit 2: Navigating Your OS</h2>
-            <p>Become more comfortable with your operating system of choice (Windows or macOS).</p>
-            
-                <div>
-                    <label>
-                        <input type="checkbox" class="task-checkbox">
-                        <a href="link" target="_blank" rel="noopener noreferrer">
-                            [link]
-                        </a>
-                    </label>
-                </div>
-
-                <div>
-                    <label>
-                        <input type="checkbox" class="task-checkbox">
-                        Video - [title]
-                    </label>
-                    <div class="video-responsive">
-                        <iframe src="https://www.youtube.com/embed/[link]" 
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen loading="lazy">
-                        </iframe>
-                    </div>
-                </div>
-
-                <div>
-                    <label>
-                        <input type="checkbox" class="task-checkbox">
-                        <a href="link" target="_blank" rel="noopener noreferrer">
-                            [link]
-                        </a>
-                    </label>
-                </div>
-
-                <div>
-                    <label>
-                        <input type="checkbox" class="task-checkbox">
-                        <a href="link" target="_blank" rel="noopener noreferrer">
-                            [link]
-                        </a>
-                    </label>
-                </div>
-
-                <div>
-                    <label>
-                        <input type="checkbox" class="task-checkbox">
-                        <a href="link" target="_blank" rel="noopener noreferrer">
-                            [link]
-                        </a>
-                    </label>
-                </div>
-
-                <div>
-                    <label>
-                        <input type="checkbox" class="task-checkbox">
-                        Video - [title]
-                    </label>
-                    <div class="video-responsive">
-                        <iframe src="https://www.youtube.com/embed/[link]" 
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen loading="lazy">
-                        </iframe>
-                    </div>
-                </div>
-
-        </section>
-        <!-- Unit 3 -->
-        <section>
-            <h2>Unit 3: Internet Skills</h2>
-            <p>Develop efficient web searching techniques, email etiquette, and online safety.</p>
-
-
-
-        </section>
     </main>
     <footer>
         <p>&copy; 2024 NeuroDev</p>
