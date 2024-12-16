@@ -163,7 +163,7 @@ input[type="checkbox"] {
     margin-right: 10px;
     width: 16px;
     height: 16px;
-    accent-color: var(--primary-color);
+    accent-color: var(--h3-color);
 }
 
 label {
@@ -176,6 +176,7 @@ label {
 }
 
 label .task-checkbox {
+    margin-left: 10px;
     margin-right: 20px;
 }
 
