@@ -46,7 +46,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 const iframe = document.createElement("iframe");
                 iframe.src = item.url;
-                iframe.frameBorder = "0";
                 iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
                 iframe.allowFullscreen = true;
                 iframe.loading = "lazy";
