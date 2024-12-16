@@ -58,18 +58,17 @@ document.addEventListener("DOMContentLoaded", () => {
                 div.appendChild(videoContainer);
 
             } else if (item.type === "html") {
-                // Add a simple text label (if needed) or just the checkbox if no title
-                const textNode = document.createTextNode(item.title || "");
-                label.appendChild(textNode);
-                // Append the label first
-                div.appendChild(label);
-
-                // Now add the HTML block outside the label
-                const htmlContainer = document.createElement("div");
+                const text = document.createTextNode(item.title || "");
+                label.appendChild(text);
+            
+                const htmlContainer = document.createElement("span"); // Use a span instead of a div
                 htmlContainer.innerHTML = item.html;
-                div.appendChild(htmlContainer);
-
-            } else {
+                htmlContainer.style.display = "inline-block"; // Ensure it doesn't break line
+            
+                label.appendChild(htmlContainer);
+                div.appendChild(label);
+            }
+             else {
                 // For simple links, it's fine to keep them in the label
                 const link = document.createElement("a");
                 link.href = item.url;
