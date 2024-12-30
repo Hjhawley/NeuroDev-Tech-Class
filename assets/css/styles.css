@@ -55,7 +55,7 @@ body.dark-mode {
 }
 
 body, body.dark-mode {
-    background-image: url('github.com/Hjhawley/NeuroDev-Tech-Class/blob/main/assets/images/texture.png');
+    background-image: url('./assets/images/texture.png');
     background-repeat: repeat;
 }
 
