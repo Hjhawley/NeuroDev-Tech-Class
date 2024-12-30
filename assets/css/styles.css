@@ -237,7 +237,7 @@ footer {
 }
 
 #theme-toggle {
-    color: var(--text-color);
+    color: #eee;
     background-color: var(--button-background);
     border: none;
     padding: 10px 15px;
@@ -250,20 +250,6 @@ footer {
     justify-content: center;
 }
 
-/* Responsive Adjustments for Toggle Button */
-@media (max-width: 480px) {
-    .theme-toggle-container {
-        bottom: 10px;
-        right: 10px;
-    }
-
-    #theme-toggle {
-        padding: 8px 12px;
-        font-size: 0.8em;
-    }
-}
-
-/* Focus States */
 a:focus, button:focus, .button:focus {
     outline: 2px solid #fd5;
     outline-offset: 2px;

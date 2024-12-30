@@ -13,10 +13,10 @@ if (!currentTheme) {
 // Apply the initial theme
 if (currentTheme === "dark-mode") {
     document.body.classList.add('dark-mode');
-    toggleButton.textContent = 'Toggle Light Mode ☀️';
+    toggleButton.textContent = '☀️ Theme';
 } else {
     document.body.classList.remove('dark-mode');
-    toggleButton.textContent = 'Toggle Dark Mode 🌙';
+    toggleButton.textContent = '🌙 Theme';
 }
 
 // Toggle theme on button click
@@ -26,10 +26,10 @@ toggleButton.addEventListener('click', function() {
     let theme;
     if (document.body.classList.contains('dark-mode')) {
         theme = 'dark-mode';
-        toggleButton.textContent = 'Toggle Light Mode ☀️';
+        toggleButton.textContent = '☀️ Theme';
     } else {
         theme = 'light-mode';
-        toggleButton.textContent = 'Toggle Dark Mode 🌙';
+        toggleButton.textContent = '🌙 Theme';
     }
 
     localStorage.setItem('theme', theme);
