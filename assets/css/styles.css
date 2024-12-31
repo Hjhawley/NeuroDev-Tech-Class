@@ -112,7 +112,7 @@ body.dark-mode main {
 }
 
 section {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 h1 {
@@ -132,7 +132,7 @@ h3 {
     color: var(--h3-color);
     margin-top: 20px;
     margin-bottom: 10px;
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
 
 a {
@@ -258,6 +258,6 @@ footer {
 }
 
 a:focus, button:focus, .button:focus {
-    outline: 2px solid #fd5;
+    outline: 2px solid var(--tertiary-color);
     outline-offset: 2px;
 }
