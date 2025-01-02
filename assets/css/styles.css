@@ -17,7 +17,7 @@ body, header, main, section, footer, nav a, a:hover, button, h1, h2, h3, ul, li 
     --primary-color: #42BFEF;
     --secondary-color: #1A2E86;
     --tertiary-color: #fd5;
-    --background-color: #ddd;
+    --background-color: #d3e6f0;
     --text-color: #000;
     --h2-color: var(--text-color);
     --h3-color: var(--primary-color);
@@ -42,7 +42,7 @@ body, #theme-toggle {
 }
 
 body.dark-mode {
-    --background-color: #222;
+    --background-color: #252b31;
     --text-color: #eee;
     --h2-color: #eee;
     --h3-color: var(--tertiary-color);
@@ -56,10 +56,10 @@ body.dark-mode {
 
 /* Tiled background image */
 
-body, body.dark-mode {
+/* body, body.dark-mode {
     background-image: url('/NeuroDev-Tech-Class/assets/images/texture.png');
     background-repeat: repeat;
-}
+} */
 
 header {
     display: flex;
