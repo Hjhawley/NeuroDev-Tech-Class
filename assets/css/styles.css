@@ -15,10 +15,10 @@ body, header, main, section, footer, nav a, a:hover, button, h1, h2, h3, ul, li 
 :root {
     --max-width: 1000px;
     --primary-color: #42BFEF;
-    --secondary-color: #20306F;
+    --secondary-color: #1A2E86;
     --tertiary-color: #fd5;
     --background-color: #ddd;
-    --text-color: #222;
+    --text-color: #000;
     --h2-color: var(--text-color);
     --h3-color: var(--primary-color);
     --header-background: var(--primary-color);
@@ -56,10 +56,10 @@ body.dark-mode {
 
 /* Tiled background image */
 
-/* body, body.dark-mode {
+body, body.dark-mode {
     background-image: url('/NeuroDev-Tech-Class/assets/images/texture.png');
     background-repeat: repeat;
-} */
+}
 
 header {
     display: flex;
