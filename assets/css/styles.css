@@ -17,7 +17,7 @@ body, header, main, section, footer, nav a, a:hover, button, h1, h2, h3, ul, li 
     --primary-color: #42BFEF;
     --secondary-color: #1A2E86;
     --tertiary-color: #fd5;
-    --background-color: #d3e6f0;
+    --background-color: #d5dfe4;
     --text-color: #000;
     --h2-color: var(--text-color);
     --h3-color: var(--primary-color);
