@@ -268,7 +268,7 @@ a:focus, button:focus, .button:focus {
 }
 
 /* Adjust sizes for mobile */
-@media (max-width: 768px) {
+@media (max-width: 430px) {
     h1 {
         font-size: 1.35em;
     }
