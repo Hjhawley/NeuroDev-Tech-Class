@@ -266,3 +266,16 @@ a:focus, button:focus, .button:focus {
     outline: 2px solid var(--ter);
     outline-offset: 2px;
 }
+
+/* Adjust sizes for mobile */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.35em;
+    }
+    h2 {
+        font-size: 1.25em;
+    }
+    h3 {
+        font-size: 1.15em;
+    }
+}
