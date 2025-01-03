@@ -150,6 +150,11 @@ p {
     line-height: 1.8;
 }
 
+b, strong {
+    font-weight: bold;
+    color: var(--h3-color);
+}
+
 ul {
     list-style-type: square;
     padding-left: 15px;
