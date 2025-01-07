@@ -100,14 +100,14 @@ nav a:hover {
 main {
     max-width: var(--max-width);
     margin: 0 auto;
-    background-color: white;
+    background-color: #f8f8f8;
     padding: 30px;
     border-radius: 8px;
     box-shadow: var(--box-shadow);
 }
 
 body.dark-mode main {
-    background-color: #000;
+    background-color: #181818;
     box-shadow: var(--box-shadow);
 }
 
