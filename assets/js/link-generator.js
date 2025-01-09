@@ -1,6 +1,6 @@
 // Makes course assignment checkboxes pretty and consistent, with password protection for links
 
-const correctPassword = "love2code!"; // WiFi password
+const correctPassword = "love2code!"; // same as our WiFi password
 
 document.addEventListener("DOMContentLoaded", () => {
     const dataScript = document.getElementById("unit-data");
@@ -35,7 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
         unit.content.forEach(item => {
             const div = document.createElement("div");
             const label = document.createElement("label");
-
             const checkbox = document.createElement("input");
             checkbox.type = "checkbox";
             checkbox.className = "task-checkbox";
@@ -46,7 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 const textNode = document.createTextNode(`Video - ${item.title}`);
                 label.appendChild(textNode);
                 div.appendChild(label);
-
                 const videoContainer = document.createElement("div");
                 videoContainer.className = "video-responsive";
 
@@ -60,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 div.appendChild(videoContainer);
             }
 
-            // HTML content
+            // Inline HTML content
             else if (item.type === "html") {
                 const text = document.createTextNode(item.title || "");
                 label.appendChild(text);
@@ -68,7 +66,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 const htmlContainer = document.createElement("span");
                 htmlContainer.innerHTML = item.html;
                 htmlContainer.style.display = "inline-block";
-
                 label.appendChild(htmlContainer);
                 div.appendChild(label);
             }
