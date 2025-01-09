@@ -1,3 +1,5 @@
+// Makes course assignment checkboxes pretty and consistent
+
 document.addEventListener("DOMContentLoaded", () => {
     const dataScript = document.getElementById("unit-data");
     if (!dataScript) {
@@ -41,9 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 // Put the inline text with the checkbox
                 const textNode = document.createTextNode(`Video - ${item.title}`);
                 label.appendChild(textNode);
-                // Append the label now
                 div.appendChild(label);
-
                 // Now add the video container outside the label
                 const videoContainer = document.createElement("div");
                 videoContainer.className = "video-responsive";
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
             
                 const htmlContainer = document.createElement("span"); // Use a span instead of a div
                 htmlContainer.innerHTML = item.html;
-                htmlContainer.style.display = "inline-block"; // Ensure it doesn't break line
+                htmlContainer.style.display = "inline-block";
             
                 label.appendChild(htmlContainer);
                 div.appendChild(label);
