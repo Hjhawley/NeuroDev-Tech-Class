@@ -150,7 +150,7 @@ p {
     line-height: 1.8;
 }
 
-b, strong {
+b, strong, table thead th {
     font-weight: bold;
     color: var(--h3-color);
 }
@@ -265,6 +265,27 @@ footer {
 a:focus, button:focus, .button:focus {
     outline: 2px solid var(--ter);
     outline-offset: 2px;
+}
+
+table {
+    width: 100%;
+    max-width: 525px;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table thead th {
+    text-align: left;
+    font-weight: bold;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--section-border-color);
+}
+
+table tbody td {
+    text-align: left;
+    padding-top: 8px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #888;
 }
 
 /* Adjust sizes for mobile */
