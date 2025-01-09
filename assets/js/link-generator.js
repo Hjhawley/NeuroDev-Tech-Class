@@ -1,4 +1,6 @@
-// Makes course assignment checkboxes pretty and consistent
+// Makes course assignment checkboxes pretty and consistent, with password protection for links
+
+const correctPassword = "love2code!"; // WiFi password
 
 document.addEventListener("DOMContentLoaded", () => {
     const dataScript = document.getElementById("unit-data");
@@ -39,12 +41,12 @@ document.addEventListener("DOMContentLoaded", () => {
             checkbox.className = "task-checkbox";
             label.appendChild(checkbox);
 
+            // YouTube links (no password protection)
             if (item.type === "video") {
-                // Put the inline text with the checkbox
                 const textNode = document.createTextNode(`Video - ${item.title}`);
                 label.appendChild(textNode);
                 div.appendChild(label);
-                // Now add the video container outside the label
+
                 const videoContainer = document.createElement("div");
                 videoContainer.className = "video-responsive";
 
@@ -56,27 +58,45 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 videoContainer.appendChild(iframe);
                 div.appendChild(videoContainer);
+            }
 
-            } else if (item.type === "html") {
+            // HTML content
+            else if (item.type === "html") {
                 const text = document.createTextNode(item.title || "");
                 label.appendChild(text);
-            
-                const htmlContainer = document.createElement("span"); // Use a span instead of a div
+
+                const htmlContainer = document.createElement("span");
                 htmlContainer.innerHTML = item.html;
                 htmlContainer.style.display = "inline-block";
-            
+
                 label.appendChild(htmlContainer);
                 div.appendChild(label);
             }
-             else {
-                // For simple links, it's fine to keep them in the label
+
+            // All other link types
+            else {
                 const link = document.createElement("a");
                 link.href = item.url;
                 link.textContent = item.title;
                 link.target = "_blank";
                 link.rel = "noopener noreferrer";
+                
+                // Password protection
+                link.addEventListener('click', function (event) {
+                    if (localStorage.getItem('isAuthenticated') !== 'true') {
+                        event.preventDefault();
+                        const enteredPassword = prompt("Please enter the course password:");
+                        if (enteredPassword === correctPassword) {
+                            localStorage.setItem('isAuthenticated', 'true');
+                            alert("Access Granted! You can now view all course materials.");
+                            window.open(link.href, '_blank');
+                        } else {
+                            alert("Incorrect password. Please try again.");
+                        }
+                    }
+                });
+
                 label.appendChild(link);
-                // Append the label last since it's all inline
                 div.appendChild(label);
             }
 
