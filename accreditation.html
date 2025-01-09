@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NeuroDev Tech Class - Accreditation</title>
+        <script>
+            const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+            const baseElement = document.createElement("base");
+            baseElement.href = isLocal ? "/" : "/NeuroDev-Tech-Class/";
+            document.head.appendChild(baseElement);
+        </script>
+        <script src="assets/js/link-generator.js"></script>
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/NeuroDev-favicon-32x32.png">
+    </head>    
+<body>
+    <header>
+        <a href="index.html">
+            <img src="assets/images/logo-white.png" alt="NeuroDev Logo" class="logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="help.html">Help</a>
+            <a href="accreditation.html" aria-current="page">Accreditation</a>
+        </nav>
+    </header>
+    <main id="main-content">
+        
+    </main>
+    <footer>
+        <p>&copy; 2025 NeuroDev</p>
+    </footer>
+    <div class="theme-toggle-container">
+        <button id="theme-toggle" class="button" aria-label="Theme / Dark Mode">Toggle Theme</button>
+    </div>
+    <script src="assets/js/theme-toggle.js"></script>
+</body>
+</html>
