@@ -85,13 +85,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 link.addEventListener('click', function (event) {
                     if (localStorage.getItem('isAuthenticated') !== 'true') {
                         event.preventDefault();
-                        const enteredPassword = prompt("Please enter the course password:");
+                        const enteredPassword = prompt("Please enter the Tech Class password to access course content.\n(Hint: it's the same as our WiFi password.)");
                         if (enteredPassword === correctPassword) {
                             localStorage.setItem('isAuthenticated', 'true');
-                            alert("Access Granted! You can now view all course materials.");
+                            alert("Access granted!\nYou can now view all course materials.");
                             window.open(link.href, '_blank');
                         } else {
-                            alert("Incorrect password. Please try again.");
+                            alert("Incorrect password. Please try again.\n(Hint: it's the same as our WiFi password.)");
                         }
                     }
                 });
