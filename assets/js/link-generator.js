@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
             checkbox.className = "task-checkbox";
             label.appendChild(checkbox);
 
-            // YouTube links (no password protection)
+            // YouTube links
             if (item.type === "video") {
                 const textNode = document.createTextNode(`Video - ${item.title}`);
                 label.appendChild(textNode);
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 div.appendChild(label);
             }
 
-            // All other link types
+            // All other link types (with password protection)
             else {
                 const link = document.createElement("a");
                 link.href = item.url;
@@ -78,12 +78,15 @@ document.addEventListener("DOMContentLoaded", () => {
                 link.target = "_blank";
                 link.rel = "noopener noreferrer";
                 
-                // Password protection
+                // Password protection logic
                 link.addEventListener('click', function (event) {
                     if (localStorage.getItem('isAuthenticated') !== 'true') {
                         event.preventDefault();
                         const enteredPassword = prompt("Please enter the Tech Class password to access course content.\n(Hint: it's the same as our WiFi password.)");
-                        if (enteredPassword === correctPassword) {
+
+                        if (enteredPassword === null) {
+                            return; // Cancel
+                        } else if (enteredPassword === correctPassword) {
                             localStorage.setItem('isAuthenticated', 'true');
                             alert("Access granted!\nYou can now view all course materials.");
                             window.open(link.href, '_blank');
