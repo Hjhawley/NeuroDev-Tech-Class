@@ -54,7 +54,7 @@ body.dark-mode {
     --border-color: #999;
 }
 
-/* Tiled background image */
+/* Tiled background image; i don't think i like this */
 
 /* body, body.dark-mode {
     background-image: url('/NeuroDev-Tech-Class/assets/images/texture.png');
@@ -68,7 +68,7 @@ header {
     background-color: var(--header-background);
     color: var(--header-text-color);
     padding: 20px 0;
-    margin: 0 auto 30px auto; /* Top & Bottom margins, auto for left & right */
+    margin: 0 auto 30px auto; /* Top & bottom margins, auto for left & right */
     border-radius: 8px;
     box-shadow: var(--box-shadow);
     max-width: var(--max-width);
@@ -208,6 +208,7 @@ label .task-checkbox {
 
 .video-responsive iframe {
     position: absolute;
+    padding-left: 35px;
     top: 0;
     left: 0;
     width: 100%;
