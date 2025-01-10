@@ -6,6 +6,9 @@
         <title>NeuroDev Tech Class - Digital Literacy</title>
         <script>
             const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+            const baseElement = document.createElement("base");
+            baseElement.href = isLocal ? "/" : "/NeuroDev-Tech-Class/";
+            document.head.appendChild(baseElement);
         </script>
         <script src="assets/js/link-generator.js"></script>
         <link rel="stylesheet" href="assets/css/styles.css">
@@ -56,19 +59,19 @@
                 "description": "Learn the basics of hardware, software, and computer safety.",
                 "content": [
                     { "type": "doc", "title": "Slideshow - \"When am I going to use this?\"", "url": "https://docs.google.com/presentation/u/0/d/1A5Wxnjh8EWCwFQYhK-_iWr0yY05UBOP80svrONxToss" },
-                    { "type": "doc", "title": "Reading - What Does It Mean to Be Digitally Literate?", "url": "/assets/pdfs/computer-basics/digital-literacy/unit1/what_does_it_mean_to_be_digitally_literate_.pdf" },
+                    { "type": "doc", "title": "Reading - What Does It Mean to Be Digitally Literate?", "url": "assets/pdfs/computer-basics/digital-literacy/unit1/what_does_it_mean_to_be_digitally_literate_.pdf" },
                     { "type": "doc", "title": "Slideshow - Basics of Computer Safety", "url": "https://docs.google.com/presentation/d/12idFrbgFHmDyqFY7wbD84SgNzaU1u8qxcUlJuP3DJ8I" },
-                    { "type": "doc", "title": "Checkpoint - How Will Technology Help Me?", "url": "/assets/pdfs/computer-basics/digital-literacy/unit1/checkpoint-how_will_technology_help_me_.pdf" },
-                    { "type": "doc", "title": "Reading - Hardware and Software", "url": "/assets/pdfs/computer-basics/digital-literacy/unit1/hardware_and_software.pdf" },
+                    { "type": "doc", "title": "Checkpoint - How Will Technology Help Me?", "url": "assets/pdfs/computer-basics/digital-literacy/unit1/checkpoint-how_will_technology_help_me_.pdf" },
+                    { "type": "doc", "title": "Reading - Hardware and Software", "url": "assets/pdfs/computer-basics/digital-literacy/unit1/hardware_and_software.pdf" },
                     { "type": "video", "title": "The Fetch-Execute Cycle: What's Your Computer Actually Doing?", "url": "https://www.youtube.com/embed/Z5JC9Ve1sfI" },
-                    { "type": "doc", "title": "Reading - Computer Hazards", "url": "/assets/pdfs/computer-basics/digital-literacy/unit1/computer_hazards.pdf" },
+                    { "type": "doc", "title": "Reading - Computer Hazards", "url": "assets/pdfs/computer-basics/digital-literacy/unit1/computer_hazards.pdf" },
                     { "type": "video", "title": "The Worst Typo I Ever Made (Why backups are important)", "url": "https://www.youtube.com/embed/X6NJkWbM1xk" },
-                    { "type": "doc", "title": "Reading - Cables and Ports", "url": "/assets/pdfs/computer-basics/digital-literacy/unit1/cables_and_ports.pdf" },
-                    { "type": "doc", "title": "Hands-on Exercise - Identifying Hardware", "url": "/assets/pdfs/computer-basics/digital-literacy/unit1/hands-on_exercise-identifying_hardware.pdf" },
-                    { "type": "doc", "title": "Reading - Files, Data, and Information", "url": "/assets/pdfs/computer-basics/digital-literacy/unit1/files,_data,_and_information.pdf" },
-                    { "type": "doc", "title": "Reading - \"Why is my computer so slow?\"", "url": "/assets/pdfs/computer-basics/digital-literacy/unit1/_why_is_my_computer_so_slow_.pdf" },
-                    { "type": "doc", "title": "Reading - Your Computer's Properties", "url": "/assets/pdfs/computer-basics/digital-literacy/unit1/your_computer_s_properties.pdf" },
-                    { "type": "doc", "title": "Unit 1 Review Exercises", "url": "/assets/pdfs/computer-basics/digital-literacy/unit1/unit_1_recap.pdf" },
+                    { "type": "doc", "title": "Reading - Cables and Ports", "url": "assets/pdfs/computer-basics/digital-literacy/unit1/cables_and_ports.pdf" },
+                    { "type": "doc", "title": "Hands-on Exercise - Identifying Hardware", "url": "assets/pdfs/computer-basics/digital-literacy/unit1/hands-on_exercise-identifying_hardware.pdf" },
+                    { "type": "doc", "title": "Reading - Files, Data, and Information", "url": "assets/pdfs/computer-basics/digital-literacy/unit1/files,_data,_and_information.pdf" },
+                    { "type": "doc", "title": "Reading - \"Why is my computer so slow?\"", "url": "assets/pdfs/computer-basics/digital-literacy/unit1/_why_is_my_computer_so_slow_.pdf" },
+                    { "type": "doc", "title": "Reading - Your Computer's Properties", "url": "assets/pdfs/computer-basics/digital-literacy/unit1/your_computer_s_properties.pdf" },
+                    { "type": "doc", "title": "Unit 1 Review Exercises", "url": "assets/pdfs/computer-basics/digital-literacy/unit1/unit_1_recap.pdf" },
                     { "type": "doc", "title": "Unit 1 Test", "url": "https://docs.google.com/forms/d/e/1FAIpQLScr3Av6NjYj078UyzPSgV_avz7BLk9WN-ftffa5a8AsO4JVPw/viewform?usp=sf_link" }
                 ]
             },
