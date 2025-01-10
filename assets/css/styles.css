@@ -223,14 +223,11 @@ button, .button {
     border-radius: 25px;
     cursor: pointer;
     font-size: 0.9em;
+    color: #eee;
     box-shadow: var(--box-shadow);
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-button:hover, .button:hover {
-    background-color: var(--button-hover-background);
 }
 
 footer {
