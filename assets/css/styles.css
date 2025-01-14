@@ -166,6 +166,7 @@ li {
     display: list-item;
     margin-bottom: 10px;
     list-style-position: outside;
+    margin-top: 10px;
     padding-left: 5px;
 }
 
@@ -269,7 +270,7 @@ table {
     width: 100%;
     max-width: 525px;
     border-collapse: collapse;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 
 table thead th {
