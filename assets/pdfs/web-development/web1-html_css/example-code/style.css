@@ -10,13 +10,6 @@ h1 {
     text-align: center;
 }
 
-/* This styles elements with class="intro" */
-.intro {
-    font-size: 24px;
-    color: navy;
-    text-align: center;
-}
-
 /* This styles the element with id="container" */
 #container {
     border: 2px solid black;
