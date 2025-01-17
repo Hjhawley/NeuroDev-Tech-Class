@@ -14,7 +14,7 @@ h1 {
 button {
     background-color: white;
     border: none;
-    padding: 10px 30px 10px 30px;
+    padding: 10px 20px 15px 40px; /* top, right, bottom, left (like a clock) */
     text-align: center;
     display: inline-block;
     cursor: pointer;
