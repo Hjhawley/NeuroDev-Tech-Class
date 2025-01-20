@@ -116,25 +116,27 @@ section {
 
 h1 {
     color: var(--h1-color);
+    font-size: 2.25em;
     margin-bottom: 15px;
     padding-bottom: 1px;
-    font-size: 2.25em;
 }
 
 h2 {
     color: var(--h2-color);
+    font-size: 1.5em;
     margin-bottom: 15px;
     border-bottom: 2px solid var(--section-border-color);
     padding-bottom: 5px;
-    font-size: 1.5em;
+    
 }
 
 h3 {
-    font-weight: 500;
     color: var(--h3-color);
+    font-size: 1.25em;
+    font-weight: 500;
     margin-top: 20px;
     margin-bottom: 10px;
-    font-size: 1.25em;
+    
 }
 
 a {
@@ -263,7 +265,7 @@ footer {
     justify-content: center;
 }
 
-a:focus, button:focus, .button:focus {
+a:focus {
     outline: 2px solid var(--tertiary-color);
     outline-offset: 2px;
 }
