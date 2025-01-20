@@ -206,13 +206,13 @@ label .task-checkbox {
     position: relative;
     max-width: 500px;
     height: 280px;
-    overflow: hidden;
+    margin-left: 35px;
     margin-bottom: 20px;
+    box-shadow: var(--shadow);
 }
 
 .video-responsive iframe {
     position: absolute;
-    padding-left: 35px;
     top: 0;
     left: 0;
     width: 100%;
