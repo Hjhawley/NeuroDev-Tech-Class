@@ -137,6 +137,10 @@ h3 {
     
 }
 
+ul ul li, footer, #theme-toggle {
+    font-size: 0.875em;
+}
+
 a {
     color: var(--link-color);
     text-decoration: none;
@@ -173,7 +177,6 @@ li {
 }
 
 ul ul li {
-    font-size: 0.95em;
     list-style-type: circle;
 }
 
@@ -229,7 +232,6 @@ button, .button {
     padding: 10px 15px;
     border-radius: 25px;
     cursor: pointer;
-    font-size: 0.9em;
     color: #eee;
     box-shadow: var(--shadow);
     display: flex;
@@ -241,7 +243,6 @@ footer {
     text-align: center;
     margin-top: 50px;
     color: var(--footer-text-color);
-    font-size: 0.9em;
     border-top: 1px solid var(--footer-text-color);
     padding-top: 20px;
 }
@@ -260,7 +261,6 @@ footer {
     padding: 5px 10px;
     border-radius: 25px;
     cursor: pointer;
-    font-size: 0.9em;
     box-shadow: var(--shadow);
     display: flex;
     align-items: center;
