@@ -83,7 +83,7 @@ nav {
 
 nav a {
     color: var(--header-text-color);
-    font-size: 1.15rem;
+    font-size: 1.375rem;
     font-weight: 500;
     margin: 0 25px;
 }
