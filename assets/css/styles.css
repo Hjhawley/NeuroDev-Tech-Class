@@ -5,9 +5,6 @@
     padding: 0;
     box-sizing: border-box;
     font-weight: normal;
-}
-
-body, header, main, section, footer, nav a, a:hover, button, h1, h2, h3, ul, li {
     transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -152,8 +149,8 @@ a:hover {
 }
 
 p {
-    margin-bottom: 15px;
-    line-height: 1.8;
+    margin-bottom: 16px;
+    line-height: 1.75;
 }
 
 b, strong, table thead th {
