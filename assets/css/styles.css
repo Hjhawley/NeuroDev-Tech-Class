@@ -305,6 +305,11 @@ table tbody td {
     h3 {
         font-size: 1.1em;
     }
+    .video-responsive {
+        width: 100%;
+        height: 170px;
+        margin-left: 0px;
+    }
     .theme-toggle-container {
         bottom: 15px;
         right: 15px;
