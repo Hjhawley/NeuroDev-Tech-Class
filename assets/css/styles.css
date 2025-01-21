@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-weight: normal;
-    transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, color 0.1s ease;
 }
 
 :root {
@@ -142,13 +142,13 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    color: var(--link-hover-color);
-    text-decoration: underline;
-}
-
 :not(nav a):visited {
     color: var(--footer-text-color);
+}
+
+a:hover, :not(nav a):visited:hover {
+    color: var(--link-hover-color);
+    text-decoration: underline;
 }
 
 p {
