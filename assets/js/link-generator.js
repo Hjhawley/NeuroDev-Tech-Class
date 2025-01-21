@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 link.addEventListener('click', function (event) {
                     if (localStorage.getItem('isAuthenticated') !== 'true') {
                         event.preventDefault();
-                        const enteredPassword = prompt("Please enter the Tech Class password to access course content.\n(Hint: it's the same as our WiFi password.)");
+                        const enteredPassword = prompt("Please enter the Tech Class password to access course content.\n(Hint: it's the same as our Wi-Fi password.)");
 
                         if (enteredPassword === null) {
                             return; // Cancel
