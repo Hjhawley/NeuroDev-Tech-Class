@@ -142,13 +142,13 @@ a {
     text-decoration: none;
 }
 
-:not(nav a):visited {
-    color: var(--footer-text-color);
-}
-
 a:hover, :not(nav a):visited:hover {
     color: var(--link-hover-color);
     text-decoration: underline;
+}
+
+:not(nav a):visited {
+    color: var(--footer-text-color);
 }
 
 p {
