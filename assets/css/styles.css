@@ -107,7 +107,7 @@ body.dark-mode main {
 }
 
 section {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 h1 {
@@ -149,8 +149,8 @@ a:hover {
 }
 
 p {
-    margin-bottom: 16px;
-    line-height: 1.75;
+    margin-bottom: 20px;
+    line-height: 1.8;
 }
 
 b, strong, table thead th {
