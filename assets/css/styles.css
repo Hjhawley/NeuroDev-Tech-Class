@@ -81,7 +81,7 @@ nav {
     margin-top: 25px;
 }
 
-nav a, nav a:visited {
+nav a {
     color: var(--header-text-color);
     text-decoration: none;
     margin: 0 15px;
@@ -145,6 +145,10 @@ a {
 a:hover {
     color: var(--link-hover-color);
     text-decoration: underline;
+}
+
+:not(nav a):visited {
+    color: var(--footer-text-color);
 }
 
 p {
