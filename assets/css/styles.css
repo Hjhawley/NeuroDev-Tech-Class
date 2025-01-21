@@ -22,6 +22,7 @@
     --footer-text-color: #888;
     --link-color: var(--secondary-color);
     --link-hover-color: var(--tertiary-color);
+    --visited-color: #80a0b0;
     --section-border-color: var(--secondary-color);
     --button-background: var(--primary-color);
     --button-hover-background: var(--secondary-color);
@@ -44,6 +45,7 @@ body.dark-mode {
     --h3-color: var(--tertiary-color);
     --header-background: var(--secondary-color);
     --link-color: var(--primary-color);
+    --visited-color: #608090;
     --section-border-color: var(--primary-color);
     --button-background: var(--secondary-color);
     --button-hover-background: var(--primary-color);
@@ -150,7 +152,7 @@ a:hover, :not(nav a):visited:hover {
 }
 
 p a:visited, section a:visited {
-    color: var(--footer-text-color);
+    color: var(--visited-color);
 }
 
 p {
