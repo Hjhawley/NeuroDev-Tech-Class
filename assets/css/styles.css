@@ -147,7 +147,7 @@ a:hover, :not(nav a):visited:hover {
     text-decoration: underline;
 }
 
-:not(nav a):visited {
+p a:visited, section a:visited {
     color: var(--footer-text-color);
 }
 
