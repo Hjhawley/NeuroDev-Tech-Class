@@ -1,7 +1,7 @@
 // Makes course assignment checkboxes pretty and consistent, with password protection for links
 
 const correctPassword = "love2code!"; // same as our WiFi password
-localStorage.setItem('isAuthenticated', 'true'); // keep everything public until i fix password system
+localStorage.setItem('isAuthenticated', 'false'); // password protected; still need to fix bug Donzo found
 
 document.addEventListener("DOMContentLoaded", () => {
     const dataScript = document.getElementById("unit-data");
