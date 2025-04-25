@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
             else {
                 const link = document.createElement("a");
                 link.dataset.url = item.url;
-                link.href = isAuth ? item.url : "#"; // if we’re already logged in, point href at the real URL
+                link.href = isAuth ? item.url : "javascript:void(0)"; // if we’re already logged in, point href at the real URL
                 link.textContent = item.title;
                 link.target = "_blank";
                 link.rel = "noopener noreferrer";
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     // if not yet logged in:
                     if (localStorage.getItem('isAuthenticated') !== 'true') {
                         const entered = prompt("Please enter the Tech Class password.");
-                        if (entered === null) return; // canceled
+                        if (entered === null || entered === "") return; // canceled
                         if (entered !== authPassword) {
                             alert("Incorrect password.\nHint: Ask the tech coach!");
                             return;
