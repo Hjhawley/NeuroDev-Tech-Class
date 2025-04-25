@@ -1,7 +1,7 @@
 // Makes course assignment checkboxes pretty and consistent, with password protection for links
 
 const correctPassword = "love2code!"; // same as our WiFi password
-localStorage.setItem('isAuthenticated', 'false'); // password protected; still need to fix bug Donzo found
+localStorage.setItem('isAuthenticated', 'false'); // password protected
 
 document.addEventListener("DOMContentLoaded", () => {
     const dataScript = document.getElementById("unit-data");
@@ -74,27 +74,29 @@ document.addEventListener("DOMContentLoaded", () => {
             // All other link types (with password protection)
             else {
                 const link = document.createElement("a");
-                link.href = item.url;
+                link.dataset.url = item.url;
+                link.href = "javascript:void(0)";
                 link.textContent = item.title;
                 link.target = "_blank";
                 link.rel = "noopener noreferrer";
                 
                 // Password protection logic
                 link.addEventListener('click', function (event) {
-                    if (localStorage.getItem('isAuthenticated') !== 'true') {
-                        event.preventDefault();
-                        const enteredPassword = prompt("Please enter the Tech Class password to access course content.\n(Hint: it's the same as our Wi-Fi password.)");
-
-                        if (enteredPassword === null) {
-                            return; // Cancel
-                        } else if (enteredPassword === correctPassword) {
-                            localStorage.setItem('isAuthenticated', 'true');
-                            alert("Access granted!\nYou can now view all course materials.");
-                            window.open(link.href, '_blank');
-                        } else {
-                            alert("Incorrect password. Please try again.\n(Hint: it's the same as our WiFi password.)");
-                        }
+                event.preventDefault();
+                if (localStorage.getItem('isAuthenticated') !== 'true') {
+                    const enteredPassword = prompt("Please enter the Tech Class password.");
+                    if (enteredPassword === correctPassword) {
+                        localStorage.setItem('isAuthenticated', 'true');
+                        alert("Access granted!\nYou can now view all course materials.");
+                    } else if (enteredPassword === null) {
+                        return;
+                    } else {
+                        alert("Incorrect password.");
+                        return;
                     }
+                }
+                // Authenticated, now open the real URL
+                window.open(this.dataset.url, '_blank');
                 });
 
                 label.appendChild(link);
