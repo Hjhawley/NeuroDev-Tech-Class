@@ -1,9 +1,12 @@
 // Makes course assignment checkboxes pretty and consistent, with password protection for links
 
-const correctPassword = "love2code!"; // same as our WiFi password
-localStorage.setItem('isAuthenticated', 'false'); // password protected
+const authPassword = "love2code!"; // same as our WiFi password
+if (localStorage.getItem('isAuthenticated') === null) {
+    localStorage.setItem('isAuthenticated', 'false');
+}
 
 document.addEventListener("DOMContentLoaded", () => {
+    const isAuth = localStorage.getItem('isAuthenticated') === 'true';
     const dataScript = document.getElementById("unit-data");
     if (!dataScript) {
         console.error("No unit data found.");
@@ -75,28 +78,29 @@ document.addEventListener("DOMContentLoaded", () => {
             else {
                 const link = document.createElement("a");
                 link.dataset.url = item.url;
-                link.href = "javascript:void(0)";
+                link.href = isAuth ? item.url : "#"; // if we’re already logged in, point href at the real URL
                 link.textContent = item.title;
                 link.target = "_blank";
                 link.rel = "noopener noreferrer";
-                
-                // Password protection logic
-                link.addEventListener('click', function (event) {
-                event.preventDefault();
-                if (localStorage.getItem('isAuthenticated') !== 'true') {
-                    const enteredPassword = prompt("Please enter the Tech Class password.");
-                    if (enteredPassword === correctPassword) {
+        
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    // if not yet logged in:
+                    if (localStorage.getItem('isAuthenticated') !== 'true') {
+                        const entered = prompt("Please enter the Tech Class password.");
+                        if (entered === null) return; // canceled
+                        if (entered !== authPassword) {
+                            alert("Incorrect password.\nHint: Ask the tech coach!");
+                            return;
+                        }
                         localStorage.setItem('isAuthenticated', 'true');
-                        alert("Access granted!\nYou can now view all course materials.");
-                    } else if (enteredPassword === null) {
-                        return;
-                    } else {
-                        alert("Incorrect password.");
-                        return;
+                        alert("Access granted!");
+                        // flip every protected link to point at its real URL
+                        document.querySelectorAll('a[data-url]').forEach(a => {
+                            a.href = a.dataset.url;
+                        });
                     }
-                }
-                // Authenticated, now open the real URL
-                window.open(this.dataset.url, '_blank');
+                  window.open(this.dataset.url, '_blank');
                 });
 
                 label.appendChild(link);
