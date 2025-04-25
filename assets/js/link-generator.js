@@ -39,15 +39,23 @@ document.addEventListener("DOMContentLoaded", () => {
         unit.content.forEach(item => {
             const div = document.createElement("div");
             const label = document.createElement("label");
+
+            // checkbox logic
             const checkbox = document.createElement("input");
             checkbox.type = "checkbox";
             checkbox.className = "task-checkbox";
+
+            const boxKey = `checked:${unit.title}|${item.title}`;
+            const saved = localStorage.getItem(boxKey);
+            checkbox.checked = (saved === 'true');
+            checkbox.addEventListener('change', () => {
+                localStorage.setItem(boxKey, checkbox.checked);
+            });
             label.appendChild(checkbox);
 
             // YouTube links
             if (item.type === "video") {
-                const textNode = document.createTextNode(`Video - ${item.title}`);
-                label.appendChild(textNode);
+                label.appendChild(document.createTextNode(`Video - ${item.title}`));
                 div.appendChild(label);
                 const videoContainer = document.createElement("div");
                 videoContainer.className = "video-responsive";
