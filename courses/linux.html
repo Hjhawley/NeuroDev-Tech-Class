@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>NeuroDev Tech Class - title</title>
+        <title>NeuroDev Tech Class - Linux</title>
         <script>
             const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
             const baseElement = document.createElement("base");
@@ -26,15 +26,15 @@
         </nav>
     </header>
     <main id="main-content">
-        <h1>title</h1>
+        <h1>Introduction to Linux</h1>
 
         <!-- Course Overview -->
         <section>
             <h3>Course Overview</h3>
             <p>
-                etc
-                etc
-                etc
+                This course introduces students to the Linux operating system through practical, beginner-friendly tasks. 
+                Designed for learners with basic computer literacy, it emphasizes understanding the Linux ecosystem, navigating the terminal, managing files and processes, and using open-source tools. 
+                By the end of the course, students will have the skills to use Linux comfortably as a daily OS or development environment.
             </p>
         </section>
 
@@ -42,12 +42,12 @@
         <section>
             <h3>Course Objectives</h3>
             <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-                <li>6</li>
+                <li>Understand what Linux is and how it differs from Windows/macOS.</li>
+                <li>Use the command line to navigate and manipulate the file system.</li>
+                <li>Manage software using package managers.</li>
+                <li>Understand file permissions and user management basics.</li>
+                <li>Perform basic system monitoring and troubleshooting.</li>
+                <li>Gain confidence with a Linux desktop environment.</li>
             </ul>
         </section>
 
@@ -58,41 +58,67 @@
                 "title": "Getting Started",
                 "description": "",
                 "content": [
-                    { "type": "doc", "title": "Reading", "url": "link" },
-                    { "type": "doc", "title": "Reading", "url": "link" },
-                    { "type": "doc", "title": "Reading", "url": "link" }
+                    { "type": "doc", "title": "Reading - What is Linux?", "url": "link" },
+                    { "type": "html", "html": "Download and install <a href=\"link\" target=\"_blank\" rel=\"noopener noreferrer\">WSL (Ubuntu)</a> with guided PDF or instructor-led setup" },
+                    { "type": "html", "html": "Verify access to the Ubuntu terminal (run <code>wsl</code> command)" },
+                    { "type": "html", "html": "Exercise: Run your first command (<code>ls</code>) and take a screenshot" },
+                    { "type": "html", "html": "Survey: Why are you taking this course?" }
                 ]
             },
             {
-            "title": "Unit 1: ___",
-                "description": "___",
+                "title": "Unit 1: Getting to Know Linux",
+                "description": "Learn Linux concepts and terminal basics using WSL (Ubuntu).",
                 "content": [
-                    { "type": "doc", "title": "___", 
-                        "url": "link" },
-                    { "type": "video", "title": "___", 
-                        "url": "https://youtube.com/embed/link" },
-                    { "type": "html", 
-                        "html": "Custom HTML content with a <a href=\"https://example.com\" target=\"_blank\" rel=\"noopener noreferrer\">link</a>." }
+                    { "type": "doc", "title": "Slideshow - Why Linux?", "url": "link" },
+                    { "type": "video", "title": "What Is Linux?", "url": "link" },
+                    { "type": "doc", "title": "Reading - Linux Distributions Explained", "url": "link" },
+                    { "type": "doc", "title": "Reading - Filesystem Basics", "url": "link" },
+                    { "type": "doc", "title": "Reading - Desktop Environments Overview", "url": "link" },
+                    { "type": "doc", "title": "Slideshow - Linux vs Windows: Key Differences", "url": "link" },
+                    { "type": "html", "html": "Exercise: WSL Setup Guide + First Commands (<code>ls</code>, <code>cd</code>, <code>pwd</code>)" },
+                    { "type": "html", "html": "Exercise: Install a Package with <code>apt</code> (<code>htop</code>, <code>cowsay</code>, etc)" },
+                    { "type": "html", "html": "Reflection: Who uses Linux and why? (Short writing prompt)" },
+                    { "type": "doc", "title": "Quiz - Unit 1 Review", "url": "link" }
                 ]
             },
             {
-                "title": "Unit 2: ___",
-                "description": "___",
+                "title": "Unit 2: Full Linux Environment",
+                "description": "Explore Linux GUI and system tools using a Virtual Machine (Ubuntu Desktop).",
                 "content": [
-                    { "type": "doc", "title": "___", 
-                        "url": "link" },
-                    { "type": "video", "title": "___", 
-                        "url": "https://youtube.com/embed/link" }
+                    { "type": "html", "html": "Install VirtualBox on your system (guided walkthrough)" },
+                    { "type": "html", "html": "Import or install Ubuntu Desktop ISO" },
+                    { "type": "html", "html": "Configure VM settings (RAM, CPU, disk size)" },
+                    { "type": "video", "title": "What Is the Terminal?", "url": "link" },
+                    { "type": "doc", "title": "Slideshow - Why Use the Command Line?", "url": "link" },
+                    { "type": "doc", "title": "Reading - Command Line Basics", "url": "link" },
+                    { "type": "html", "html": "Exercise: Terminal Navigation Practice (guided worksheet)" },
+                    { "type": "doc", "title": "Reading - Absolute vs Relative Paths", "url": "link" },
+                    { "type": "html", "html": "Exercise: Create, Move, and Delete Files/Folders" },
+                    { "type": "doc", "title": "Reading - File Permissions and Ownership", "url": "link" },
+                    { "type": "html", "html": "Exercise: Modify Permissions (hands-on)" },
+                    { "type": "doc", "title": "Reading - Using nano, touch, cat", "url": "link" },
+                    { "type": "html", "html": "Exercise: Create and Edit a Config File" },
+                    { "type": "html", "html": "Reflection: CLI vs GUI — When to use which?" },
+                    { "type": "doc", "title": "Quiz - Unit 2 Review", "url": "link" }
                 ]
             },
             {
-                "title": "Unit 3: ___",
-                "description": "___",
+                "title": "Unit 3: Real-World Linux Use",
+                "description": "Use Live USB to experience Linux on real hardware and troubleshoot systems.",
                 "content": [
-                    { "type": "doc", "title": "___", 
-                        "url": "link" },
-                    { "type": "video", "title": "___", 
-                        "url": "https://youtube.com/embed/link" }
+                    { "type": "html", "html": "Instructor distributes bootable Live USBs" },
+                    { "type": "html", "html": "Students boot into Ubuntu Desktop from USB (non-destructive)" },
+                    { "type": "html", "html": "Walkthrough: Navigating a Linux desktop environment" },
+                    { "type": "doc", "title": "Reading - What Is a Package Manager?", "url": "link" },
+                    { "type": "html", "html": "Exercise: Install and Remove Packages via Terminal" },
+                    { "type": "doc", "title": "Reading - System Monitoring Tools (top, htop)", "url": "link" },
+                    { "type": "html", "html": "Exercise: Kill a Process from Terminal" },
+                    { "type": "doc", "title": "Reading - User and Group Management", "url": "link" },
+                    { "type": "html", "html": "Exercise: Create a New User, Switch Users" },
+                    { "type": "doc", "title": "Reading - Basic Troubleshooting", "url": "link" },
+                    { "type": "doc", "title": "Slideshow - I Broke It — Now What?", "url": "link" },
+                    { "type": "doc", "title": "Final Project - Linux Task Challenge", "url": "link" },
+                    { "type": "doc", "title": "Quiz - Unit 3 Review", "url": "link" }
                 ]
             }
         ]

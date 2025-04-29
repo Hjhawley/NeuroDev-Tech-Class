@@ -164,6 +164,11 @@ b, strong, table thead th {
     color: var(--h3-color);
 }
 
+code {
+    font-weight: 700;
+    color: var(--h3-color);
+}
+
 ul {
     list-style-type: square;
     padding-left: 15px;
