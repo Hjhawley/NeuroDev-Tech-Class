@@ -126,7 +126,6 @@ h3 {
     font-weight: 500;
     margin-top: 20px;
     margin-bottom: 10px;
-    
 }
 
 ul ul li, footer, #theme-toggle {
@@ -160,7 +159,12 @@ b, strong, table thead th {
 
 code {
     font-weight: bold;
-    color: var(--h3-color);
+    margin: 0 3px;
+    color: #2a7;
+}
+
+body.dark-mode code {
+    color: #3f8
 }
 
 ul {
