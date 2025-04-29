@@ -26,7 +26,7 @@
     --section-border-color: var(--secondary-color);
     --button-background: var(--primary-color);
     --button-hover-background: var(--secondary-color);
-    --shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
+    --shadow: 3px 6px 10px rgba(0, 0, 0, 0.5);
 }
 
 body, #theme-toggle {
@@ -165,7 +165,7 @@ b, strong, table thead th {
 }
 
 code {
-    font-weight: 700;
+    font-weight: bold;
     color: var(--h3-color);
 }
 
