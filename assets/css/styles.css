@@ -159,12 +159,12 @@ b, strong, table thead th {
 
 code {
     font-weight: bold;
-    margin: 0 3px;
-    color: #2a7;
+    margin: 3px;
+    color: #2b8;
 }
 
 body.dark-mode code {
-    color: #3f8
+    color: #3f9;
 }
 
 ul {
