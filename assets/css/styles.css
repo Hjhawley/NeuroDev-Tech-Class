@@ -323,20 +323,20 @@ table tbody td {
 /* Mobile */
 @media (max-width: 430px) {
     h1 {
-        font-size: 1.72em;
+        font-size: 1.5em;
     }
     h2 {
-        font-size: 1.36em;
+        font-size: 1.3em;
     }
     h3 {
-        font-size: 1.18em;
+        font-size: 1.1em;
     }
     nav a {
-        font-size: 1.06rem;
+        font-size: 1.05rem;
         margin: 0 15px;
     }
     .callout {
-        font-size: 1.3em;
+        font-size: 1.15em;
     }
     .video-responsive {
         width: 100%;
