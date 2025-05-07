@@ -254,7 +254,6 @@ footer {
 }
 
 .callout {
-    color: var(--section-border-color);
     background-color: var(--background-color);
     padding: 20px 25px;
     border-radius: 8px;
