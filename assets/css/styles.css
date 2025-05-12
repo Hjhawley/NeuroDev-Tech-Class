@@ -28,7 +28,7 @@
     --section-border-color: var(--secondary-color);
     --button-background: var(--primary-color);
     --button-hover-background: var(--secondary-color);
-    --shadow: 3px 6px 12px rgba(0, 0, 0, 0.5);
+    --shadow: 2px 4px 10px rgba(0, 0, 0, 0.7);
 }
 
 body, #theme-toggle {
