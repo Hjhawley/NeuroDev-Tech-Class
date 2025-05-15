@@ -33,7 +33,7 @@
             <h3>Course Overview</h3>
             <p>
                 This beginner course introduces students to the Linux family of operating systems through hands-on beginner-friendly tasks. 
-                Topics include navigating the terminal, managing files and processes, and working with open-source tools. 
+                Covered topics include navigating the terminal, managing files and processes, and working with open-source tools. 
                 By the end of the course, students will have the skills and confidence to use Linux comfortably as a daily driver.
             </p>
         </section>
@@ -59,12 +59,12 @@
                 "description": "",
                 "content": [
                     { "type": "doc", "title": "Reading - What is Linux?", "url": "assets/pdfs/it/linux/what_is_linux.pdf" },
-                    { "type": "html", "html": "First we need to enable WSL and download Ubuntu. Run cmd or PowerShell as administrator and enter the command <code>wsl --install</code>." },
-                    { "type": "html", "html": "Open the Start Menu and launch Ubuntu. It might take a few minutes to extract and set up the file system. Once that's done, restart your computer." },
+                    { "type": "html", "html": "Run <strong>cmd</strong> or <strong>PowerShell</strong> as administrator and enter the command <code>wsl --install</code>. This will enable WSL and download Ubuntu by default." },
+                    { "type": "html", "html": "Open the Start Menu and launch Ubuntu. It might take a few minutes to extract and set up the file system. Once that's done, restart your computer (don't skip this step!)" },
                     { "type": "html", "html": "After rebooting, launch Ubuntu. You'll be asked to enter a new UNIX username. Choose something simple with no spaces and no capital letters." },
                     { "type": "html", "html": "Then you'll be asked for a password. When you type the password, nothing will appear on the screen. Don't worry, that's normal! It's registering your key presses, just not showing them for security reasons." },
-                    { "type": "html", "html": "Once that's done, we need to verify that your installation worked. Type <code>ls</code> and hit Enter. If you see a list of folders like Desktop, Documents, Downloads, you're looking at your Linux home directory. That means you're in!" },
-                    { "type": "html", "html": "Update your system. Enter <code>sudo apt update</code> and <code>sudo apt upgrade</code>. It may ask you for the password you just created. If it says there are updates, press Y and hit Enter to install. (Terminal commands are case-sensitive. So, for example, <code>Sudo Apt Update</code> is NOT a valid command.)" }
+                    { "type": "html", "html": "Once that's done, we need to verify that your installation worked. Type <code>pwd</code> and hit Enter. If you see <strong>/home/[username]</strong>, that means you're inside your Linux home directory. Congrats, you did it!" },
+                    { "type": "html", "html": "Update your system. Enter <code>sudo apt update</code> and <code>sudo apt upgrade</code>. It will ask you for the password you just created. If it says there are updates, press Y and hit Enter to install. (Commands are case-sensitive. So, for example, <code>Sudo Apt Update</code> is NOT a valid command.)" }
                 ]
             },
             {
