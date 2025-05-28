@@ -2,7 +2,8 @@
 
 * {
     font-size: 17px;
-    line-height: 1.6;
+    line-height: 1.5;
+    text-wrap: balance;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -112,11 +113,27 @@ h1 {
 }
 
 h2 {
+    position: relative;
     color: var(--h2-color);
     font-size: 1.5em;
     margin-bottom: 15px;
-    border-bottom: 2px solid var(--section-border-color);
     padding-bottom: 5px;
+    border-bottom: none;
+}
+
+/* gradient line */
+h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(
+        to right,
+        var(--section-border-color) 0%,
+        transparent 100%
+    );
 }
 
 h3 {
