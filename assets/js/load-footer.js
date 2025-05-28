@@ -6,9 +6,13 @@ document.addEventListener("DOMContentLoaded", () => {
     footer.className = "footer";
     footer.innerHTML = `
     <p>
+        435.574.9393 &middot; 
+        640 E 700 S Ste. 303 St. George, UT 84770 &middot; 
         &copy; <span id="year"></span>
         <a href="https://neurodevmentoring.com/" target="_blank" rel="noopener">NeuroDev</a>
-        &middot; <a href="#top">Back to top</a>
+    </p>
+    <p>
+        <a href="#top">Back to top</a>
     </p>
     <div class="theme-toggle-container">
         <button id="theme-toggle" class="button" aria-label="Theme / Dark Mode">

@@ -248,6 +248,15 @@ footer {
     padding-top: 20px;
 }
 
+.footer a {
+  color: inherit;
+  transition: none;
+}
+
+.footer a:hover {
+  color: inherit;
+}
+
 .hero-image {
     width: 100%;
     max-width: 1000px;
