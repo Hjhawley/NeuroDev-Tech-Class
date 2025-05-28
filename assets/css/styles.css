@@ -24,7 +24,6 @@
     --footer-text-color: #888;
     --link-color: var(--secondary-color);
     --link-hover-color: var(--tertiary-color);
-    --visited-color: #7397a8;
     --section-border-color: var(--secondary-color);
     --button-background: var(--primary-color);
     --button-hover-background: var(--secondary-color);
@@ -138,13 +137,9 @@ a {
     transition: color 0.25s ease;
 }
 
-a:hover, :not(nav a):visited:hover {
+a:hover {
     color: var(--link-hover-color);
     text-decoration: underline;
-}
-
-p a:visited, section a:visited {
-    color: var(--visited-color);
 }
 
 p {
