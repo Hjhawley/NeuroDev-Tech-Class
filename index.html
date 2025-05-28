@@ -61,18 +61,8 @@
         </p>
     </main>
 
-    <!-- Footer -->
     <div id="footer-placeholder"></div>
-    <script>
-        fetch("footer.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("footer-placeholder").innerHTML = data;
-                const themeScript = document.createElement("script");
-                themeScript.src = "assets/js/theme-toggle.js";
-                document.body.appendChild(themeScript);
-            });
-    </script>
+    <script src="assets/js/load-footer.js"   defer></script>
 
 </body>
 </html>
