@@ -93,12 +93,19 @@
         <div id="unit-sections"></div>
 
     </main>
-    <footer>
-        <p>&copy; 2025 NeuroDev</p>
-    </footer>
-    <div class="theme-toggle-container">
-        <button id="theme-toggle" class="button" aria-label="Theme / Dark Mode">Toggle Theme</button>
-    </div>
-    <script src="assets/js/theme-toggle.js"></script>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer-placeholder").innerHTML = data;
+                const themeScript = document.createElement("script");
+                themeScript.src = "assets/js/theme-toggle.js";
+                document.body.appendChild(themeScript);
+            });
+    </script>
+
 </body>
 </html>

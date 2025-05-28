@@ -321,7 +321,7 @@ table tbody td {
 }
 
 /* Mobile */
-@media (max-width: 430px) {
+@media (max-width: 480px) {
     h1 {
         font-size: 1.5em;
     }

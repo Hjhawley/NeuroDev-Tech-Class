@@ -81,7 +81,7 @@
                 ]
             }
         ]
-        </script>            
+        </script>
 
 <!--         {
             "title": "Unit 2: Full Linux Environment",
@@ -90,15 +90,10 @@
                 { "type": "html", "html": "Install VirtualBox on your system (guided walkthrough)" },
                 { "type": "html", "html": "Download the Ubuntu ISO and install it in VirtualBox" },
                 { "type": "html", "html": "Configure VM settings (RAM, CPU, disk size)" },
-                { "type": "video", "title": "What Is the Terminal?", "url": "link" },
-                { "type": "doc", "title": "Slideshow - Why Use the Command Line?", "url": "link" },
-                { "type": "doc", "title": "Reading - Command Line Basics", "url": "link" },
-                { "type": "html", "html": "Exercise: Terminal navigation practice (guided worksheet)" },
                 { "type": "doc", "title": "Reading - Absolute vs Relative Paths", "url": "link" },
                 { "type": "html", "html": "Exercise: Create, move, and delete files/folders" },
                 { "type": "doc", "title": "Reading - File Permissions and Ownership", "url": "link" },
                 { "type": "html", "html": "Exercise: Modify file permissions (hands-on)" },
-                { "type": "doc", "title": "Reading - Using <code>nano</code>, <code>touch</code>, <code>cat</code>", "url": "link" },
                 { "type": "html", "html": "Exercise: Create and edit a config file" },
                 { "type": "html", "html": "Reflection: CLI vs GUI — When to use which?" },
                 { "type": "doc", "title": "Quiz - Unit 2 Review", "url": "link" }
@@ -111,8 +106,6 @@
                 { "type": "html", "html": "Instructor distributes bootable Ubuntu Desktop Live USBs" },
                 { "type": "html", "html": "Boot into Ubuntu Desktop from a Live USB (no installation required)" },
                 { "type": "html", "html": "Walkthrough: Navigating a Linux desktop environment" },
-                { "type": "doc", "title": "Reading - What Is a Package Manager?", "url": "link" },
-                { "type": "html", "html": "Exercise: Install and remove packages via terminal (<code>apt</code>)" },
                 { "type": "doc", "title": "Reading - System Monitoring Tools (top, htop)", "url": "link" },
                 { "type": "html", "html": "Exercise: Kill a process using the terminal" },
                 { "type": "doc", "title": "Reading - User and Group Management", "url": "link" },
@@ -128,12 +121,19 @@
         <div id="unit-sections"></div>
 
     </main>
-    <footer>
-        <p>&copy; 2025 NeuroDev</p>
-    </footer>
-    <div class="theme-toggle-container">
-        <button id="theme-toggle" class="button" aria-label="Theme / Dark Mode">Toggle Theme</button>
-    </div>
-    <script src="assets/js/theme-toggle.js"></script>
+    
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer-placeholder").innerHTML = data;
+                const themeScript = document.createElement("script");
+                themeScript.src = "assets/js/theme-toggle.js";
+                document.body.appendChild(themeScript);
+            });
+    </script>
+    
 </body>
 </html>
