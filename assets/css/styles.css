@@ -102,13 +102,9 @@ body.dark-mode main {
     box-shadow: var(--shadow);
 }
 
-section {
-    margin-bottom: 40px;
-}
-
 h1 {
     color: var(--h1-color);
-    font-size: 2.25em;
+    font-size: 2.5em;
     margin-bottom: 15px;
 }
 
@@ -116,9 +112,9 @@ h2 {
     position: relative;
     color: var(--h2-color);
     font-size: 1.5em;
-    margin-bottom: 15px;
+    margin-top: 1.5rem;
+    margin-bottom: 5px;
     padding-bottom: 5px;
-    border-bottom: none;
 }
 
 /* gradient line */
@@ -188,7 +184,6 @@ ul {
 
 li {
     display: list-item;
-    margin-bottom: 10px;
     list-style-position: outside;
     margin-top: 10px;
     padding-left: 5px;
@@ -258,11 +253,11 @@ button, .button {
 }
 
 footer {
+    color: var(--footer-text-color);
     text-align: center;
     margin-top: 50px;
-    color: var(--footer-text-color);
-    border-top: 1px solid var(--footer-text-color);
     padding-top: 20px;
+    border-top: 1px solid var(--footer-text-color);
 }
 
 .footer a {
@@ -285,12 +280,13 @@ footer {
 }
 
 .callout {
+    text-align: justify;
     background-color: var(--background-color);
     padding: 20px 25px;
     border-radius: 8px;
     margin-bottom: 30px;
     box-shadow: var(--shadow);
-    font-size: 1.85em;
+    font-size: 1.7em;
     font-weight: 300;
 }
 
@@ -342,7 +338,7 @@ table tbody td {
 }
 
 /* Mobile */
-@media (max-width: 480px) {
+@media (max-width: 580px) {
     h1 {
         font-size: 1.5em;
     }
@@ -357,7 +353,8 @@ table tbody td {
         margin: 0 15px;
     }
     .callout {
-        font-size: 1.125em;
+        font-size: 1.15em;
+        text-align: left;
     }
     .video-responsive {
         width: 100%;
