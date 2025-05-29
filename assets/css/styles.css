@@ -3,7 +3,6 @@
 * {
     font-size: 17px;
     line-height: 1.5;
-    text-wrap: balance;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -338,7 +337,10 @@ table tbody td {
 }
 
 /* Mobile */
-@media (max-width: 580px) {
+@media (max-width: 624px) {
+    * {
+        text-wrap: balance;
+    }
     h1 {
         font-size: 1.5em;
     }
@@ -349,8 +351,7 @@ table tbody td {
         font-size: 1.1em;
     }
     nav a {
-        font-size: 1.05rem;
-        margin: 0 15px;
+        font-size: 1.2rem;
     }
     .callout {
         font-size: 1.15em;
