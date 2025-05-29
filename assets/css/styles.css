@@ -103,8 +103,9 @@ body.dark-mode main {
 
 h1 {
     color: var(--h1-color);
-    font-size: 2.5em;
+    font-size: 2em;
     margin-bottom: 15px;
+    font-weight: bold;
 }
 
 h2 {
@@ -342,16 +343,14 @@ table tbody td {
         text-wrap: balance;
     }
     h1 {
-        font-size: 1.5em;
+        font-size: 1.55em;
     }
     h2 {
-        font-size: 1.3em;
-    }
-    h3 {
-        font-size: 1.1em;
+        font-size: 1.35em;
     }
     nav a {
         font-size: 1.2rem;
+        margin: 0.75rem;
     }
     .callout {
         font-size: 1.15em;
