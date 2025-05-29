@@ -6,10 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
     footer.className = "footer";
     footer.innerHTML = `
     <p>
-        435.574.9393 &middot;
-        640 E 700 S Ste. 303 St. George, UT 84770 &middot;
-        &copy; <span id="year"></span>
-        <a href="https://neurodevmentoring.com/" target="_blank" rel="noopener">NeuroDev</a>
+        &copy; <span id="year"></span> <a href="https://neurodevmentoring.com/" target="_blank" rel="noopener">NeuroDev</a> &middot;
+        435.574.9393
     </p>
     <p>
         <a href="#top" id="back-to-top">Back to top</a>
