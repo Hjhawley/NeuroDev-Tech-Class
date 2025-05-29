@@ -30,6 +30,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const back = document.getElementById("back-to-top");
     back.addEventListener("click", e => {
     e.preventDefault();
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0});
     });
 });
