@@ -57,7 +57,7 @@ header {
     background-color: var(--header-background);
     color: var(--header-text-color);
     padding: 20px 0;
-    margin: 0 auto 30px auto; /* Top & bottom margins, auto for left & right */
+    margin: 0 auto 30px auto;
     border-radius: 8px;
     box-shadow: var(--shadow);
     max-width: var(--max-width);
