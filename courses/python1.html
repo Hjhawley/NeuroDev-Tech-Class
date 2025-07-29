@@ -1,131 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>NeuroDev Tech Class - Python I</title>
-        <script>
-            const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
-            const baseElement = document.createElement("base");
-            baseElement.href = isLocal ? "/" : "/NeuroDev-Tech-Class/";
-            document.head.appendChild(baseElement);
-        </script>
-        <script src="assets/js/link-generator.js"></script>
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/NeuroDev-favicon-32x32.png">
-    </head>    
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NeuroDev Tech Class - Python I</title>
+    <script>
+      const isLocal =
+        window.location.hostname === "localhost" ||
+        window.location.hostname === "127.0.0.1";
+      const baseElement = document.createElement("base");
+      baseElement.href = isLocal ? "/" : "/NeuroDev-Tech-Class/";
+      document.head.appendChild(baseElement);
+    </script>
+    <script src="assets/js/link-generator.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/NeuroDev-favicon-32x32.png"
+    />
+  </head>
+  <body>
     <header>
-        <a href="catalog.html">
-            <img src="assets/images/logo-white.png" alt="NeuroDev Logo" class="logo">
-        </a>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="catalog.html">Catalog</a>
-            <a href="resources.html">Resources</a>
-        </nav>
+      <a href="catalog.html">
+        <img
+          src="assets/images/logo-white.png"
+          alt="NeuroDev Logo"
+          class="logo"
+        />
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="catalog.html">Catalog</a>
+        <a href="resources.html">Resources</a>
+      </nav>
     </header>
     <main id="main-content">
-        <h1>Python I - Programming Fundamentals</h1>
+      <h1>Python I - Programming Fundamentals</h1>
 
-        <!-- Course Overview -->
-        <section>
-            <h3>Course Overview</h3>
-            <p>
-                This beginner programming course introduces students to the essentials of coding using Python 3, focusing on foundational concepts like 
-                data types, variables, loops, and functions. Students will learn to write Python code within the Visual Studio Code IDE, developing skills 
-                to build a simple text-based adventure game. This course lays the groundwork for more advanced studies in computer science.
-            </p>
-        </section>
+      <!-- Course Overview -->
+      <section>
+        <h3>Course Overview</h3>
+        <p>
+          This beginner programming course introduces students to the essentials
+          of coding using Python 3, focusing on foundational concepts like data
+          types, variables, loops, and functions. Students will learn to write
+          Python code within the Visual Studio Code IDE, developing skills to
+          build a simple text-based adventure game. This course lays the
+          groundwork for more advanced studies in computer science.
+        </p>
+      </section>
 
-        <!-- Course Objectives -->
-        <section>
-            <h3>Course Objectives</h3>
-            <ul>
-                <li>Gain foundational knowledge of programming concepts including variables, conditionals, loops, and data structures.</li>
-                <li>Develop proficiency in Python by learning syntax and writing code.</li>
-                <li>Become comfortable with code editors like Visual Studio Code.</li>
-                <li>Apply problem-solving skills to tackle programming challenges.</li>
-                <li>Understand and implement best practices in code readability and version control.</li>
-                <li>Demonstrate knowledge with a text-based adventure game that utilizes all course concepts.</li>
-            </ul>
-        </section>
+      <!-- Course Objectives -->
+      <section>
+        <h3>Course Objectives</h3>
+        <ul>
+          <li>
+            Gain foundational knowledge of programming concepts including
+            variables, conditionals, loops, and data structures.
+          </li>
+          <li>
+            Develop proficiency in Python by learning syntax and writing code.
+          </li>
+          <li>Become comfortable with code editors like Visual Studio Code.</li>
+          <li>
+            Apply problem-solving skills to tackle programming challenges.
+          </li>
+          <li>
+            Understand and implement best practices in code readability and
+            version control.
+          </li>
+          <li>
+            Demonstrate knowledge with a text-based adventure game that utilizes
+            all course concepts.
+          </li>
+        </ul>
+      </section>
 
-        <!-- Unit Material -->
-        <script id="unit-data" type="application/json">
+      <!-- Unit Material -->
+      <script id="unit-data" type="application/json">
         [
-            {
-                "title": "Getting Started",
-                "description": "",
-                "content": [
-                    { "type": "doc", "title": "Reading - What Is Python?", "url": "assets/pdfs/computer-science/python1-intro_to_programming/unit1/what_is_python.pdf" },
-                    { "type": "html", "html": "Download and install <a href=\"https://www.python.org/downloads/\" target=\"_blank\" rel=\"noopener noreferrer\">Python 3</a>." },
-                    { "type": "doc", "title": "Reading - What Is an IDE?", "url": "assets/pdfs/computer-science/python1-intro_to_programming/unit1/what_is_an_ide.pdf" },
-                    { "type": "html", "html": "Download and install <a href=\"https://code.visualstudio.com/download\" target=\"_blank\" rel=\"noopener noreferrer\">VS Code</a>." },
-                    { "type": "html", "html": "Install the Python extension in VS Code." },
-                    { "type": "doc", "title": "Reading - Setting Up GitHub", "url": "assets/pdfs/computer-science/python1-intro_to_programming/unit1/github_setup.pdf" },
-                    { "type": "html", "html": "Clone this repository: <a href=\"https://github.com/Hjhawley/NeuroDev-Tech-Class-Python1\" target=\"_blank\" rel=\"noopener noreferrer\">Python I Repo</a>. This is where you'll find most of the lessons and practice exercises for this course. For each section, review the lesson and then complete the exercise in VS Code and pass off with the tech coach." }
-                ]
-            },
-            {
-                "title": "Unit 1: Data Types, Variables, and Operators",
-                "description": "Learn some of the fundamental building blocks of programming, including data types, variables, operators, and basic syntax.",
-                "content": [
-                    { "type": "html", "html": "Complete Lesson & Exercise 1.1 - Basic Syntax" },
-                    { "type": "html", "html": "Complete Lesson & Exercise 1.2 - Data Types" },
-                    { "type": "video", "title": "Why TRUE + TRUE = 2: Data Types", "url": "https://www.youtube.com/embed/6otW6OXjR8c" },
-                    { "type": "html", "html": "Complete Lesson & Exercise 1.3 - Variables" },
-                    { "type": "html", "html": "Read Sidenote: Naming Conventions" },
-                    { "type": "html", "html": "Complete Lesson & Exercise 1.4 - Operators" },
-                    { "type": "html", "html": "Complete Lesson & Exercise 1.5 - User Input" },
-                    { "type": "html", "html": "Complete Lesson & Exercise 1.6 - String Manipulation" },
-                    { "type": "doc", "title": "Unit 1 Test", "url": "https://docs.google.com/forms/d/e/1FAIpQLSfOlN9MM7r_MMXUHHWKeJsYdOv9DNVD2MtWcCgXAnZLNekunw/viewform?usp=sf_link" }
-                ]
-            },
-            {
-                "title": "Unit 2: Control Flow and Data Structures",
-                "description": "Learn to build more expressive programs using conditional statements, loops, and basic data structures.",
-                "content": [
-                    { "type": "doc", "title": "Reading - What Is Control Flow?", "url": "assets/pdfs/computer-science/python1-intro_to_programming/unit2/what_is_control_flow.pdf" },
-                    { "type": "html", "html": "Complete Lesson & Exercise 2.1 - Conditional Statements" },
-                    { "type": "html", "html": "Complete Lesson & Exercise 2.2 - Loops" },
-                    { "type": "html", "html": "Complete Lesson & Exercise 2.3 - Exception Handling" },
-                    { "type": "html", "html": "Complete Lesson & Exercise 2.4 - Functions" },
-                    { "type": "html", "html": "Read Sidenote: Data Structures" },
-                    { "type": "html", "html": "Complete Lesson & Exercise 2.5 - Lists" },
-                    { "type": "html", "html": "Complete Lesson & Exercise 2.6 - Tuples" },
-                    { "type": "html", "html": "Complete Lesson & Exercise 2.7 - Dictionaries" },
-                    { "type": "doc", "title": "Unit 2 Test", "url": "https://docs.google.com/forms/d/e/1FAIpQLSeI-uVrDq7YKlJ1KpFDscx5SV7TQH2MmpgBgzDhmHM2JP9ZMA/viewform?usp=share_link" }
-                ]
-            },
-            {
-                "title": "Unit 3: Best Practices and Advanced Tools",
-                "description": "Learn good habits to help you write cleaner, more efficient, and more maintainable code.",
-                "content": [
-                    { "type": "doc", "title": "Reading - Best Practices", "url": "assets/pdfs/computer-science/python1-intro_to_programming/unit3/best_practices.pdf" },
-                    { "type": "doc", "title": "Reading - PEP-8 Style Guide", "url": "assets/pdfs/computer-science/python1-intro_to_programming/unit3/pep-8_style_guide.pdf" },
-                    { "type": "video", "title": "Best Practices for Comments in Python", "url": "https://youtube.com/embed/7FpJRXuwLSY" },
-                    { "type": "html", "html": "Complete Lesson & Exercise 3.1 - Debugging" },
-                    { "type": "html", "html": "Complete Lesson & Exercise 3.2 - Modules and Libraries" },
-                    { "type": "doc", "title": "Reading - Third-Party Libraries", "url": "assets/pdfs/computer-science/python1-intro_to_programming/unit3/3rd_party_libraries.pdf" },
-                    { "type": "html", "html": "Complete Lesson & Exercise 3.3 - Type Hinting" },
-                    { "type": "html", "html": "Read Lesson 3.4 - Unit Testing" },
-                    { "type": "html", "html": "Read Lesson 3.5 - File I/O" },
-                    { "type": "html", "html": "Complete Lesson & Exercise 3.6 - Regular Expressions" },
-                    { "type": "doc", "title": "Unit 3 Test", "url": "https://docs.google.com/forms/d/e/1FAIpQLSdkdibic7ZjpzzqPpDb2w3yZkw4eSoRwdCTSFVMYzqjrTZgCA/viewform?usp=sf_link" },
-                    { "type": "doc", "title": "Final Project - Text Adventure Game", "url": "assets/pdfs/computer-science/python1-intro_to_programming/unit3/final_project_text_adventure_game.pdf" }
-                ]
-            }
+          {
+            "title": "Getting Started",
+            "description": "",
+            "content": [
+              {
+                "type": "doc",
+                "title": "Reading - What Is Python?",
+                "url": "assets/pdfs/computer-science/python1-intro_to_programming/unit1/what_is_python.pdf"
+              },
+              {
+                "type": "html",
+                "html": "Download and install <a href=\"https://www.python.org/downloads/\" target=\"_blank\" rel=\"noopener noreferrer\">Python 3</a>."
+              },
+              {
+                "type": "doc",
+                "title": "Reading - What Is an IDE?",
+                "url": "assets/pdfs/computer-science/python1-intro_to_programming/unit1/what_is_an_ide.pdf"
+              },
+              {
+                "type": "html",
+                "html": "Download and install <a href=\"https://code.visualstudio.com/download\" target=\"_blank\" rel=\"noopener noreferrer\">VS Code</a>."
+              },
+              {
+                "type": "html",
+                "html": "Install the Python extension in VS Code."
+              },
+              {
+                "type": "doc",
+                "title": "Reading - Setting Up GitHub",
+                "url": "assets/pdfs/computer-science/python1-intro_to_programming/unit1/github_setup.pdf"
+              },
+              {
+                "type": "html",
+                "html": "Clone this repository: <a href=\"https://github.com/Hjhawley/NeuroDev-Tech-Class-Python1\" target=\"_blank\" rel=\"noopener noreferrer\">Python I Repo</a>. This is where you'll find most of the lessons and practice exercises for this course. For each section, review the lesson and then complete the exercise in VS Code and pass off with the tech coach."
+              }
+            ]
+          },
+          {
+            "title": "Unit 1: Data Types, Variables, and Operators",
+            "description": "Learn some of the fundamental building blocks of programming, including data types, variables, operators, and basic syntax.",
+            "content": [
+              {
+                "type": "html",
+                "html": "Complete Lesson & Exercise 1.1 - Basic Syntax"
+              },
+              {
+                "type": "html",
+                "html": "Complete Lesson & Exercise 1.2 - Data Types"
+              },
+              {
+                "type": "video",
+                "title": "Why TRUE + TRUE = 2: Data Types",
+                "url": "https://www.youtube.com/embed/6otW6OXjR8c"
+              },
+              {
+                "type": "html",
+                "html": "Complete Lesson & Exercise 1.3 - Variables"
+              },
+              { "type": "html", "html": "Read Sidenote: Naming Conventions" },
+              {
+                "type": "html",
+                "html": "Complete Lesson & Exercise 1.4 - Operators"
+              },
+              {
+                "type": "html",
+                "html": "Complete Lesson & Exercise 1.5 - User Input"
+              },
+              {
+                "type": "html",
+                "html": "Complete Lesson & Exercise 1.6 - String Manipulation"
+              },
+              {
+                "type": "doc",
+                "title": "Unit 1 Test",
+                "url": "https://docs.google.com/forms/d/e/1FAIpQLSfOlN9MM7r_MMXUHHWKeJsYdOv9DNVD2MtWcCgXAnZLNekunw/viewform?usp=sf_link"
+              }
+            ]
+          },
+          {
+            "title": "Unit 2: Control Flow and Data Structures",
+            "description": "Learn to build more expressive programs using conditional statements, loops, and basic data structures.",
+            "content": [
+              {
+                "type": "doc",
+                "title": "Reading - What Is Control Flow?",
+                "url": "assets/pdfs/computer-science/python1-intro_to_programming/unit2/what_is_control_flow.pdf"
+              },
+              {
+                "type": "html",
+                "html": "Complete Lesson & Exercise 2.1 - Conditional Statements"
+              },
+              {
+                "type": "html",
+                "html": "Complete Lesson & Exercise 2.2 - Loops"
+              },
+              {
+                "type": "html",
+                "html": "Complete Lesson & Exercise 2.3 - Exception Handling"
+              },
+              {
+                "type": "html",
+                "html": "Complete Lesson & Exercise 2.4 - Functions"
+              },
+              { "type": "html", "html": "Read Sidenote: Data Structures" },
+              {
+                "type": "html",
+                "html": "Complete Lesson & Exercise 2.5 - Lists"
+              },
+              {
+                "type": "html",
+                "html": "Complete Lesson & Exercise 2.6 - Tuples"
+              },
+              {
+                "type": "html",
+                "html": "Complete Lesson & Exercise 2.7 - Dictionaries"
+              },
+              {
+                "type": "doc",
+                "title": "Unit 2 Test",
+                "url": "https://docs.google.com/forms/d/e/1FAIpQLSeI-uVrDq7YKlJ1KpFDscx5SV7TQH2MmpgBgzDhmHM2JP9ZMA/viewform?usp=share_link"
+              }
+            ]
+          },
+          {
+            "title": "Unit 3: Best Practices and Advanced Tools",
+            "description": "Learn good habits to help you write cleaner, more efficient, and more maintainable code.",
+            "content": [
+              {
+                "type": "doc",
+                "title": "Reading - Best Practices",
+                "url": "assets/pdfs/computer-science/python1-intro_to_programming/unit3/best_practices.pdf"
+              },
+              {
+                "type": "doc",
+                "title": "Reading - PEP-8 Style Guide",
+                "url": "assets/pdfs/computer-science/python1-intro_to_programming/unit3/pep-8_style_guide.pdf"
+              },
+              {
+                "type": "video",
+                "title": "Best Practices for Comments in Python",
+                "url": "https://youtube.com/embed/7FpJRXuwLSY"
+              },
+              {
+                "type": "html",
+                "html": "Complete Lesson & Exercise 3.1 - Debugging"
+              },
+              {
+                "type": "html",
+                "html": "Complete Lesson & Exercise 3.2 - Modules and Libraries"
+              },
+              {
+                "type": "doc",
+                "title": "Reading - Third-Party Libraries",
+                "url": "assets/pdfs/computer-science/python1-intro_to_programming/unit3/3rd_party_libraries.pdf"
+              },
+              {
+                "type": "html",
+                "html": "Complete Lesson & Exercise 3.3 - Type Hinting"
+              },
+              { "type": "html", "html": "Read Lesson 3.4 - Unit Testing" },
+              { "type": "html", "html": "Read Lesson 3.5 - File I/O" },
+              {
+                "type": "html",
+                "html": "Complete Lesson & Exercise 3.6 - Regular Expressions"
+              },
+              {
+                "type": "doc",
+                "title": "Unit 3 Test",
+                "url": "https://docs.google.com/forms/d/e/1FAIpQLSdkdibic7ZjpzzqPpDb2w3yZkw4eSoRwdCTSFVMYzqjrTZgCA/viewform?usp=sf_link"
+              },
+              {
+                "type": "doc",
+                "title": "Final Project - Text Adventure Game",
+                "url": "assets/pdfs/computer-science/python1-intro_to_programming/unit3/final_project_text_adventure_game.pdf"
+              }
+            ]
+          }
         ]
-        </script>
+      </script>
 
-        <!-- Generate Content -->
-        <div id="unit-sections"></div>
-
+      <!-- Generate Content -->
+      <div id="unit-sections"></div>
     </main>
-    
+
     <div id="footer-placeholder"></div>
-    <script src="assets/js/load-footer.js"   defer></script>
-    
-</body>
+    <script src="assets/js/load-footer.js" defer></script>
+  </body>
 </html>

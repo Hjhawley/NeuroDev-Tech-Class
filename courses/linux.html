@@ -1,89 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>NeuroDev Tech Class - Linux</title>
-        <script>
-            const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
-            const baseElement = document.createElement("base");
-            baseElement.href = isLocal ? "/" : "/NeuroDev-Tech-Class/";
-            document.head.appendChild(baseElement);
-        </script>
-        <script src="assets/js/link-generator.js"></script>
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/NeuroDev-favicon-32x32.png">
-    </head>    
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NeuroDev Tech Class - Linux</title>
+    <script>
+      const isLocal =
+        window.location.hostname === "localhost" ||
+        window.location.hostname === "127.0.0.1";
+      const baseElement = document.createElement("base");
+      baseElement.href = isLocal ? "/" : "/NeuroDev-Tech-Class/";
+      document.head.appendChild(baseElement);
+    </script>
+    <script src="assets/js/link-generator.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/NeuroDev-favicon-32x32.png"
+    />
+  </head>
+  <body>
     <header>
-        <a href="catalog.html">
-            <img src="assets/images/logo-white.png" alt="NeuroDev Logo" class="logo">
-        </a>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="catalog.html">Catalog</a>
-            <a href="resources.html">Resources</a>
-        </nav>
+      <a href="catalog.html">
+        <img
+          src="assets/images/logo-white.png"
+          alt="NeuroDev Logo"
+          class="logo"
+        />
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="catalog.html">Catalog</a>
+        <a href="resources.html">Resources</a>
+      </nav>
     </header>
     <main id="main-content">
-        <h1>Introduction to Linux</h1>
+      <h1>Introduction to Linux</h1>
 
-        <!-- Course Overview -->
-        <section>
-            <h3>Course Overview</h3>
-            <p>
-                This beginner course introduces students to the Linux family of operating systems through hands-on beginner-friendly tasks. 
-                Covered topics include navigating the terminal, managing files and processes, and working with open-source tools. 
-                By the end of the course, students will have the skills and confidence to use Linux comfortably as a daily driver.
-            </p>
-        </section>
+      <!-- Course Overview -->
+      <section>
+        <h3>Course Overview</h3>
+        <p>
+          This beginner course introduces students to the Linux family of
+          operating systems through hands-on beginner-friendly tasks. Covered
+          topics include navigating the terminal, managing files and processes,
+          and working with open-source tools. By the end of the course, students
+          will have the skills and confidence to use Linux comfortably as a
+          daily driver.
+        </p>
+      </section>
 
-        <!-- Course Objectives -->
-        <section>
-            <h3>Course Objectives</h3>
-            <ul>
-                <li>Understand what Linux is and how it differs from Windows and macOS.</li>
-                <li>Use the command line to navigate and manipulate the file system.</li>
-                <li>Manage software using package managers.</li>
-                <li>Understand basic file permissions and user management.</li>
-                <li>Perform basic system monitoring and troubleshooting.</li>
-                <li>Develop confidence and familiarity with a Linux desktop environment.</li>
-            </ul>
-        </section>
+      <!-- Course Objectives -->
+      <section>
+        <h3>Course Objectives</h3>
+        <ul>
+          <li>
+            Understand what Linux is and how it differs from Windows and macOS.
+          </li>
+          <li>
+            Use the command line to navigate and manipulate the file system.
+          </li>
+          <li>Manage software using package managers.</li>
+          <li>Understand basic file permissions and user management.</li>
+          <li>Perform basic system monitoring and troubleshooting.</li>
+          <li>
+            Develop confidence and familiarity with a Linux desktop environment.
+          </li>
+        </ul>
+      </section>
 
-        <!-- Unit Material -->
-        <script id="unit-data" type="application/json">
+      <!-- Unit Material -->
+      <script id="unit-data" type="application/json">
         [
-            {
-                "title": "Getting Started",
-                "description": "",
-                "content": [
-                    { "type": "doc", "title": "Reading - What is Linux?", "url": "assets/pdfs/it/linux/what_is_linux.pdf" },
-                    { "type": "html", "html": "Run <strong>cmd</strong> or <strong>PowerShell</strong> as administrator and enter the command <code>wsl --install</code>. This will enable WSL and download Ubuntu by default." },
-                    { "type": "html", "html": "Open the Start Menu and launch Ubuntu. It might take a few minutes to extract and set up the file system. Once that's done, restart your computer (don't skip this step!)" },
-                    { "type": "html", "html": "After rebooting, launch Ubuntu. You'll be asked to enter a new UNIX username. Choose something simple with no spaces and no capital letters." },
-                    { "type": "html", "html": "Then you'll be asked for a password. When you type the password, nothing will appear on the screen. Don't worry, that's normal! It's registering your key presses, just not showing them for security reasons." },
-                    { "type": "html", "html": "Once that's done, we need to verify that your installation worked. Type <code>pwd</code> and hit Enter. If you see <strong>/home/[username]</strong>, that means you're inside your Linux home directory. Congrats, you did it!" },
-                    { "type": "html", "html": "Update your system. Enter <code>sudo apt update</code> and <code>sudo apt upgrade</code>. It will ask you for the password you just created. If it says there are updates, press Y and hit Enter to install. (Commands are case-sensitive. So, for example, <code>Sudo Apt Update</code> is NOT a valid command.)" }
-                ]
-            },
-            {
-                "title": "Unit 1: Getting to Know Linux",
-                "description": "Learn Linux concepts and terminal basics using Ubuntu (WSL).",
-                "content": [
-                    { "type": "doc", "title": "Reading - Intro to WSL", "url": "assets/pdfs/it/linux/intro_to_WSL.pdf" },
-                    { "type": "doc", "title": "Bash Command Practice 1 - mkdir, ls, pwd, cd, clear", "url": "assets/pdfs/it/linux/bash_1.pdf" },
-                    { "type": "doc", "title": "Bash Command Practice 2 - rm, rmdir, touch, echo, cat, nano, mv", "url": "assets/pdfs/it/linux/bash_2.pdf" },
-                    { "type": "doc", "title": "Bash Command Practice 3 - wget, head, tail, less, grep, cp, |, >, >>", "url": "assets/pdfs/it/linux/bash_3.pdf" },
-                    { "type": "doc", "title": "Quiz - Bash Commands", "url": "https://docs.google.com/forms/d/e/1FAIpQLScZK2yr-2tqefaFcV6xJ7Zi0CAq7SWMZms47R0z7IefhG2eQw/viewform?usp=header" },
-                    { "type": "doc", "title": "Reading - Package Managers", "url": "assets/pdfs/it/linux/package_managers.pdf" },
-                    { "type": "doc", "title": "Bash Command Practice 4 - apt, tree", "url": "assets/pdfs/it/linux/bash_4.pdf" }
-                ]
-            }
+          {
+            "title": "Getting Started",
+            "description": "",
+            "content": [
+              {
+                "type": "doc",
+                "title": "Reading - What is Linux?",
+                "url": "assets/pdfs/it/linux/what_is_linux.pdf"
+              },
+              {
+                "type": "html",
+                "html": "Run <strong>cmd</strong> or <strong>PowerShell</strong> as administrator and enter the command <code>wsl --install</code>. This will enable WSL and download Ubuntu by default."
+              },
+              {
+                "type": "html",
+                "html": "Open the Start Menu and launch Ubuntu. It might take a few minutes to extract and set up the file system. Once that's done, restart your computer (don't skip this step!)"
+              },
+              {
+                "type": "html",
+                "html": "After rebooting, launch Ubuntu. You'll be asked to enter a new UNIX username. Choose something simple with no spaces and no capital letters."
+              },
+              {
+                "type": "html",
+                "html": "Then you'll be asked for a password. When you type the password, nothing will appear on the screen. Don't worry, that's normal! It's registering your key presses, just not showing them for security reasons."
+              },
+              {
+                "type": "html",
+                "html": "Once that's done, we need to verify that your installation worked. Type <code>pwd</code> and hit Enter. If you see <strong>/home/[username]</strong>, that means you're inside your Linux home directory. Congrats, you did it!"
+              },
+              {
+                "type": "html",
+                "html": "Update your system. Enter <code>sudo apt update</code> and <code>sudo apt upgrade</code>. It will ask you for the password you just created. If it says there are updates, press Y and hit Enter to install. (Commands are case-sensitive. So, for example, <code>Sudo Apt Update</code> is NOT a valid command.)"
+              }
+            ]
+          },
+          {
+            "title": "Unit 1: Getting to Know Linux",
+            "description": "Learn Linux concepts and terminal basics using Ubuntu (WSL).",
+            "content": [
+              {
+                "type": "doc",
+                "title": "Reading - Intro to WSL",
+                "url": "assets/pdfs/it/linux/intro_to_WSL.pdf"
+              },
+              {
+                "type": "doc",
+                "title": "Bash Command Practice 1 - mkdir, ls, pwd, cd, clear",
+                "url": "assets/pdfs/it/linux/bash_1.pdf"
+              },
+              {
+                "type": "doc",
+                "title": "Bash Command Practice 2 - rm, rmdir, touch, echo, cat, nano, mv",
+                "url": "assets/pdfs/it/linux/bash_2.pdf"
+              },
+              {
+                "type": "doc",
+                "title": "Bash Command Practice 3 - wget, head, tail, less, grep, cp, |, >, >>",
+                "url": "assets/pdfs/it/linux/bash_3.pdf"
+              },
+              {
+                "type": "doc",
+                "title": "Quiz - Bash Commands",
+                "url": "https://docs.google.com/forms/d/e/1FAIpQLScZK2yr-2tqefaFcV6xJ7Zi0CAq7SWMZms47R0z7IefhG2eQw/viewform?usp=header"
+              },
+              {
+                "type": "doc",
+                "title": "Reading - Package Managers",
+                "url": "assets/pdfs/it/linux/package_managers.pdf"
+              },
+              {
+                "type": "doc",
+                "title": "Bash Command Practice 4 - apt, tree",
+                "url": "assets/pdfs/it/linux/bash_4.pdf"
+              }
+            ]
+          }
         ]
-        </script>
+      </script>
 
-<!--         {
+      <!--         {
             "title": "Unit 2: Full Linux Environment",
             "description": "Explore Linux GUI and system tools using a Virtual Machine (Ubuntu Desktop).",
             "content": [
@@ -117,13 +187,11 @@
             ]
         } -->
 
-        <!-- Generate Content -->
-        <div id="unit-sections"></div>
-
+      <!-- Generate Content -->
+      <div id="unit-sections"></div>
     </main>
-    
+
     <div id="footer-placeholder"></div>
-    <script src="assets/js/load-footer.js"   defer></script>
-    
-</body>
+    <script src="assets/js/load-footer.js" defer></script>
+  </body>
 </html>

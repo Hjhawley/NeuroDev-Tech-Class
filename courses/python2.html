@@ -1,109 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>NeuroDev Tech Class - Python II</title>
-        <script>
-            const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
-            const baseElement = document.createElement("base");
-            baseElement.href = isLocal ? "/" : "/NeuroDev-Tech-Class/";
-            document.head.appendChild(baseElement);
-        </script>
-        <script src="assets/js/link-generator.js"></script>
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/NeuroDev-favicon-32x32.png">
-    </head>    
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NeuroDev Tech Class - Python II</title>
+    <script>
+      const isLocal =
+        window.location.hostname === "localhost" ||
+        window.location.hostname === "127.0.0.1";
+      const baseElement = document.createElement("base");
+      baseElement.href = isLocal ? "/" : "/NeuroDev-Tech-Class/";
+      document.head.appendChild(baseElement);
+    </script>
+    <script src="assets/js/link-generator.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/NeuroDev-favicon-32x32.png"
+    />
+  </head>
+  <body>
     <header>
-        <a href="catalog.html">
-            <img src="assets/images/logo-white.png" alt="NeuroDev Logo" class="logo">
-        </a>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="catalog.html">Catalog</a>
-            <a href="resources.html">Resources</a>
-        </nav>
+      <a href="catalog.html">
+        <img
+          src="assets/images/logo-white.png"
+          alt="NeuroDev Logo"
+          class="logo"
+        />
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="catalog.html">Catalog</a>
+        <a href="resources.html">Resources</a>
+      </nav>
     </header>
     <main id="main-content">
-        <h1>Python II - Object-Oriented Programming</h1>
+      <h1>Python II - Object-Oriented Programming</h1>
 
-        <!-- Course Overview -->
-        <section>
-            <h3>Course Overview</h3>
-            <p>
-                This intermediate course dives into object-oriented programming (OOP) concepts, GUI development, and 
-                modular programming with Python. Students will learn about recursion, generators, decorators, and third-party libraries, 
-                culminating in a project where students develop a GUI-based chess game using PyGame.
-            </p>
-        </section>
+      <!-- Course Overview -->
+      <section>
+        <h3>Course Overview</h3>
+        <p>
+          This intermediate course dives into object-oriented programming (OOP)
+          concepts, GUI development, and modular programming with Python.
+          Students will learn about recursion, generators, decorators, and
+          third-party libraries, culminating in a project where students develop
+          a GUI-based chess game using PyGame.
+        </p>
+      </section>
 
-        <!-- Course Objectives -->
-        <section>
-            <h3>Course Objectives</h3>
-            <ul>
-                <li>Apply object-oriented programming principles including classes, encapsulation, inheritance, polymorphism, and abstraction.</li>
-                <li>Learn best practices for software development, including code organization, documentation, and version control.</li>
-                <li>Learn new tools to write more efficient and modular Python code.</li>
-                <li>Implement modular programming techniques using Python's third-party libraries.</li>
-                <li>Develop graphical user interfaces (GUIs) with Python, focusing on event-driven programming and user interaction.</li>
-                <li>Complete a comprehensive project to design and implement a chess game using PyGame, demonstrating mastery of OOP and GUI programming.</li>
-            </ul>
-        </section>
+      <!-- Course Objectives -->
+      <section>
+        <h3>Course Objectives</h3>
+        <ul>
+          <li>
+            Apply object-oriented programming principles including classes,
+            encapsulation, inheritance, polymorphism, and abstraction.
+          </li>
+          <li>
+            Learn best practices for software development, including code
+            organization, documentation, and version control.
+          </li>
+          <li>
+            Learn new tools to write more efficient and modular Python code.
+          </li>
+          <li>
+            Implement modular programming techniques using Python's third-party
+            libraries.
+          </li>
+          <li>
+            Develop graphical user interfaces (GUIs) with Python, focusing on
+            event-driven programming and user interaction.
+          </li>
+          <li>
+            Complete a comprehensive project to design and implement a chess
+            game using PyGame, demonstrating mastery of OOP and GUI programming.
+          </li>
+        </ul>
+      </section>
 
-        <!-- Unit Material -->
-        <script id="unit-data" type="application/json">
+      <!-- Unit Material -->
+      <script id="unit-data" type="application/json">
         [
-            {
-                "title": "Unit 1: Objects and Classes",
-                "description": "Explore the core principles of Object-Oriented Programming (OOP) in Python, including classes, objects, inheritance, polymorphism, encapsulation, and abstraction. This unit lays the foundation for designing robust and reusable code structures.",
-                "content": [
-                    { "type": "doc", "title": "Reading - What Is Object-Oriented Programming?", "url": "assets/pdfs/computer-science/python2-object-oriented_programming/what_is_oop.pdf" },
-                    { "type": "video", "title": "Classes and Instances", "url": "https://www.youtube.com/embed/ZDa-Z5JzLYM" },
-                    { "type": "html", "html": "Clone this repository: <a href=\"https://github.com/Hjhawley/NeuroDev-Tech-Class-Python2\" target=\"_blank\" rel=\"noopener noreferrer\">Python II Repo</a>. This is where you'll find most of the lessons and practice exercises for this course. For each section, review the lesson and then complete the exercise in VS Code and pass off with the tech coach." },
-                    { "type": "html", "html": "Complete Lesson & Exercise 1.1 - Classes and Objects" },
-                    { "type": "html", "html": "Complete Lesson & Exercise 1.2 - Encapsulation" },
-                    { "type": "html", "html": "Complete Lesson & Exercise 1.3 - Inheritance" },
-                    { "type": "html", "html": "Complete Lesson & Exercise 1.4 - Polymorphism" },
-                    { "type": "html", "html": "Complete Lesson & Exercise 1.5 - Abstraction" },
-                    { "type": "html", "html": "Complete Lesson & Exercise 1.6 - Operator Overloading" }
-                ]
-            },
-            {
-                "title": "Unit 2: Advanced Programming Techniques",
-                "description": "Delve into advanced programming concepts such as recursion, scope, and modular programming. This unit also introduces basic graphics with Python using Turtle Graphics, setting the stage for game development with PyGame.",
-                "content": [
-                    { "type": "video", "title": "You WILL Understand Recursion After Watching This", "url": "https://www.youtube.com/embed/DUC1qg7ZaRg" },
-                    { "type": "html", "html": "Complete Lesson & Exercise 2.1 - Recursion" },
-                    { "type": "html", "html": "Complete Lesson & Exercise 2.2 - Scope" },
-                    { "type": "html", "html": "Complete Lesson & Exercise 2.3 - Revisiting Modules" },
-                    { "type": "html", "html": "Complete Lesson & Exercise 2.4 - Turtle Graphics" },
-                    { "type": "html", "html": "Read Sidenote: DRY (Don't Repeat Yourself)" }
-                ]
-            },
-            {
-                "title": "Unit 3: PyGame",
-                "description": "Introduce game development using PyGame. This unit covers the essentials of creating graphical applications, handling user input, and integrating sound. Students will apply their knowledge to develop a GUI-based chess game as their final project.",
-                "content": [
-                    { "type": "html", "html": "Complete Lesson & Exercise 3.1 - Intro to PyGame" },
-                    { "type": "html", "html": "Complete Lesson & Exercise 3.2 - Drawing Shapes in PyGame" },
-                    { "type": "html", "html": "Complete Lesson & Exercise 3.3 - Handling User Input in PyGame" },
-                    { "type": "html", "html": "Complete Lesson & Exercise 3.4 - Text and Sound Effects in Pygame" },
-                    { "type": "doc", "title": "Slideshow - What Is Version Control?", "url": "https://docs.google.com/presentation/d/1WNJ8Q2gWr2XkNXglvT60i0FEZywW0he0h430FTe7plc/edit?usp=sharing" },
-                    { "type": "html", "html": "Set up a new Github repository for the chess game assignment and share it with the tech coach." },
-                    { "type": "html", "html": "Final Project - Chess Game" }
-                ]
-            }
+          {
+            "title": "Unit 1: Objects and Classes",
+            "description": "Explore the core principles of Object-Oriented Programming (OOP) in Python, including classes, objects, inheritance, polymorphism, encapsulation, and abstraction. This unit lays the foundation for designing robust and reusable code structures.",
+            "content": [
+              {
+                "type": "doc",
+                "title": "Reading - What Is Object-Oriented Programming?",
+                "url": "assets/pdfs/computer-science/python2-object-oriented_programming/what_is_oop.pdf"
+              },
+              {
+                "type": "video",
+                "title": "Classes and Instances",
+                "url": "https://www.youtube.com/embed/ZDa-Z5JzLYM"
+              },
+              {
+                "type": "html",
+                "html": "Clone this repository: <a href=\"https://github.com/Hjhawley/NeuroDev-Tech-Class-Python2\" target=\"_blank\" rel=\"noopener noreferrer\">Python II Repo</a>. This is where you'll find most of the lessons and practice exercises for this course. For each section, review the lesson and then complete the exercise in VS Code and pass off with the tech coach."
+              },
+              {
+                "type": "html",
+                "html": "Complete Lesson & Exercise 1.1 - Classes and Objects"
+              },
+              {
+                "type": "html",
+                "html": "Complete Lesson & Exercise 1.2 - Encapsulation"
+              },
+              {
+                "type": "html",
+                "html": "Complete Lesson & Exercise 1.3 - Inheritance"
+              },
+              {
+                "type": "html",
+                "html": "Complete Lesson & Exercise 1.4 - Polymorphism"
+              },
+              {
+                "type": "html",
+                "html": "Complete Lesson & Exercise 1.5 - Abstraction"
+              },
+              {
+                "type": "html",
+                "html": "Complete Lesson & Exercise 1.6 - Operator Overloading"
+              }
+            ]
+          },
+          {
+            "title": "Unit 2: Advanced Programming Techniques",
+            "description": "Delve into advanced programming concepts such as recursion, scope, and modular programming. This unit also introduces basic graphics with Python using Turtle Graphics, setting the stage for game development with PyGame.",
+            "content": [
+              {
+                "type": "video",
+                "title": "You WILL Understand Recursion After Watching This",
+                "url": "https://www.youtube.com/embed/DUC1qg7ZaRg"
+              },
+              {
+                "type": "html",
+                "html": "Complete Lesson & Exercise 2.1 - Recursion"
+              },
+              {
+                "type": "html",
+                "html": "Complete Lesson & Exercise 2.2 - Scope"
+              },
+              {
+                "type": "html",
+                "html": "Complete Lesson & Exercise 2.3 - Revisiting Modules"
+              },
+              {
+                "type": "html",
+                "html": "Complete Lesson & Exercise 2.4 - Turtle Graphics"
+              },
+              {
+                "type": "html",
+                "html": "Read Sidenote: DRY (Don't Repeat Yourself)"
+              }
+            ]
+          },
+          {
+            "title": "Unit 3: PyGame",
+            "description": "Introduce game development using PyGame. This unit covers the essentials of creating graphical applications, handling user input, and integrating sound. Students will apply their knowledge to develop a GUI-based chess game as their final project.",
+            "content": [
+              {
+                "type": "html",
+                "html": "Complete Lesson & Exercise 3.1 - Intro to PyGame"
+              },
+              {
+                "type": "html",
+                "html": "Complete Lesson & Exercise 3.2 - Drawing Shapes in PyGame"
+              },
+              {
+                "type": "html",
+                "html": "Complete Lesson & Exercise 3.3 - Handling User Input in PyGame"
+              },
+              {
+                "type": "html",
+                "html": "Complete Lesson & Exercise 3.4 - Text and Sound Effects in Pygame"
+              },
+              {
+                "type": "doc",
+                "title": "Slideshow - What Is Version Control?",
+                "url": "https://docs.google.com/presentation/d/1WNJ8Q2gWr2XkNXglvT60i0FEZywW0he0h430FTe7plc/edit?usp=sharing"
+              },
+              {
+                "type": "html",
+                "html": "Set up a new Github repository for the chess game assignment and share it with the tech coach."
+              },
+              { "type": "html", "html": "Final Project - Chess Game" }
+            ]
+          }
         ]
-        </script>
+      </script>
 
-        <!-- Generate Content -->
-        <div id="unit-sections"></div>
-
+      <!-- Generate Content -->
+      <div id="unit-sections"></div>
     </main>
 
     <div id="footer-placeholder"></div>
-    <script src="assets/js/load-footer.js"   defer></script>
-    
-</body>
+    <script src="assets/js/load-footer.js" defer></script>
+  </body>
 </html>

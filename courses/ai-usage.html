@@ -1,110 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>NeuroDev Tech Class - AI Usage</title>
-        <script>
-            const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
-            const baseElement = document.createElement("base");
-            baseElement.href = isLocal ? "/" : "/NeuroDev-Tech-Class/";
-            document.head.appendChild(baseElement);
-        </script>
-        <script src="assets/js/link-generator.js"></script>
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/NeuroDev-favicon-32x32.png">
-    </head>    
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NeuroDev Tech Class - AI Usage</title>
+    <script>
+      const isLocal =
+        window.location.hostname === "localhost" ||
+        window.location.hostname === "127.0.0.1";
+      const baseElement = document.createElement("base");
+      baseElement.href = isLocal ? "/" : "/NeuroDev-Tech-Class/";
+      document.head.appendChild(baseElement);
+    </script>
+    <script src="assets/js/link-generator.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/NeuroDev-favicon-32x32.png"
+    />
+  </head>
+  <body>
     <header>
-        <a href="catalog.html">
-            <img src="assets/images/logo-white.png" alt="NeuroDev Logo" class="logo">
-        </a>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="catalog.html">Catalog</a>
-            <a href="resources.html">Resources</a>
-        </nav>
+      <a href="catalog.html">
+        <img
+          src="assets/images/logo-white.png"
+          alt="NeuroDev Logo"
+          class="logo"
+        />
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="catalog.html">Catalog</a>
+        <a href="resources.html">Resources</a>
+      </nav>
     </header>
     <main id="main-content">
-        <h1>AI Usage & Prompt Engineering</h1>
+      <h1>AI Usage & Prompt Engineering</h1>
 
-        <!-- Course Overview -->
-        <section>
-            <h3>Course Overview</h3>
-            <p>
-                This course introduces students to the rapidly developing world of AI with an emphasis on large language models (LLMs) like OpenAI's ChatGPT and Google's Gemini, 
-                as well as text-to-image software like DALL·E. Designed for beginners, it covers practical skills for engaging with AI responsibly and creatively in everyday scenarios.
-            </p>
-        </section>
+      <!-- Course Overview -->
+      <section>
+        <h3>Course Overview</h3>
+        <p>
+          This course introduces students to the rapidly developing world of AI
+          with an emphasis on large language models (LLMs) like OpenAI's ChatGPT
+          and Google's Gemini, as well as text-to-image software like DALL·E.
+          Designed for beginners, it covers practical skills for engaging with
+          AI responsibly and creatively in everyday scenarios.
+        </p>
+      </section>
 
-        <!-- Course Objectives -->
-        <section>
-            <h3>Course Objectives</h3>
-            <ul>
-                <li>Understand the basics of Generative AI, especially LLMs, and their role in generative tasks.</li>
-                <li>Practice ethical usage of Generative AI.</li>
-                <li>Learn clear communication strategies with Generative AI, called "prompt engineering."</li>
-                <li>Apply Generative AI tools in practical scenarios for creativity, learning, and productivity.</li>
-            </ul>
-        </section>
+      <!-- Course Objectives -->
+      <section>
+        <h3>Course Objectives</h3>
+        <ul>
+          <li>
+            Understand the basics of Generative AI, especially LLMs, and their
+            role in generative tasks.
+          </li>
+          <li>Practice ethical usage of Generative AI.</li>
+          <li>
+            Learn clear communication strategies with Generative AI, called
+            "prompt engineering."
+          </li>
+          <li>
+            Apply Generative AI tools in practical scenarios for creativity,
+            learning, and productivity.
+          </li>
+        </ul>
+      </section>
 
-        <!-- Unit Material -->
-        <script id="unit-data" type="application/json">
+      <!-- Unit Material -->
+      <script id="unit-data" type="application/json">
         [
-            {
-                "title": "Unit 1: Fundamentals of AI",
-                "description": "Overview of AI and ethics of engagement for generative purposes.",
-                "content": [
-                    { "type": "doc", "title": "Slideshow - Intro to Generative AI", "url": "https://docs.google.com/presentation/d/1AfwUX_T-DBr3q2e0ZJSNyGEbciYaMNyaI3QI6apNgHc/edit?usp=sharing" },
-                    { "type": "doc", "title": "Quiz - Generative AI", "url": "https://docs.google.com/forms/d/e/1FAIpQLScApLPHV6QTArfW_I2TUUAmUw8xz3_jJdI0amFrOOMJYyprIA/viewform?usp=sharing" },
-                    { "type": "video", "title": "AI art, explained", "url": "https://youtube.com/embed/SVcsDDABEkM" },
-                    { "type": "video", "title": "Why Neural Networks can learn (almost) anything", "url": "https://youtube.com/embed/0QczhVg5HaI" },
-                    { "type": "doc", "title": "Neural Network Playground", "url": "https://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.05544&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false" },
-                    { "type": "video", "title": "Watching Neural Networks Learn", "url": "https://youtube.com/embed/TkwXa7Cvfr8" }
-                ]
-            },
-            {
-                "title": "Unit 2: Ethical AI Usage",
-                "description": "Overview of AI and ethics of engagement for generative purposes.",
-                "content": [
-                    { "type": "doc", "title": "Slideshow - AI Ethics", "url": "https://docs.google.com/presentation/d/1O3jb91xuNxmalFGFuN1j_CFw3cWBdrCSRCs-_BCbbuw/edit?usp=drive_link" },
-                    { "type": "doc", "title": "Article - AI Fairness Isn't Just an Ethical Issue", "url": "https://hbr.org/2020/10/ai-fairness-isnt-just-an-ethical-issue" },
-                    { "type": "doc", "title": "Article - Generative AI Has a Visual Plagiarism Problem", "url": "https://spectrum.ieee.org/midjourney-copyright" },
-                    { "type": "video", "title": "AI can do your homework. Now what?", "url": "https://youtube.com/embed/bEJ0_TVXh-I" },
-                    { "type": "html", "html": "Sign up for a free <a href=\"https://chat.openai.com/auth/login\" target=\"_blank\" rel=\"noopener noreferrer\">ChatGPT</a> or <a href=\"https://gemini.google.com/?utm_source=google&utm_medium=cpc&utm_campaign=2024enUS_gemfeb&gad_source=1&gclid=EAIaIQobChMIjuTM96OGhQMVcy7UAR2xFgv7EAAYASAAEgLK1vD_BwE&hl=en\" target=\"_blank\" rel=\"noopener noreferrer\">Gemini</a> account." },
-                    { "type": "doc", "title": "Hands-on Generative AI Exercises", "url": "assets/pdfs/computer-basics/ai-prompt-engineering/hands-on_generative_ai_exercises.pdf" }
-                ]
-            },
-            {
-                "title": "Unit 3: Problem-Solving with AI",
-                "description": "Principles of clear communication with AI through problem formulation.",
-                "content": [
-                    { "type": "doc", "title": "Reading - Prompt Engineering Approaches and Strategies", "url": "assets/pdfs/computer-basics/ai-prompt-engineering/prompt_engineering_approaches_and_strategies.pdf" },
-                    { "type": "doc", "title": "Article - Prompt Engineering 101", "url": "https://hackernoon.com/prompt-engineering-101-i-unveiling-principles-and-techniques-of-effective-prompt-crafting" },
-                    { "type": "doc", "title": "Slideshow - Prompt Engineering vs. Problem Formulation", "url": "https://docs.google.com/presentation/d/1p0PsTj-5NdPQPne3LKOHqjUddnLLRKhdLU-8JfdDWgQ/edit?usp=drive_link" },
-                    { "type": "doc", "title": "Final Assignment - AI Application", "url": "assets/pdfs/computer-basics/ai-prompt-engineering/final_assignment-ai_application.pdf" }
-                ]
-            },
-            {
-                "title": "Additional Resources",
-                "description": "",
-                "content": [
-                    { "type": "video", "title": "\"But what is a neural network?\"", "url": "https://youtube.com/embed/aircAruvnKk" },
-                    { "type": "video", "title": "Transformers (how LLMs work) explained visually", "url": "https://youtube.com/embed/wjZofJX0v4M" },
-                    { "type": "video", "title": "The moment we stopped understanding AI", "url": "https://youtube.com/embed/UZDiGooFs54" },
-                    { "type": "doc", "title": "What Is ChatGPT Doing... and Why Does It Work?", "url": "https://faculty.sites.iastate.edu/tesfatsi/archive/tesfatsi/ChatGPT.WhatIsItWhyDoesItWork.SWolfram.2024.pdf" }
-                ]
-            }
+          {
+            "title": "Unit 1: Fundamentals of AI",
+            "description": "Overview of AI and ethics of engagement for generative purposes.",
+            "content": [
+              {
+                "type": "doc",
+                "title": "Slideshow - Intro to Generative AI",
+                "url": "https://docs.google.com/presentation/d/1AfwUX_T-DBr3q2e0ZJSNyGEbciYaMNyaI3QI6apNgHc/edit?usp=sharing"
+              },
+              {
+                "type": "doc",
+                "title": "Quiz - Generative AI",
+                "url": "https://docs.google.com/forms/d/e/1FAIpQLScApLPHV6QTArfW_I2TUUAmUw8xz3_jJdI0amFrOOMJYyprIA/viewform?usp=sharing"
+              },
+              {
+                "type": "video",
+                "title": "AI art, explained",
+                "url": "https://youtube.com/embed/SVcsDDABEkM"
+              },
+              {
+                "type": "video",
+                "title": "Why Neural Networks can learn (almost) anything",
+                "url": "https://youtube.com/embed/0QczhVg5HaI"
+              },
+              {
+                "type": "doc",
+                "title": "Neural Network Playground",
+                "url": "https://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.05544&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false"
+              },
+              {
+                "type": "video",
+                "title": "Watching Neural Networks Learn",
+                "url": "https://youtube.com/embed/TkwXa7Cvfr8"
+              }
+            ]
+          },
+          {
+            "title": "Unit 2: Ethical AI Usage",
+            "description": "Overview of AI and ethics of engagement for generative purposes.",
+            "content": [
+              {
+                "type": "doc",
+                "title": "Slideshow - AI Ethics",
+                "url": "https://docs.google.com/presentation/d/1O3jb91xuNxmalFGFuN1j_CFw3cWBdrCSRCs-_BCbbuw/edit?usp=drive_link"
+              },
+              {
+                "type": "doc",
+                "title": "Article - AI Fairness Isn't Just an Ethical Issue",
+                "url": "https://hbr.org/2020/10/ai-fairness-isnt-just-an-ethical-issue"
+              },
+              {
+                "type": "doc",
+                "title": "Article - Generative AI Has a Visual Plagiarism Problem",
+                "url": "https://spectrum.ieee.org/midjourney-copyright"
+              },
+              {
+                "type": "video",
+                "title": "AI can do your homework. Now what?",
+                "url": "https://youtube.com/embed/bEJ0_TVXh-I"
+              },
+              {
+                "type": "html",
+                "html": "Sign up for a free <a href=\"https://chat.openai.com/auth/login\" target=\"_blank\" rel=\"noopener noreferrer\">ChatGPT</a> or <a href=\"https://gemini.google.com/?utm_source=google&utm_medium=cpc&utm_campaign=2024enUS_gemfeb&gad_source=1&gclid=EAIaIQobChMIjuTM96OGhQMVcy7UAR2xFgv7EAAYASAAEgLK1vD_BwE&hl=en\" target=\"_blank\" rel=\"noopener noreferrer\">Gemini</a> account."
+              },
+              {
+                "type": "doc",
+                "title": "Hands-on Generative AI Exercises",
+                "url": "assets/pdfs/computer-basics/ai-prompt-engineering/hands-on_generative_ai_exercises.pdf"
+              }
+            ]
+          },
+          {
+            "title": "Unit 3: Problem-Solving with AI",
+            "description": "Principles of clear communication with AI through problem formulation.",
+            "content": [
+              {
+                "type": "doc",
+                "title": "Reading - Prompt Engineering Approaches and Strategies",
+                "url": "assets/pdfs/computer-basics/ai-prompt-engineering/prompt_engineering_approaches_and_strategies.pdf"
+              },
+              {
+                "type": "doc",
+                "title": "Article - Prompt Engineering 101",
+                "url": "https://hackernoon.com/prompt-engineering-101-i-unveiling-principles-and-techniques-of-effective-prompt-crafting"
+              },
+              {
+                "type": "doc",
+                "title": "Slideshow - Prompt Engineering vs. Problem Formulation",
+                "url": "https://docs.google.com/presentation/d/1p0PsTj-5NdPQPne3LKOHqjUddnLLRKhdLU-8JfdDWgQ/edit?usp=drive_link"
+              },
+              {
+                "type": "doc",
+                "title": "Final Assignment - AI Application",
+                "url": "assets/pdfs/computer-basics/ai-prompt-engineering/final_assignment-ai_application.pdf"
+              }
+            ]
+          },
+          {
+            "title": "Additional Resources",
+            "description": "",
+            "content": [
+              {
+                "type": "video",
+                "title": "\"But what is a neural network?\"",
+                "url": "https://youtube.com/embed/aircAruvnKk"
+              },
+              {
+                "type": "video",
+                "title": "Transformers (how LLMs work) explained visually",
+                "url": "https://youtube.com/embed/wjZofJX0v4M"
+              },
+              {
+                "type": "video",
+                "title": "The moment we stopped understanding AI",
+                "url": "https://youtube.com/embed/UZDiGooFs54"
+              },
+              {
+                "type": "doc",
+                "title": "What Is ChatGPT Doing... and Why Does It Work?",
+                "url": "https://faculty.sites.iastate.edu/tesfatsi/archive/tesfatsi/ChatGPT.WhatIsItWhyDoesItWork.SWolfram.2024.pdf"
+              }
+            ]
+          }
         ]
-        </script>
+      </script>
 
-        <!-- Generate Content -->
-        <div id="unit-sections"></div>
-
+      <!-- Generate Content -->
+      <div id="unit-sections"></div>
     </main>
 
     <div id="footer-placeholder"></div>
-    <script src="assets/js/load-footer.js"   defer></script>
-    
-</body>
+    <script src="assets/js/load-footer.js" defer></script>
+  </body>
 </html>

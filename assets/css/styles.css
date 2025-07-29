@@ -94,7 +94,7 @@ main {
   max-width: var(--max-width);
   margin: 0 auto;
   background-color: #f8f8f8;
-  padding: 30px;
+  padding: 1.8rem;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
 }
@@ -107,7 +107,7 @@ body.dark-mode main {
 h1 {
   color: var(--h1-color);
   font-size: 1.9em;
-  margin-bottom: 15px;
+  margin-bottom: 0.9rem;
 }
 
 h2 {
@@ -187,16 +187,16 @@ body.dark-mode code {
 
 ul {
   list-style-type: square;
-  padding-left: 15px;
-  margin-left: 15px;
+  padding-left: 0.9rem;
+  margin-left: 0.9rem;
   color: var(--h2-color);
 }
 
 li {
   display: list-item;
   list-style-position: outside;
-  margin-top: 10px;
-  padding-left: 5px;
+  margin-top: 0.6rem;
+  padding-left: 0.3rem;
 }
 
 ul ul li {
@@ -221,8 +221,8 @@ label {
 }
 
 label .task-checkbox {
-  margin-left: 10px;
-  margin-right: 20px;
+  margin-left: 0.6rem;
+  margin-right: 1.25rem;
 }
 
 .task-checkbox {
@@ -233,17 +233,17 @@ label .task-checkbox {
 
 .video-responsive {
   position: relative;
-  max-width: 500px;
-  height: 280px;
-  margin-left: 35px;
-  margin-bottom: 20px;
+  height: 280px; /* fixed height */
+  aspect-ratio: 16 / 9; /* width will be 280 * (16/9) ≈ 497.8px */
+  max-width: 100%; /* never overflow its container on small screens */
+  margin: 0 auto 1.25rem; /* center horizontally and add bottom gap */
   box-shadow: var(--shadow);
+  overflow: hidden; /* clip any iframe overflow */
 }
 
 .video-responsive iframe {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0; /* top:0; right:0; bottom:0; left:0; */
   width: 100%;
   height: 100%;
   border: none;
@@ -253,7 +253,7 @@ button,
 .button {
   background-color: var(--button-background);
   border: none;
-  padding: 10px 15px;
+  padding: 0.6em 0.9em;
   border-radius: var(--border-radius);
   cursor: pointer;
   color: #eee;

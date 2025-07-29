@@ -1,96 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>NeuroDev Tech Class - Office Software</title>
-        <script>
-            const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
-            const baseElement = document.createElement("base");
-            baseElement.href = isLocal ? "/" : "/NeuroDev-Tech-Class/";
-            document.head.appendChild(baseElement);
-        </script>
-        <script src="assets/js/link-generator.js"></script>
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/NeuroDev-favicon-32x32.png">
-    </head>    
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NeuroDev Tech Class - Office Software</title>
+    <script>
+      const isLocal =
+        window.location.hostname === "localhost" ||
+        window.location.hostname === "127.0.0.1";
+      const baseElement = document.createElement("base");
+      baseElement.href = isLocal ? "/" : "/NeuroDev-Tech-Class/";
+      document.head.appendChild(baseElement);
+    </script>
+    <script src="assets/js/link-generator.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/NeuroDev-favicon-32x32.png"
+    />
+  </head>
+  <body>
     <header>
-        <a href="catalog.html">
-            <img src="assets/images/logo-white.png" alt="NeuroDev Logo" class="logo">
-        </a>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="catalog.html">Catalog</a>
-            <a href="resources.html">Resources</a>
-        </nav>
+      <a href="catalog.html">
+        <img
+          src="assets/images/logo-white.png"
+          alt="NeuroDev Logo"
+          class="logo"
+        />
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="catalog.html">Catalog</a>
+        <a href="resources.html">Resources</a>
+      </nav>
     </header>
     <main id="main-content">
-        <h1>Office Software: Microsoft 365 &amp; Google Workspace</h1>
+      <h1>Office Software: Microsoft 365 &amp; Google Workspace</h1>
 
-        <!-- Course Overview -->
-        <section>
-            <h3>Course Overview</h3>
-            <p>
-                This comprehensive course will prepare students to more effectively utilize the leading office productivity tools: Microsoft 365 and Google Workspace. 
-                Specifically the course offers a deep dive into Microsoft Word / Google Docs, MS Excel / Google Sheets, and MS PowerPoint / Google Slides. 
-                This course is ideal for students wanting to enhance their everyday software skills in academic, personal, and professional settings.
-            </p>
-        </section>
+      <!-- Course Overview -->
+      <section>
+        <h3>Course Overview</h3>
+        <p>
+          This comprehensive course will prepare students to more effectively
+          utilize the leading office productivity tools: Microsoft 365 and
+          Google Workspace. Specifically the course offers a deep dive into
+          Microsoft Word / Google Docs, MS Excel / Google Sheets, and MS
+          PowerPoint / Google Slides. This course is ideal for students wanting
+          to enhance their everyday software skills in academic, personal, and
+          professional settings.
+        </p>
+      </section>
 
-        <!-- Course Objectives -->
-        <section>
-            <h3>Course Objectives</h3>
-            <ul>
-                <li>Understand the core functionalities of word processors, spreadsheets, and presentation software.</li>
-                <li>Develop proficiency in creating, formatting, and editing documents using Microsoft Word and Google Docs.</li>
-                <li>Master spreadsheet skills, including formula application, data analysis, and budget creation with Excel and Google Sheets.</li>
-                <li>Learn to design and deliver effective presentations using PowerPoint and Google Slides, focusing on audience engagement and clear communication.</li>
-                <li>Apply real-world applications of office productivity software through project-based assignments, including résumé creation, budget management, and presentation delivery.</li>
-            </ul>
-        </section>
+      <!-- Course Objectives -->
+      <section>
+        <h3>Course Objectives</h3>
+        <ul>
+          <li>
+            Understand the core functionalities of word processors,
+            spreadsheets, and presentation software.
+          </li>
+          <li>
+            Develop proficiency in creating, formatting, and editing documents
+            using Microsoft Word and Google Docs.
+          </li>
+          <li>
+            Master spreadsheet skills, including formula application, data
+            analysis, and budget creation with Excel and Google Sheets.
+          </li>
+          <li>
+            Learn to design and deliver effective presentations using PowerPoint
+            and Google Slides, focusing on audience engagement and clear
+            communication.
+          </li>
+          <li>
+            Apply real-world applications of office productivity software
+            through project-based assignments, including résumé creation, budget
+            management, and presentation delivery.
+          </li>
+        </ul>
+      </section>
 
-        <!-- Unit Material -->
-        <script id="unit-data" type="application/json">
+      <!-- Unit Material -->
+      <script id="unit-data" type="application/json">
         [
-            {
-                "title": "Unit 1: Word Processors",
-                "description": "Learn how to better use Microsoft Word and Google Docs.",
-                "content": [
-                    { "type": "doc", "title": "Reading - Word Processors", "url": "assets/pdfs/computer-basics/office-software/word_processors/word_processors.pdf" },
-                    { "type": "doc", "title": "Quiz - Word Processors", "url": "https://docs.google.com/forms/d/e/1FAIpQLSdqqkhza05g7Aar0w9ElvafKq54gdsBDNkBgZaROEgnWvqa0A/viewform?usp=sf_link" },
-                    { "type": "doc", "title": "Practice - Word Processors", "url": "assets/pdfs/computer-basics/office-software/word_processors/practice-word_processors.pdf" },
-                    { "type": "doc", "title": "Application - Creating a Résumé", "url": "assets/pdfs/computer-basics/office-software/word_processors/application-creating_a_résumé.pdf" }
-                ]
-            },
-            {
-                "title": "Unit 2: Spreadsheets",
-                "description": "Learn how to better use Microsoft Excel and Google Sheets.",
-                "content": [
-                    { "type": "doc", "title": "Reading - Spreadsheets", "url": "assets/pdfs/computer-basics/office-software/spreadsheets/spreadsheets.pdf" },
-                    { "type": "html", "html": "<a href=\"https://docs.google.com/spreadsheets/d/1-DqkSTjb0iq8MDh-hrxfyP-fkK9dMA6bvFY7e-4GFsE/edit?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\">Worksheet - Spreadsheet Formulas</a> (make a copy of this spreadsheet and complete the tasks on all five sheets)" },
-                    { "type": "doc", "title": "Practice - Spreadsheets", "url": "assets/pdfs/computer-basics/office-software/spreadsheets/practice-spreadsheets.pdf" },
-                    { "type": "doc", "title": "Application - Creating a Budget", "url": "assets/pdfs/computer-basics/office-software/spreadsheets/application-creating_a_budget.pdf" }
-                ]
-            },
-            {
-                "title": "Unit 3: Presentation Software",
-                "description": "Learn how to better use Microsoft PowerPoint and Google Slides.",
-                "content": [
-                    { "type": "doc", "title": "Reading - Slideshows", "url": "assets/pdfs/computer-basics/office-software/presentation_software/slideshows.pdf" },
-                    { "type": "doc", "title": "Application - “Career Day” Presentation", "url": "assets/pdfs/computer-basics/office-software/presentation_software/application-careers_day_presentation.pdf" }
-                ]
-            }
+          {
+            "title": "Unit 1: Word Processors",
+            "description": "Learn how to better use Microsoft Word and Google Docs.",
+            "content": [
+              {
+                "type": "doc",
+                "title": "Reading - Word Processors",
+                "url": "assets/pdfs/computer-basics/office-software/word_processors/word_processors.pdf"
+              },
+              {
+                "type": "doc",
+                "title": "Quiz - Word Processors",
+                "url": "https://docs.google.com/forms/d/e/1FAIpQLSdqqkhza05g7Aar0w9ElvafKq54gdsBDNkBgZaROEgnWvqa0A/viewform?usp=sf_link"
+              },
+              {
+                "type": "doc",
+                "title": "Practice - Word Processors",
+                "url": "assets/pdfs/computer-basics/office-software/word_processors/practice-word_processors.pdf"
+              },
+              {
+                "type": "doc",
+                "title": "Application - Creating a Résumé",
+                "url": "assets/pdfs/computer-basics/office-software/word_processors/application-creating_a_résumé.pdf"
+              }
+            ]
+          },
+          {
+            "title": "Unit 2: Spreadsheets",
+            "description": "Learn how to better use Microsoft Excel and Google Sheets.",
+            "content": [
+              {
+                "type": "doc",
+                "title": "Reading - Spreadsheets",
+                "url": "assets/pdfs/computer-basics/office-software/spreadsheets/spreadsheets.pdf"
+              },
+              {
+                "type": "html",
+                "html": "<a href=\"https://docs.google.com/spreadsheets/d/1-DqkSTjb0iq8MDh-hrxfyP-fkK9dMA6bvFY7e-4GFsE/edit?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\">Worksheet - Spreadsheet Formulas</a> (make a copy of this spreadsheet and complete the tasks on all five sheets)"
+              },
+              {
+                "type": "doc",
+                "title": "Practice - Spreadsheets",
+                "url": "assets/pdfs/computer-basics/office-software/spreadsheets/practice-spreadsheets.pdf"
+              },
+              {
+                "type": "doc",
+                "title": "Application - Creating a Budget",
+                "url": "assets/pdfs/computer-basics/office-software/spreadsheets/application-creating_a_budget.pdf"
+              }
+            ]
+          },
+          {
+            "title": "Unit 3: Presentation Software",
+            "description": "Learn how to better use Microsoft PowerPoint and Google Slides.",
+            "content": [
+              {
+                "type": "doc",
+                "title": "Reading - Slideshows",
+                "url": "assets/pdfs/computer-basics/office-software/presentation_software/slideshows.pdf"
+              },
+              {
+                "type": "doc",
+                "title": "Application - “Career Day” Presentation",
+                "url": "assets/pdfs/computer-basics/office-software/presentation_software/application-careers_day_presentation.pdf"
+              }
+            ]
+          }
         ]
-        </script>
+      </script>
 
-        <!-- Generate Content -->
-        <div id="unit-sections"></div>
-
+      <!-- Generate Content -->
+      <div id="unit-sections"></div>
     </main>
-    
+
     <div id="footer-placeholder"></div>
-    <script src="assets/js/load-footer.js"   defer></script>
-    
-</body>
+    <script src="assets/js/load-footer.js" defer></script>
+  </body>
 </html>
