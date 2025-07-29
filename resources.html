@@ -1,147 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>NeuroDev Tech Class - Resources</title> <!-- Not "accredited" yet; change to "resources" for now -->
-        <script>
-            const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
-            const baseElement = document.createElement("base");
-            baseElement.href = isLocal ? "/" : "/NeuroDev-Tech-Class/";
-            document.head.appendChild(baseElement);
-        </script>
-        <script src="assets/js/link-generator.js"></script>
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/NeuroDev-favicon-32x32.png">
-    </head>    
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NeuroDev Tech Class - Resources</title>
+    <!-- Not "accredited" yet; change to "resources" for now -->
+    <script>
+      const isLocal =
+        window.location.hostname === "localhost" ||
+        window.location.hostname === "127.0.0.1";
+      const baseElement = document.createElement("base");
+      baseElement.href = isLocal ? "/" : "/NeuroDev-Tech-Class/";
+      document.head.appendChild(baseElement);
+    </script>
+    <script src="assets/js/link-generator.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/NeuroDev-favicon-32x32.png"
+    />
+  </head>
+  <body>
     <header>
-        <a href="catalog.html">
-            <img src="assets/images/logo-white.png" alt="NeuroDev Logo" class="logo">
-        </a>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="catalog.html">Catalog</a>
-            <a href="resources.html" aria-current="page">Resources</a>
-        </nav>
+      <a href="catalog.html">
+        <img
+          src="assets/images/logo-white.png"
+          alt="NeuroDev Logo"
+          class="logo"
+        />
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="catalog.html">Catalog</a>
+        <a href="resources.html" aria-current="page">Resources</a>
+      </nav>
     </header>
     <main id="main-content">
-<!--         <h1>Accreditation</h1>
+      <section>
+        <h1>Technology Equipment &amp; Resource Inventory</h1>
 
-        <section>
-            <p>
-                Below is a list of NeuroDev's Tech Class programs and their corresponding 
-                <a href="https://nces.ed.gov/ipeds/cipcode/default.aspx?y=56" target="_blank">CIP codes</a>. 
-                These codes reflect the primary focus of each course and support our mission to provide 
-                quality technical education.
-            </p>
-        </section>
-        
-        <section>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Course Name</th>
-                        <th>CIP Code</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Office Software</td>
-                        <td>11.0602</td>
-                    </tr>
-                    <tr>
-                        <td>Python Programming I & II</td>
-                        <td>11.0201</td>
-                    </tr>
-                    <tr>
-                        <td>Computer Hardware</td>
-                        <td>15.1202</td>
-                    </tr>
-                    <tr>
-                    </tr> -->
-                </tbody>
-            </table>
-        </section>
-
-        <section>
-            <h1>Technology Equipment &amp; Resource Inventory</h2>
-
-            <h3>Hardware</h3>
+        <h3>Hardware</h3>
+        <ul>
+          <li>
+            Desktop Computer
             <ul>
-                <li>Desktop Computer
-                    <ul>
-                        <li>Core i5 7500</li>
-                        <li>NVIDIA GeForce RTX 2070</li>
-                        <li>Windows 10 Home</li>
-                    </ul>
-                </li>
-                <li>Dell XPS 27 All-in-One Computer
-                    <ul>
-                        <li>Core i5 7400</li>
-                        <li>Windows 10 Home</li>
-                    </ul>
-                </li>
-                <li>Driving Simulator Rig
-                    <ul>
-                        <li>AMD Ryzen 5 5600X</li>
-                        <li>AMD Radeon RX 6700 XT</li>
-                        <li>Meta Quest 2 VR Headset</li>
-                        <li>Next Level Racing GT Lite Cockpit</li>
-                        <li>Logitech G923 Racing Wheel &amp; Pedals</li>
-                        <li>Logitech G Driving Force Shifter</li>
-                        <li>Windows 11 Pro</li>
-                        <li>
-                            <a href="https://store.steampowered.com/app/493490/City_Car_Driving/" target="_blank">City Car Driving</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>Disassembled Computer Hardware for Demonstrations
-                    <ul>
-                        <li>Motherboards, CPUs, GPUs, RAM Sticks, Hard Drives &amp; SSDs, Power Supplies, Wi-Fi Routers, Ethernet Cables</li>
-                    </ul>
-                </li>
-                <li>Flashforge Guider II 3D Printer</li>
-                <li>Raspberry Pi 4 Model B</li>
-                <li>XP-PEN Deco Mini7 Drawing Tablet</li>
+              <li>Core i5 7500</li>
+              <li>NVIDIA GeForce RTX 2070</li>
+              <li>Windows 10 Home</li>
             </ul>
-
-            <h3>Software and Licenses</h3>
+          </li>
+          <li>
+            Dell XPS 27 All-in-One Computer
             <ul>
-                <li>Programming Tools: Visual Studio Code, Python, Java, Git, GitHub</li>
-                <li>3D Modeling Software: Blender, ZBrush Mini, FlashPrint</li>
-                <li>Game Development Software: Unreal Engine, Unity, GameMaker Studio 2</li>
-                <li>Digital Art Tools: Krita</li>
-                <li>Media Editing Tools: Audacity (Audio), DaVinci Resolve (Video)</li>
+              <li>Core i5 7400</li>
+              <li>Windows 10 Home</li>
             </ul>
-
-            <h3>Additional Resources</h3>
+          </li>
+          <li>
+            Driving Simulator Rig
             <ul>
-                <li><a href="https://innovation.utahtech.edu/makerspace/" target="_blank">The Makerspace at the Atwood Innovation Plaza</a> (Access to 3D printers, CNC machines, and more)</li>
-                <li>Udemy Course Subscriptions:
-                    <ul>
-                        <li><a href="https://www.udemy.com/share/101XCe3@LroQr7Ls83bm3inPmSISjHqP0jIgr5DTPKUnTnmHzNzK_6pdEC0Ef2UG6InohWo4IA==/" target="_blank">C# Unity Game Development</a></li>
-                        <li><a href="https://www.udemy.com/share/104wCM3@oqi_KP8pntbBM_bBT0bmRStGr4xYIdJZpbJI2SlIOYmglomeMDf5MQA5QUFbsVXh3w==/" target="_blank">The Linux Command Line Bootcamp</a></li>
-                        <li><a href="https://www.udemy.com/share/104vyq3@o1Wq_WgM4H6mO4dDbUhe2N2gVqOwOVvTMaJGTBndY3Pr-7HlsIwIlHGPwSnb1s9tSw==/" target="_blank">Animation Production with Blender</a></li>
-                        <li><a href="https://www.udemy.com/share/1025gI3@VDCd-8osy1Tix6e_A64Q_xcDZaWNCyYutN0Vg9WrWKcaEt06NqjgyVeIIN1sf_RQug==/" target="_blank">Gimp Masterclass</a></li>
-                        <li><a href="https://www.udemy.com/share/1027kW3@XaPBuelge0mbo2b6SqD3JEVOOXCQwLyHrhZznUjvKNp4Rg6n-IrHkoC46cDBcWed7A==/" target="_blank">Computer Literacy & Basic Computer Skills</a></li>
-                        <li><a href="https://www.udemy.com/share/101xCa3@qTiYgPLguuysqIrf0doKNKkVtNeW-LxObzDPSKdN4IYL8kC_nqGvFj8X137kpITHfg==/" target="_blank">Android App Development using Kotlin</a></li>
-                        <li><a href="https://www.udemy.com/share/101SIG3@seSMR-xbY5i-R1NP9ua_0tRvis-ZAokNnc-QlRKKk064QKuczoJ7Y2wlt6eNsTtB3A==/" target="_blank">AutoCAD Complete Course</a></li>
-                        <li><a href="https://www.udemy.com/share/101WeY3@LwXlnkI187ChAnMmvdnyekHVdN9l_HkLXDIl2jjDfbT3296wXxZDTWykAnCCwJ27Yw==/" target="_blank">Complete JavaScript Course</a></li>
-                        <li><a href="https://www.udemy.com/share/101ZDe3@WklVxD_ujikl8I3g-0PphAfO80y9b42oZbR_CJJvMMYOe5E6dE07PA2Pu4oAT-RM9A==/" target="_blank">Complete Networking Fundamentals Course</a></li>
-                        <li><a href="https://www.udemy.com/share/106mkC3@sC3IHZEtT2BEgTBxaBJilTlND1MxV0CSYeReeZVq_Oq7H6iz8Z7NxNMeryjClva1zA==/" target="_blank">Complete Blender Megacourse</a></li>
-                        <li><a href="https://www.udemy.com/share/101Way3@Xx6TRpCp8ItpPF-T8oq6hathhU-EqaDC78yvPVI8O3xcofUG87C8p0fayrCGEV8nUg==/" target="_blank">React - The Complete Guide</a></li>
-                        <li><a href="https://www.udemy.com/share/101WsU3@yY-bosmR7iTmGX9BmpA-uKw252k61eALXK7tlUAexfLDCJ89opfc95ljgbguGkYFvw==/" target="_blank">Complete SQL Bootcamp</a></li>
-                        <li><a href="https://www.udemy.com/share/101WpA3@LM0DnMH8HjsBtvvyXpjVIKKb0Muu7bRm2fYWN2u7mY1wq01TjH41amMAmccHf315BQ==/" target="_blank">Complete Node.js Developer Course</a></li>
-                        <li><a href="https://www.udemy.com/share/101Wsa3@OM2DTYLUxuYZ78_aBPwLdW2GiSpVxjNEi4i5zKswjKlCxhDWZLdpixKpJHIcI41-IQ==/" target="_blank">iOS & Swift App Development</a></li>
-                    </ul>
-                </li>
+              <li>AMD Ryzen 5 5600X</li>
+              <li>AMD Radeon RX 6700 XT</li>
+              <li>Meta Quest 2 VR Headset</li>
+              <li>Next Level Racing GT Lite Cockpit</li>
+              <li>Logitech G923 Racing Wheel &amp; Pedals</li>
+              <li>Logitech G Driving Force Shifter</li>
+              <li>Windows 11 Pro</li>
+              <li>
+                <a
+                  href="https://store.steampowered.com/app/493490/City_Car_Driving/"
+                  target="_blank"
+                  >City Car Driving</a
+                >
+              </li>
             </ul>
-        </section>
+          </li>
+          <li>
+            Disassembled Computer Hardware for Demonstrations
+            <ul>
+              <li>
+                Motherboards, CPUs, GPUs, RAM Sticks, Hard Drives &amp; SSDs,
+                Power Supplies, Wi-Fi Routers, Ethernet Cables
+              </li>
+            </ul>
+          </li>
+          <li>Flashforge Guider II 3D Printer</li>
+          <li>Raspberry Pi 4 Model B</li>
+          <li>XP-PEN Deco Mini7 Drawing Tablet</li>
+        </ul>
+
+        <h3>Software and Licenses</h3>
+        <ul>
+          <li>
+            Programming Tools: Visual Studio Code, Python, Java, Git, GitHub
+          </li>
+          <li>3D Modeling Software: Blender, ZBrush Mini, FlashPrint</li>
+          <li>
+            Game Development Software: Unreal Engine, Unity, GameMaker Studio 2
+          </li>
+          <li>Digital Art Tools: Krita</li>
+          <li>
+            Media Editing Tools: Audacity (Audio), DaVinci Resolve (Video)
+          </li>
+        </ul>
+
+        <h3>Additional Resources</h3>
+        <ul>
+          <li>
+            <a
+              href="https://innovation.utahtech.edu/makerspace/"
+              target="_blank"
+              >The Makerspace at the Atwood Innovation Plaza</a
+            >
+            (Access to 3D printers, CNC machines, and more)
+          </li>
+          <li>
+            Udemy Course Subscriptions:
+            <ul>
+              <li>
+                <a
+                  href="https://www.udemy.com/share/101XCe3@LroQr7Ls83bm3inPmSISjHqP0jIgr5DTPKUnTnmHzNzK_6pdEC0Ef2UG6InohWo4IA==/"
+                  target="_blank"
+                  >C# Unity Game Development</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.udemy.com/share/104wCM3@oqi_KP8pntbBM_bBT0bmRStGr4xYIdJZpbJI2SlIOYmglomeMDf5MQA5QUFbsVXh3w==/"
+                  target="_blank"
+                  >The Linux Command Line Bootcamp</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.udemy.com/share/104vyq3@o1Wq_WgM4H6mO4dDbUhe2N2gVqOwOVvTMaJGTBndY3Pr-7HlsIwIlHGPwSnb1s9tSw==/"
+                  target="_blank"
+                  >Animation Production with Blender</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.udemy.com/share/1025gI3@VDCd-8osy1Tix6e_A64Q_xcDZaWNCyYutN0Vg9WrWKcaEt06NqjgyVeIIN1sf_RQug==/"
+                  target="_blank"
+                  >Gimp Masterclass</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.udemy.com/share/1027kW3@XaPBuelge0mbo2b6SqD3JEVOOXCQwLyHrhZznUjvKNp4Rg6n-IrHkoC46cDBcWed7A==/"
+                  target="_blank"
+                  >Computer Literacy & Basic Computer Skills</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.udemy.com/share/101xCa3@qTiYgPLguuysqIrf0doKNKkVtNeW-LxObzDPSKdN4IYL8kC_nqGvFj8X137kpITHfg==/"
+                  target="_blank"
+                  >Android App Development using Kotlin</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.udemy.com/share/101SIG3@seSMR-xbY5i-R1NP9ua_0tRvis-ZAokNnc-QlRKKk064QKuczoJ7Y2wlt6eNsTtB3A==/"
+                  target="_blank"
+                  >AutoCAD Complete Course</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.udemy.com/share/101WeY3@LwXlnkI187ChAnMmvdnyekHVdN9l_HkLXDIl2jjDfbT3296wXxZDTWykAnCCwJ27Yw==/"
+                  target="_blank"
+                  >Complete JavaScript Course</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.udemy.com/share/101ZDe3@WklVxD_ujikl8I3g-0PphAfO80y9b42oZbR_CJJvMMYOe5E6dE07PA2Pu4oAT-RM9A==/"
+                  target="_blank"
+                  >Complete Networking Fundamentals Course</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.udemy.com/share/106mkC3@sC3IHZEtT2BEgTBxaBJilTlND1MxV0CSYeReeZVq_Oq7H6iz8Z7NxNMeryjClva1zA==/"
+                  target="_blank"
+                  >Complete Blender Megacourse</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.udemy.com/share/101Way3@Xx6TRpCp8ItpPF-T8oq6hathhU-EqaDC78yvPVI8O3xcofUG87C8p0fayrCGEV8nUg==/"
+                  target="_blank"
+                  >React - The Complete Guide</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.udemy.com/share/101WsU3@yY-bosmR7iTmGX9BmpA-uKw252k61eALXK7tlUAexfLDCJ89opfc95ljgbguGkYFvw==/"
+                  target="_blank"
+                  >Complete SQL Bootcamp</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.udemy.com/share/101WpA3@LM0DnMH8HjsBtvvyXpjVIKKb0Muu7bRm2fYWN2u7mY1wq01TjH41amMAmccHf315BQ==/"
+                  target="_blank"
+                  >Complete Node.js Developer Course</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.udemy.com/share/101Wsa3@OM2DTYLUxuYZ78_aBPwLdW2GiSpVxjNEi4i5zKswjKlCxhDWZLdpixKpJHIcI41-IQ==/"
+                  target="_blank"
+                  >iOS & Swift App Development</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
     </main>
 
     <div id="footer-placeholder"></div>
-    <script src="assets/js/load-footer.js"   defer></script>
-
-</body>
+    <script src="assets/js/load-footer.js" defer></script>
+  </body>
 </html>
