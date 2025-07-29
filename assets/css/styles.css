@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
 
 * {
-  font-size: 1.1rem;
   line-height: 1.5;
   margin: 0;
   padding: 0;
@@ -16,7 +15,7 @@
   --max-width: 900px;
   --primary-color: #4ad;
   --secondary-color: #228;
-  --tertiary-color: #ffe292;
+  --tertiary-color: #fe9;
   --background-color: #d5dfe4;
   --text-color: #111;
   --h2-color: var(--text-color);
@@ -30,7 +29,7 @@
   --button-background: var(--primary-color);
   --button-hover-background: var(--secondary-color);
   --border-radius: 0.5rem;
-  --shadow: 2px 3px 7px #000;
+  --shadow: 2px 3px 5px #000;
 }
 
 body,
@@ -114,7 +113,7 @@ h2 {
   position: relative;
   color: var(--h2-color);
   font-size: 1.5rem;
-  margin: 1.5rem 0 .5rem;
+  margin: 1.5rem 0 0.5rem;
   padding-bottom: 5px;
 }
 /* gradient line */
@@ -140,10 +139,9 @@ h3 {
   margin-bottom: 10px;
 }
 
-ul ul li,
 footer p,
 #theme-toggle {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 a {
@@ -190,6 +188,7 @@ body.dark-mode code {
 }
 
 ul {
+  font-size: 1rem;
   list-style-type: square;
   padding-left: 0.9rem;
   margin-left: 0.9rem;
