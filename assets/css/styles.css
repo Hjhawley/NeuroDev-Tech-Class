@@ -14,8 +14,8 @@
 
 :root {
   --max-width: 900px;
-  --primary-color: rgb(65, 174, 218);
-  --secondary-color: rgb(44, 44, 134);
+  --primary-color: #4ad;
+  --secondary-color: #228;
   --tertiary-color: #ffe292;
   --background-color: #d5dfe4;
   --text-color: #111;
@@ -30,7 +30,7 @@
   --button-background: var(--primary-color);
   --button-hover-background: var(--secondary-color);
   --border-radius: 0.5rem;
-  --shadow: 2px 4px 10px rgba(0, 0, 0, 0.7);
+  --shadow: 2px 3px 7px #000;
 }
 
 body,
@@ -159,11 +159,17 @@ a:hover {
   text-decoration: underline;
 }
 
-p {
+p,
+li,
+label,
+label a {
   font-family: "Open Sans", sans-serif;
   font-size: 1.15rem;
-  line-height: 1.5;
   text-wrap: balance;
+}
+
+p {
+  line-height: 1.5;
   max-width: 80ch;
   margin-bottom: 1rem;
 }
@@ -213,10 +219,9 @@ input[type="checkbox"] {
 
 label {
   display: inline-flex;
-  line-height: 1.5;
+  line-height: 1.15;
   align-items: center;
-  margin-bottom: 10px;
-  font-size: 1rem;
+  margin-bottom: 1rem;
   cursor: pointer;
 }
 
@@ -233,17 +238,18 @@ label .task-checkbox {
 
 .video-responsive {
   position: relative;
-  height: 280px; /* fixed height */
-  aspect-ratio: 16 / 9; /* width will be 280 * (16/9) ≈ 497.8px */
-  max-width: 100%; /* never overflow its container on small screens */
-  margin: 0 auto 1.25rem; /* center horizontally and add bottom gap */
+  aspect-ratio: 16 / 9;
+  width: 500px;
+  max-height: 280px; /* in case aspect ratio is ignored */
+  max-width: 100%;
+  margin: 0 2.75rem 2rem;
   box-shadow: var(--shadow);
-  overflow: hidden; /* clip any iframe overflow */
+  overflow: hidden;
 }
 
 .video-responsive iframe {
   position: absolute;
-  inset: 0; /* top:0; right:0; bottom:0; left:0; */
+  inset: 0;
   width: 100%;
   height: 100%;
   border: none;
@@ -290,7 +296,7 @@ footer p {
   max-width: 1000px;
   height: auto;
   border-radius: var(--border-radius);
-  margin-bottom: 25px;
+  margin-bottom: 1.9rem;
   box-shadow: var(--shadow);
   display: block;
 }
@@ -374,17 +380,18 @@ table tbody td {
     font-size: 1.2rem;
     margin: 0;
   }
-}
-.callout {
-  font-size: 1.15em;
-  text-align: left;
-}
-.video-responsive {
-  width: 100%;
-  height: 160px;
-  margin-left: 0px;
-}
-.theme-toggle-container {
-  bottom: 15px;
-  right: 15px;
+  label {
+    margin-bottom: 1.5rem;
+  }
+  .video-responsive {
+    margin: 0 auto 2rem;
+  }
+  .callout {
+    font-size: 1.15em;
+    text-align: left;
+  }
+  .theme-toggle-container {
+    bottom: 15px;
+    right: 15px;
+  }
 }
