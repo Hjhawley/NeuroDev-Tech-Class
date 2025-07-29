@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
 
 * {
-  font-size: 17px;
+  font-size: 1.1rem;
   line-height: 1.5;
   margin: 0;
   padding: 0;
@@ -14,11 +14,11 @@
 
 :root {
   --max-width: 900px;
-  --primary-color: #42bfef;
-  --secondary-color: #1a2e86;
-  --tertiary-color: #fd5;
+  --primary-color: rgb(65, 174, 218);
+  --secondary-color: rgb(44, 44, 134);
+  --tertiary-color: #ffe292;
   --background-color: #d5dfe4;
-  --text-color: #000;
+  --text-color: #111;
   --h2-color: var(--text-color);
   --h3-color: var(--primary-color);
   --header-background: var(--primary-color);
@@ -29,6 +29,7 @@
   --section-border-color: var(--secondary-color);
   --button-background: var(--primary-color);
   --button-hover-background: var(--secondary-color);
+  --border-radius: 0.5rem;
   --shadow: 2px 4px 10px rgba(0, 0, 0, 0.7);
 }
 
@@ -37,7 +38,7 @@ body,
   font-family: "Poppins", sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 body.dark-mode {
@@ -59,9 +60,9 @@ header {
   align-items: center;
   background-color: var(--header-background);
   color: var(--header-text-color);
-  padding: 20px 0;
-  margin: 0 auto 30px auto;
-  border-radius: 8px;
+  padding: 1.25rem 0;
+  margin: 0 auto 1.8rem;
+  border-radius: var(--border-radius);
   box-shadow: var(--shadow);
   max-width: var(--max-width);
 }
@@ -94,7 +95,7 @@ main {
   margin: 0 auto;
   background-color: #f8f8f8;
   padding: 30px;
-  border-radius: 8px;
+  border-radius: var(--border-radius);
   box-shadow: var(--shadow);
 }
 
@@ -105,7 +106,7 @@ body.dark-mode main {
 
 h1 {
   color: var(--h1-color);
-  font-size: 2em;
+  font-size: 1.9em;
   margin-bottom: 15px;
 }
 
@@ -253,7 +254,7 @@ button,
   background-color: var(--button-background);
   border: none;
   padding: 10px 15px;
-  border-radius: 25px;
+  border-radius: var(--border-radius);
   cursor: pointer;
   color: #eee;
   box-shadow: var(--shadow);
@@ -288,7 +289,7 @@ footer p {
   width: 100%;
   max-width: 1000px;
   height: auto;
-  border-radius: 8px;
+  border-radius: var(--border-radius);
   margin-bottom: 25px;
   box-shadow: var(--shadow);
   display: block;
@@ -298,7 +299,7 @@ footer p {
   text-align: justify;
   background-color: var(--background-color);
   padding: 20px 25px;
-  border-radius: 8px;
+  border-radius: var(--border-radius);
   margin-bottom: 30px;
   box-shadow: var(--shadow);
   font-size: 1.4rem;
@@ -317,7 +318,7 @@ footer p {
   background-color: var(--button-background);
   border: none;
   padding: 5px 10px;
-  border-radius: 25px;
+  border-radius: var(--border-radius);
   cursor: pointer;
   box-shadow: var(--shadow);
   display: flex;
