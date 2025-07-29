@@ -13,7 +13,7 @@
 }
 
 :root {
-  --max-width: 1000px;
+  --max-width: 900px;
   --primary-color: #42bfef;
   --secondary-color: #1a2e86;
   --tertiary-color: #fd5;
@@ -161,8 +161,11 @@ a:hover {
 
 p {
   font-family: "Open Sans", sans-serif;
-  margin-bottom: 20px;
+  font-size: 1.15rem;
   line-height: 1.5;
+  text-wrap: balance;
+  max-width: 80ch;
+  margin-bottom: 1rem;
 }
 
 b,
@@ -278,8 +281,8 @@ footer {
 }
 
 footer p {
-  margin-bottom: 0px;
-  line-height: 0.15;
+  font-size: 1rem;
+  margin: 0 auto;
 }
 
 .hero-image {
