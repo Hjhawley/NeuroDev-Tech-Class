@@ -75,14 +75,13 @@ header {
 }
 
 nav {
-  margin-top: 25px;
+  margin-top: 1.5rem;
 }
 
 nav a {
   color: var(--header-text-color);
-  font-size: 1.375rem;
-  font-weight: 500;
-  margin: 0 25px;
+  font-size: 1.4rem;
+  margin: 0 2rem;
 }
 
 nav a:hover {
@@ -354,7 +353,7 @@ table tbody td {
 }
 
 /* Mobile */
-@media (max-width: 624px) {
+@media (max-width: 700px) {
   * {
     text-wrap: balance;
   }
@@ -364,21 +363,27 @@ table tbody td {
   h2 {
     font-size: 1.35em;
   }
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
   nav a {
     font-size: 1.2rem;
-    margin: 0.75rem;
+    margin: 0;
   }
-  .callout {
-    font-size: 1.15em;
-    text-align: left;
-  }
-  .video-responsive {
-    width: 100%;
-    height: 160px;
-    margin-left: 0px;
-  }
-  .theme-toggle-container {
-    bottom: 15px;
-    right: 15px;
-  }
+}
+.callout {
+  font-size: 1.15em;
+  text-align: left;
+}
+.video-responsive {
+  width: 100%;
+  height: 160px;
+  margin-left: 0px;
+}
+.theme-toggle-container {
+  bottom: 15px;
+  right: 15px;
 }
