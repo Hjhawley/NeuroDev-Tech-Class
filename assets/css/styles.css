@@ -8,8 +8,8 @@
   padding: 0;
   box-sizing: border-box;
   font-weight: normal;
-  transition: background-color 0.25s ease, border-color 0.25s ease,
-    box-shadow 0.25s ease;
+  transition: background-color 0.2s ease, border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 :root {
@@ -106,19 +106,17 @@ body.dark-mode main {
 
 h1 {
   color: var(--h1-color);
-  font-size: 1.9em;
+  font-size: 1.7rem;
   margin-bottom: 0.9rem;
 }
 
 h2 {
   position: relative;
   color: var(--h2-color);
-  font-size: 1.5em;
-  margin-top: 1.5rem;
-  margin-bottom: 5px;
+  font-size: 1.5rem;
+  margin: 1.5rem 0 .5rem;
   padding-bottom: 5px;
 }
-
 /* gradient line */
 h2::after {
   content: "";
@@ -136,22 +134,22 @@ h2::after {
 
 h3 {
   color: var(--h3-color);
-  font-size: 1.25em;
+  font-size: 1.3rem;
   font-weight: 500;
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
 ul ul li,
-footer,
+footer p,
 #theme-toggle {
-  font-size: 0.875em;
+  font-size: 0.9rem;
 }
 
 a {
   color: var(--link-color);
   text-decoration: none;
-  transition: color 0.25s ease;
+  transition: color 0.2s ease;
 }
 
 a:hover {
@@ -287,7 +285,6 @@ footer {
 }
 
 footer p {
-  font-size: 1rem;
   margin: 0 auto;
 }
 
