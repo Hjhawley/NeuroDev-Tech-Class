@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   footer.innerHTML = `
     <p>
         &copy; <span id="year"></span> <a href="https://neurodevmentoring.com/" target="_blank" rel="noopener">NeuroDev</a> &middot;
-        435.574.9393
+        <a href="https://maps.app.goo.gl/hC9GatW43APEbPKs5">435.574.9393</a>
     </p>
     <p>
         <a href="#top" id="back-to-top">Back to top</a>
