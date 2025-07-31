@@ -1,6 +1,6 @@
 // Makes course assignment checkboxes pretty and consistent, with password protection for links
 
-const authPassword = "love2code!"; // same as our WiFi password
+const authPassword = "love2code!";
 if (localStorage.getItem("isAuthenticated") === null) {
   localStorage.setItem("isAuthenticated", "false");
 }
