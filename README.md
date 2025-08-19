@@ -1,1 +1,1 @@
-# NeuroDev-Tech-Class
+# neurodev-tech-class
