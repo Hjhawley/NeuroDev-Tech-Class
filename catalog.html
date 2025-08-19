@@ -21,14 +21,7 @@
       sizes="32x32"
       href="assets/images/NeuroDev-favicon-32x32.png"
     />
-    <script>
-      const isLocal =
-        window.location.hostname === "localhost" ||
-        window.location.hostname === "127.0.0.1";
-      const baseElement = document.createElement("base");
-      baseElement.href = isLocal ? "/" : "/neurodev-tech-class/";
-      document.head.appendChild(baseElement);
-    </script>
+    <base id="base" href="/site/">
   </head>
   <body>
     <header>
