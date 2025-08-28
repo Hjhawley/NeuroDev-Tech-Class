@@ -50,7 +50,6 @@ body.dark-mode {
   --link-hover-color: var(--tertiary-color);
   --section-border-color: var(--primary-color);
   --button-background: var(--secondary-color);
-  --button-hover-background: var(--primary-color);
   --border-color: #999;
 }
 
@@ -75,6 +74,17 @@ header {
   display: block;
 }
 
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+
 nav {
   margin-top: 1.5rem;
 }
@@ -85,9 +95,10 @@ nav a {
   margin: 0 2rem;
 }
 
-nav a:hover {
-  text-decoration: underline;
+nav a:hover,
+.button:hover {
   color: var(--tertiary-color);
+  transition: color 0.2s ease;
 }
 
 main {
@@ -142,17 +153,6 @@ h3 {
 footer p,
 #theme-toggle {
   font-size: 1rem;
-}
-
-a {
-  color: var(--link-color);
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-a:hover {
-  color: var(--link-hover-color);
-  text-decoration: underline;
 }
 
 p,
