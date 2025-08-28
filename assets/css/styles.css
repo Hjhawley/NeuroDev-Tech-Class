@@ -250,16 +250,17 @@ label .task-checkbox {
 
 button,
 .button {
+  max-width: 300px;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0.6em 0.9em;
   background-color: var(--button-background);
   border: none;
-  padding: 0.6em 0.9em;
   border-radius: var(--border-radius);
   cursor: pointer;
   color: #eee;
   box-shadow: var(--shadow);
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 footer {
