@@ -1,71 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NeuroDev Tech Class - Linux</title>
-    <base id="base" href="/site/">
-    <script src="assets/js/link-generator.js"></script>
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/images/NeuroDev-favicon-32x32.png"
-    />
-  </head>
-  <body>
-    <header>
-      <a href="catalog.html">
-        <img
-          src="assets/images/logo-white.png"
-          alt="NeuroDev Logo"
-          class="logo"
-        />
-      </a>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="catalog.html">Course Catalog</a>
-        <a href="resources.html">Resources</a>
-      </nav>
-    </header>
-    <main id="main-content">
-      <h1>Introduction to Linux</h1>
 
-      <!-- Course Overview -->
-      <section>
-        <h3>Course Overview</h3>
-        <p>
-          This beginner course introduces students to the Linux family of
-          operating systems through hands-on beginner-friendly tasks. Covered
-          topics include navigating the terminal, managing files and processes,
-          and working with open-source tools. By the end of the course, students
-          will have the skills and confidence to use Linux comfortably as a
-          daily driver.
-        </p>
-      </section>
+<head>
+  <script src="/site/assets/js/load-head.js" defer></script>
+</head>
 
-      <!-- Course Objectives -->
-      <section>
-        <h3>Course Objectives</h3>
-        <ul>
-          <li>
-            Understand what Linux is and how it differs from Windows and macOS.
-          </li>
-          <li>
-            Use the command line to navigate and manipulate the file system.
-          </li>
-          <li>Manage software using package managers.</li>
-          <li>Understand basic file permissions and user management.</li>
-          <li>Perform basic system monitoring and troubleshooting.</li>
-          <li>
-            Develop confidence and familiarity with a Linux desktop environment.
-          </li>
-        </ul>
-      </section>
+<body>
+  <header></header>
+  <script src="/site/assets/js/load-header.js" defer></script>
+  <script src="/site/assets/js/link-generator.js"></script>
 
-      <!-- Unit Material -->
-      <script id="unit-data" type="application/json">
+  <main id="main-content">
+    <h1>Introduction to Linux</h1>
+
+    <!-- Course Overview -->
+    <section>
+      <h3>Course Overview</h3>
+      <p>
+        This beginner course introduces students to the Linux family of
+        operating systems through hands-on beginner-friendly tasks. Covered
+        topics include navigating the terminal, managing files and processes,
+        and working with open-source tools. By the end of the course, students
+        will have the skills and confidence to use Linux comfortably as a
+        daily driver.
+      </p>
+    </section>
+
+    <!-- Course Objectives -->
+    <section>
+      <h3>Course Objectives</h3>
+      <ul>
+        <li>
+          Understand what Linux is and how it differs from Windows and macOS.
+        </li>
+        <li>
+          Use the command line to navigate and manipulate the file system.
+        </li>
+        <li>Manage software using package managers.</li>
+        <li>Understand basic file permissions and user management.</li>
+        <li>Perform basic system monitoring and troubleshooting.</li>
+        <li>
+          Develop confidence and familiarity with a Linux desktop environment.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Unit Material -->
+    <script id="unit-data" type="application/json">
         [
           {
             "title": "Getting Started",
@@ -146,7 +127,7 @@
         ]
       </script>
 
-      <!--         {
+    <!--         {
             "title": "Unit 2: Full Linux Environment",
             "description": "Explore Linux GUI and system tools using a Virtual Machine (Ubuntu Desktop).",
             "content": [
@@ -180,11 +161,12 @@
             ]
         } -->
 
-      <!-- Generate Content -->
-      <div id="unit-sections"></div>
-    </main>
+    <!-- Generate Content -->
+    <div id="unit-sections"></div>
+  </main>
 
-    <div id="footer-placeholder"></div>
-    <script src="assets/js/load-footer.js" defer></script>
-  </body>
+  <div id="footer-placeholder"></div>
+  <script src="assets/js/load-footer.js" defer></script>
+</body>
+
 </html>

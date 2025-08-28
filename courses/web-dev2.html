@@ -1,58 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NeuroDev Tech Class - Web Development II</title>
-    <base id="base" href="/site/">
-    <script src="assets/js/link-generator.js"></script>
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/images/NeuroDev-favicon-32x32.png"
-    />
-  </head>
-  <body>
-    <header>
-      <a href="catalog.html">
-        <img
-          src="assets/images/logo-white.png"
-          alt="NeuroDev Logo"
-          class="logo"
-        />
-      </a>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="catalog.html">Course Catalog</a>
-        <a href="resources.html">Resources</a>
-      </nav>
-    </header>
-    <main id="main-content">
-      <h1>Web Development II - JavaScript</h1>
 
-      <!-- Course Overview -->
-      <section>
-        <h3>Course Overview</h3>
-        <p>etc etc etc</p>
-      </section>
+<head>
+  <script src="/site/assets/js/load-head.js" defer></script>
+</head>
 
-      <!-- Course Objectives -->
-      <section>
-        <h3>Course Objectives</h3>
-        <ul>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
-          <li>6</li>
-        </ul>
-      </section>
+<body>
+  <header></header>
+  <script src="/site/assets/js/load-header.js" defer></script>
+  <script src="/site/assets/js/link-generator.js"></script>
 
-      <!-- Unit Material -->
-      <script id="unit-data" type="application/json">
+  <main id="main-content">
+    <h1>Web Development II - JavaScript</h1>
+
+    <!-- Course Overview -->
+    <section>
+      <h3>Course Overview</h3>
+      <p>etc etc etc</p>
+    </section>
+
+    <!-- Course Objectives -->
+    <section>
+      <h3>Course Objectives</h3>
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+      </ul>
+    </section>
+
+    <!-- Unit Material -->
+    <script id="unit-data" type="application/json">
         [
           {
             "title": "Unit 1: ___",
@@ -97,11 +78,12 @@
         ]
       </script>
 
-      <!-- Generate Content -->
-      <div id="unit-sections"></div>
-    </main>
+    <!-- Generate Content -->
+    <div id="unit-sections"></div>
+  </main>
 
-    <div id="footer-placeholder"></div>
-    <script src="assets/js/load-footer.js" defer></script>
-  </body>
+  <div id="footer-placeholder"></div>
+  <script src="assets/js/load-footer.js" defer></script>
+</body>
+
 </html>

@@ -1,106 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NeuroDev Tech Class - Web Development I</title>
-    <base id="base" href="/site/">
-    <script src="assets/js/link-generator.js"></script>
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/images/NeuroDev-favicon-32x32.png"
-    />
-  </head>
-  <body>
-    <header>
-      <a href="catalog.html">
-        <img
-          src="assets/images/logo-white.png"
-          alt="NeuroDev Logo"
-          class="logo"
-        />
-      </a>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="catalog.html">Course Catalog</a>
-        <a href="resources.html">Resources</a>
-      </nav>
-    </header>
-    <main id="main-content">
-      <h1>Web Development I - HTML & CSS</h1>
 
-      <!-- Course Overview -->
-      <section>
-        <h3>Course Overview</h3>
-        <p>
-          This beginner-level course introduces students to the essentials of
-          web design and development, focusing on frontend creation with HTML
-          and CSS. Students will learn about the infrastructure of the Internet,
-          how to build and publish web pages, and employ various layout and
-          styling techniques.
-        </p>
-      </section>
+<head>
+  <script src="/site/assets/js/load-head.js" defer></script>
+</head>
 
-      <!-- Course Objectives -->
-      <section>
-        <h3>Course Objectives</h3>
-        <ul>
-          <li>
-            Understand Internet infrastructure and the basics of web
-            technologies.
-          </li>
-          <li>Become familiar with HTML and CSS.</li>
-          <li>
-            Learn web page layout techniques, including the use of div tags,
-            lists, and the concepts of absolute vs. relative positioning.
-          </li>
-          <li>
-            Understand and apply advanced layout strategies using CSS Flexbox
-            and Grid to create responsive designs.
-          </li>
-          <li>
-            Implement multimedia elements into web pages, such as images,
-            videos, and favicons, enhancing user engagement.
-          </li>
-        </ul>
-      </section>
+<body>
+  <header></header>
+  <script src="/site/assets/js/load-header.js" defer></script>
+  <script src="/site/assets/js/link-generator.js"></script>
 
-      <section>
-        <h3>"Web Design" vs. "Web Development"</h3>
-        <p>
-          A <b>web designer</b> focuses on the visual aspects of a website:
-          layout, colors, fonts, and overall appearance. They create mockups to
-          make sure the site is visually appealing and user-friendly, using
-          tools like Photoshop and design frameworks.
-        </p>
-        <p>
-          A <b>web developer</b>, on the other hand, focuses on the technical
-          side: building the website using code like HTML, CSS, and JavaScript.
-          Developers take the designer's mockups and turn them into a
-          functional, working website.
-        </p>
-        <p>
-          In this course, you'll be learning web development: how to write code
-          that makes websites work and look the way they're supposed to. While
-          we'll cover how to style a site, we won't get into graphic design
-          principles. My focus is on teaching you how to build and style
-          functional web pages, so don't worry if you're not an artist!
-        </p>
-        <p>
-          While we're at it, don't worry if you don't consider yourself a
-          programmer. Coding websites, especially with HTML and CSS, is very
-          different from traditional programming (using languages like Python or
-          C++). HTML structures web content, and CSS styles it. Neither involves
-          complex logic or algorithms, making web development a great starting
-          point for anyone learning to code.
-        </p>
-      </section>
+  <main id="main-content">
+    <h1>Web Development I - HTML & CSS</h1>
 
-      <!-- Unit Material -->
-      <script id="unit-data" type="application/json">
+    <!-- Course Overview -->
+    <section>
+      <h3>Course Overview</h3>
+      <p>
+        This beginner-level course introduces students to the essentials of
+        web design and development, focusing on frontend creation with HTML
+        and CSS. Students will learn about the infrastructure of the Internet,
+        how to build and publish web pages, and employ various layout and
+        styling techniques.
+      </p>
+    </section>
+
+    <!-- Course Objectives -->
+    <section>
+      <h3>Course Objectives</h3>
+      <ul>
+        <li>
+          Understand Internet infrastructure and the basics of web
+          technologies.
+        </li>
+        <li>Become familiar with HTML and CSS.</li>
+        <li>
+          Learn web page layout techniques, including the use of div tags,
+          lists, and the concepts of absolute vs. relative positioning.
+        </li>
+        <li>
+          Understand and apply advanced layout strategies using CSS Flexbox
+          and Grid to create responsive designs.
+        </li>
+        <li>
+          Implement multimedia elements into web pages, such as images,
+          videos, and favicons, enhancing user engagement.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>"Web Design" vs. "Web Development"</h3>
+      <p>
+        A <b>web designer</b> focuses on the visual aspects of a website:
+        layout, colors, fonts, and overall appearance. They create mockups to
+        make sure the site is visually appealing and user-friendly, using
+        tools like Photoshop and design frameworks.
+      </p>
+      <p>
+        A <b>web developer</b>, on the other hand, focuses on the technical
+        side: building the website using code like HTML, CSS, and JavaScript.
+        Developers take the designer's mockups and turn them into a
+        functional, working website.
+      </p>
+      <p>
+        In this course, you'll be learning web development: how to write code
+        that makes websites work and look the way they're supposed to. While
+        we'll cover how to style a site, we won't get into graphic design
+        principles. My focus is on teaching you how to build and style
+        functional web pages, so don't worry if you're not an artist!
+      </p>
+      <p>
+        While we're at it, don't worry if you don't consider yourself a
+        programmer. Coding websites, especially with HTML and CSS, is very
+        different from traditional programming (using languages like Python or
+        C++). HTML structures web content, and CSS styles it. Neither involves
+        complex logic or algorithms, making web development a great starting
+        point for anyone learning to code.
+      </p>
+    </section>
+
+    <!-- Unit Material -->
+    <script id="unit-data" type="application/json">
         [
           {
             "title": "Getting Started",
@@ -255,11 +236,12 @@
         ]
       </script>
 
-      <!-- Generate Content -->
-      <div id="unit-sections"></div>
-    </main>
+    <!-- Generate Content -->
+    <div id="unit-sections"></div>
+  </main>
 
-    <div id="footer-placeholder"></div>
-    <script src="assets/js/load-footer.js" defer></script>
-  </body>
+  <div id="footer-placeholder"></div>
+  <script src="assets/js/load-footer.js" defer></script>
+</body>
+
 </html>
