@@ -10,14 +10,13 @@ document.head.innerHTML += `
     name="keywords"
     content="NeuroDev Tech Class, vocational tech school St. George, tech curricula NeuroDev, Python courses, web development courses, game development courses, St. George UT, neurodivergent tech education, neurodevelopmental mentoring, NDM"
   />
-  <meta name="author" content="NeuroDev" />
-  <title>NeuroDev Tech Class - Course Catalog</title>
-  <link rel="stylesheet" href="/site/assets/css/styles.css" />
+  <meta name="author" content="NeuroDev Mentoring" />
+  <title>NeuroDev Tech Class</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
   <link
     rel="icon"
     type="image/png"
     sizes="32x32"
-    href="/site/assets/images/NeuroDev-favicon-32x32.png"
+    href="assets/images/NeuroDev-favicon-32x32.png"
   />
-  <base id="base" href="/site/" />
-  `;
+`;
